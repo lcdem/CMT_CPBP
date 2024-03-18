@@ -1,12 +1,12 @@
 asset_root: './results'
 
 data_io:
-  path: './pkl_files/instance_pkl_15bars_fpb12_48p_ckey'
+  path: './pkl_files/instance_pkl_8bars_fpb16_48p_ckey'
 
   loader:
     num_workers: 8
     batch_size: 64
-    shuffle: Tru
+    shuffle: True
     drop_last: True
     pin_memory: True
   dataset:
@@ -18,23 +18,23 @@ data_io:
 
 experiment:
   max_epoch: 101
-  num_sample: 33
+  num_sample: 1
   topk: 5
   lr: 0.0001
   metrics:
     - 'accuracy'
   verbose: True
-  num_prime: 6
+  num_prime: 0 # nombre de notes duquel continuer pour compléter la médodie (début de la mélodie à générer)
   attention_map: False
   rhythm_only: False
   restore_rhythm:
-    idx: 1
+    idx: 2
     epoch: 100
 
 model:
   num_pitch: 50
-  frame_per_bar: 12
-  num_bars: 15
+  frame_per_bar: 16
+  num_bars: 8
   chord_emb_size: 128
   pitch_emb_size: 256
   hidden_dim: 512
@@ -50,11 +50,11 @@ model:
     rhythm:
       activate: False
       model:
-        name: 'rhythmAtleast'
+        name: 'rhythmPatternCorrelation'
         min_nb_notes: 8
       weight_variation:
         technique: 'constant'
-        nb_bars_group: 6
+        nb_bars_group: 2
         ml_weight: 1.0
         weight_ratio: 0.9943
         weight_max: 1.0
@@ -62,9 +62,9 @@ model:
         weight_per_bar: []
 
     pitch:
-      activate: False
+      activate: True
       model:
-        name: 'pitchKey'
+        name: 'pitchPatternCorrelation'
         k: 1
       weight_variation:
         technique: 'token_down'

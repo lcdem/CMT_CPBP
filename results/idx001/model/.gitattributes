@@ -1,0 +1,9 @@
+checkpoint_100.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_20.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_30.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_40.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_50.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_60.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_70.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_80.pth.tar filter=lfs diff=lfs merge=lfs -text
+checkpoint_90.pth.tar filter=lfs diff=lfs merge=lfs -text

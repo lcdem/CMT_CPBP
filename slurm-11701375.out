@@ -1,0 +1,2337 @@
+I CMT_CPBP 12-02 14:24:16.297 run.py:58] get loaders
+I CMT_CPBP 12-02 14:24:16.388 run.py:64] build graph, criterion, optimizer and trainer
+I CMT_CPBP 12-02 14:24:17.907 run.py:103] start training
+I CMT_CPBP 12-02 14:24:17.907 trainer.py:114] -1
+I CMT_CPBP 12-02 14:24:17.907 trainer.py:115] True
+I CMT_CPBP 12-02 14:24:17.907 trainer.py:55] loading model
+I CMT_CPBP 12-02 14:24:18.015 trainer.py:79] restore rhythm model
+I CMT_CPBP 12-02 14:24:18.016 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:18.016 trainer.py:121] 1 epoch
+I CMT_CPBP 12-02 14:24:18.016 trainer.py:124] ==========train 1 epoch==========
+I CMT_CPBP 12-02 14:24:22.070 utils.py:43] nll/train: 24.0446
+I CMT_CPBP 12-02 14:24:22.071 utils.py:43] nll_pitch/train: 23.7821
+I CMT_CPBP 12-02 14:24:22.071 utils.py:43] nll_rhythm/train: 0.2624
+I CMT_CPBP 12-02 14:24:22.071 utils.py:45] accuracy_rhythm/train: 0.8906
+I CMT_CPBP 12-02 14:24:22.071 utils.py:45] accuracy_pitch/train: 0.0786
+I CMT_CPBP 12-02 14:24:22.073 trainer.py:129] ==========valid 1 epoch==========
+I CMT_CPBP 12-02 14:24:22.196 utils.py:43] nll/eval: 8.7548
+I CMT_CPBP 12-02 14:24:22.197 utils.py:43] nll_pitch/eval: 8.5573
+I CMT_CPBP 12-02 14:24:22.197 utils.py:43] nll_rhythm/eval: 0.1975
+I CMT_CPBP 12-02 14:24:22.197 utils.py:45] accuracy_rhythm/eval: 0.9148
+I CMT_CPBP 12-02 14:24:22.197 utils.py:45] accuracy_pitch/eval: 0.1850
+I CMT_CPBP 12-02 14:24:22.197 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:22.198 trainer.py:121] 2 epoch
+I CMT_CPBP 12-02 14:24:22.198 trainer.py:124] ==========train 2 epoch==========
+I CMT_CPBP 12-02 14:24:24.955 utils.py:43] nll/train: 14.3272
+I CMT_CPBP 12-02 14:24:24.955 utils.py:43] nll_pitch/train: 14.0932
+I CMT_CPBP 12-02 14:24:24.955 utils.py:43] nll_rhythm/train: 0.2340
+I CMT_CPBP 12-02 14:24:24.955 utils.py:45] accuracy_rhythm/train: 0.9027
+I CMT_CPBP 12-02 14:24:24.955 utils.py:45] accuracy_pitch/train: 0.1372
+I CMT_CPBP 12-02 14:24:24.956 trainer.py:129] ==========valid 2 epoch==========
+I CMT_CPBP 12-02 14:24:25.029 utils.py:43] nll/eval: 5.8276
+I CMT_CPBP 12-02 14:24:25.030 utils.py:43] nll_pitch/eval: 5.6450
+I CMT_CPBP 12-02 14:24:25.030 utils.py:43] nll_rhythm/eval: 0.1826
+I CMT_CPBP 12-02 14:24:25.030 utils.py:45] accuracy_rhythm/eval: 0.9178
+I CMT_CPBP 12-02 14:24:25.030 utils.py:45] accuracy_pitch/eval: 0.2302
+I CMT_CPBP 12-02 14:24:25.030 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:25.030 trainer.py:121] 3 epoch
+I CMT_CPBP 12-02 14:24:25.031 trainer.py:124] ==========train 3 epoch==========
+I CMT_CPBP 12-02 14:24:27.786 utils.py:43] nll/train: 10.7909
+I CMT_CPBP 12-02 14:24:27.787 utils.py:43] nll_pitch/train: 10.5797
+I CMT_CPBP 12-02 14:24:27.787 utils.py:43] nll_rhythm/train: 0.2112
+I CMT_CPBP 12-02 14:24:27.787 utils.py:45] accuracy_rhythm/train: 0.9108
+I CMT_CPBP 12-02 14:24:27.787 utils.py:45] accuracy_pitch/train: 0.1611
+I CMT_CPBP 12-02 14:24:27.788 trainer.py:129] ==========valid 3 epoch==========
+I CMT_CPBP 12-02 14:24:27.865 utils.py:43] nll/eval: 4.7299
+I CMT_CPBP 12-02 14:24:27.866 utils.py:43] nll_pitch/eval: 4.5669
+I CMT_CPBP 12-02 14:24:27.866 utils.py:43] nll_rhythm/eval: 0.1630
+I CMT_CPBP 12-02 14:24:27.866 utils.py:45] accuracy_rhythm/eval: 0.9273
+I CMT_CPBP 12-02 14:24:27.866 utils.py:45] accuracy_pitch/eval: 0.2522
+I CMT_CPBP 12-02 14:24:27.866 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:27.867 trainer.py:121] 4 epoch
+I CMT_CPBP 12-02 14:24:27.867 trainer.py:124] ==========train 4 epoch==========
+I CMT_CPBP 12-02 14:24:30.713 trainer.py:215] 100 training steps
+I CMT_CPBP 12-02 14:24:30.713 utils.py:43] nll: 7.4811
+I CMT_CPBP 12-02 14:24:30.714 utils.py:43] nll_pitch: 7.2826
+I CMT_CPBP 12-02 14:24:30.714 utils.py:43] nll_rhythm: 0.1985
+I CMT_CPBP 12-02 14:24:30.714 utils.py:45] accuracy_rhythm/train: 0.9124
+I CMT_CPBP 12-02 14:24:30.714 utils.py:45] accuracy_pitch/train: 0.1983
+I CMT_CPBP 12-02 14:24:30.714 utils.py:43] nll/train: 8.5801
+I CMT_CPBP 12-02 14:24:30.714 utils.py:43] nll_pitch/train: 8.3838
+I CMT_CPBP 12-02 14:24:30.714 utils.py:43] nll_rhythm/train: 0.1963
+I CMT_CPBP 12-02 14:24:30.714 utils.py:45] accuracy_rhythm/train: 0.9158
+I CMT_CPBP 12-02 14:24:30.714 utils.py:45] accuracy_pitch/train: 0.1831
+I CMT_CPBP 12-02 14:24:30.717 trainer.py:129] ==========valid 4 epoch==========
+I CMT_CPBP 12-02 14:24:30.790 utils.py:43] nll/eval: 3.7173
+I CMT_CPBP 12-02 14:24:30.791 utils.py:43] nll_pitch/eval: 3.5515
+I CMT_CPBP 12-02 14:24:30.791 utils.py:43] nll_rhythm/eval: 0.1658
+I CMT_CPBP 12-02 14:24:30.791 utils.py:45] accuracy_rhythm/eval: 0.9257
+I CMT_CPBP 12-02 14:24:30.791 utils.py:45] accuracy_pitch/eval: 0.3047
+I CMT_CPBP 12-02 14:24:30.791 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:30.792 trainer.py:121] 5 epoch
+I CMT_CPBP 12-02 14:24:30.792 trainer.py:124] ==========train 5 epoch==========
+I CMT_CPBP 12-02 14:24:33.655 utils.py:43] nll/train: 6.8250
+I CMT_CPBP 12-02 14:24:33.655 utils.py:43] nll_pitch/train: 6.6366
+I CMT_CPBP 12-02 14:24:33.655 utils.py:43] nll_rhythm/train: 0.1885
+I CMT_CPBP 12-02 14:24:33.655 utils.py:45] accuracy_rhythm/train: 0.9178
+I CMT_CPBP 12-02 14:24:33.655 utils.py:45] accuracy_pitch/train: 0.2172
+I CMT_CPBP 12-02 14:24:33.657 trainer.py:129] ==========valid 5 epoch==========
+I CMT_CPBP 12-02 14:24:33.730 utils.py:43] nll/eval: 3.1976
+I CMT_CPBP 12-02 14:24:33.730 utils.py:43] nll_pitch/eval: 3.0404
+I CMT_CPBP 12-02 14:24:33.730 utils.py:43] nll_rhythm/eval: 0.1572
+I CMT_CPBP 12-02 14:24:33.730 utils.py:45] accuracy_rhythm/eval: 0.9269
+I CMT_CPBP 12-02 14:24:33.730 utils.py:45] accuracy_pitch/eval: 0.3471
+I CMT_CPBP 12-02 14:24:33.731 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:33.731 trainer.py:121] 6 epoch
+I CMT_CPBP 12-02 14:24:33.732 trainer.py:124] ==========train 6 epoch==========
+I CMT_CPBP 12-02 14:24:36.578 utils.py:43] nll/train: 5.4830
+I CMT_CPBP 12-02 14:24:36.578 utils.py:43] nll_pitch/train: 5.2989
+I CMT_CPBP 12-02 14:24:36.578 utils.py:43] nll_rhythm/train: 0.1840
+I CMT_CPBP 12-02 14:24:36.578 utils.py:45] accuracy_rhythm/train: 0.9199
+I CMT_CPBP 12-02 14:24:36.578 utils.py:45] accuracy_pitch/train: 0.2589
+I CMT_CPBP 12-02 14:24:36.580 trainer.py:129] ==========valid 6 epoch==========
+I CMT_CPBP 12-02 14:24:36.653 utils.py:43] nll/eval: 2.7937
+I CMT_CPBP 12-02 14:24:36.653 utils.py:43] nll_pitch/eval: 2.6315
+I CMT_CPBP 12-02 14:24:36.653 utils.py:43] nll_rhythm/eval: 0.1622
+I CMT_CPBP 12-02 14:24:36.653 utils.py:45] accuracy_rhythm/eval: 0.9262
+I CMT_CPBP 12-02 14:24:36.653 utils.py:45] accuracy_pitch/eval: 0.3923
+I CMT_CPBP 12-02 14:24:36.653 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:36.654 trainer.py:121] 7 epoch
+I CMT_CPBP 12-02 14:24:36.654 trainer.py:124] ==========train 7 epoch==========
+I CMT_CPBP 12-02 14:24:39.491 utils.py:43] nll/train: 4.3422
+I CMT_CPBP 12-02 14:24:39.492 utils.py:43] nll_pitch/train: 4.1605
+I CMT_CPBP 12-02 14:24:39.492 utils.py:43] nll_rhythm/train: 0.1818
+I CMT_CPBP 12-02 14:24:39.492 utils.py:45] accuracy_rhythm/train: 0.9209
+I CMT_CPBP 12-02 14:24:39.492 utils.py:45] accuracy_pitch/train: 0.3053
+I CMT_CPBP 12-02 14:24:39.494 trainer.py:129] ==========valid 7 epoch==========
+I CMT_CPBP 12-02 14:24:39.564 utils.py:43] nll/eval: 2.2853
+I CMT_CPBP 12-02 14:24:39.564 utils.py:43] nll_pitch/eval: 2.1260
+I CMT_CPBP 12-02 14:24:39.564 utils.py:43] nll_rhythm/eval: 0.1593
+I CMT_CPBP 12-02 14:24:39.564 utils.py:45] accuracy_rhythm/eval: 0.9266
+I CMT_CPBP 12-02 14:24:39.564 utils.py:45] accuracy_pitch/eval: 0.4606
+I CMT_CPBP 12-02 14:24:39.565 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:39.565 trainer.py:121] 8 epoch
+I CMT_CPBP 12-02 14:24:39.566 trainer.py:124] ==========train 8 epoch==========
+I CMT_CPBP 12-02 14:24:42.402 trainer.py:215] 200 training steps
+I CMT_CPBP 12-02 14:24:42.402 utils.py:43] nll: 3.1605
+I CMT_CPBP 12-02 14:24:42.402 utils.py:43] nll_pitch: 2.9843
+I CMT_CPBP 12-02 14:24:42.402 utils.py:43] nll_rhythm: 0.1762
+I CMT_CPBP 12-02 14:24:42.402 utils.py:45] accuracy_rhythm/train: 0.9253
+I CMT_CPBP 12-02 14:24:42.402 utils.py:45] accuracy_pitch/train: 0.3766
+I CMT_CPBP 12-02 14:24:42.402 utils.py:43] nll/train: 3.4823
+I CMT_CPBP 12-02 14:24:42.403 utils.py:43] nll_pitch/train: 3.3034
+I CMT_CPBP 12-02 14:24:42.403 utils.py:43] nll_rhythm/train: 0.1789
+I CMT_CPBP 12-02 14:24:42.403 utils.py:45] accuracy_rhythm/train: 0.9220
+I CMT_CPBP 12-02 14:24:42.403 utils.py:45] accuracy_pitch/train: 0.3528
+I CMT_CPBP 12-02 14:24:42.405 trainer.py:129] ==========valid 8 epoch==========
+I CMT_CPBP 12-02 14:24:42.480 utils.py:43] nll/eval: 1.9869
+I CMT_CPBP 12-02 14:24:42.480 utils.py:43] nll_pitch/eval: 1.8270
+I CMT_CPBP 12-02 14:24:42.480 utils.py:43] nll_rhythm/eval: 0.1599
+I CMT_CPBP 12-02 14:24:42.480 utils.py:45] accuracy_rhythm/eval: 0.9266
+I CMT_CPBP 12-02 14:24:42.480 utils.py:45] accuracy_pitch/eval: 0.4823
+I CMT_CPBP 12-02 14:24:42.481 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:42.481 trainer.py:121] 9 epoch
+I CMT_CPBP 12-02 14:24:42.481 trainer.py:124] ==========train 9 epoch==========
+I CMT_CPBP 12-02 14:24:45.318 utils.py:43] nll/train: 2.8832
+I CMT_CPBP 12-02 14:24:45.319 utils.py:43] nll_pitch/train: 2.7055
+I CMT_CPBP 12-02 14:24:45.319 utils.py:43] nll_rhythm/train: 0.1776
+I CMT_CPBP 12-02 14:24:45.319 utils.py:45] accuracy_rhythm/train: 0.9226
+I CMT_CPBP 12-02 14:24:45.319 utils.py:45] accuracy_pitch/train: 0.3906
+I CMT_CPBP 12-02 14:24:45.321 trainer.py:129] ==========valid 9 epoch==========
+I CMT_CPBP 12-02 14:24:45.391 utils.py:43] nll/eval: 1.8705
+I CMT_CPBP 12-02 14:24:45.391 utils.py:43] nll_pitch/eval: 1.7075
+I CMT_CPBP 12-02 14:24:45.391 utils.py:43] nll_rhythm/eval: 0.1631
+I CMT_CPBP 12-02 14:24:45.391 utils.py:45] accuracy_rhythm/eval: 0.9249
+I CMT_CPBP 12-02 14:24:45.391 utils.py:45] accuracy_pitch/eval: 0.5107
+I CMT_CPBP 12-02 14:24:45.392 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:45.392 trainer.py:121] 10 epoch
+I CMT_CPBP 12-02 14:24:45.393 trainer.py:124] ==========train 10 epoch==========
+I CMT_CPBP 12-02 14:24:48.237 utils.py:43] nll/train: 2.4704
+I CMT_CPBP 12-02 14:24:48.237 utils.py:43] nll_pitch/train: 2.2935
+I CMT_CPBP 12-02 14:24:48.237 utils.py:43] nll_rhythm/train: 0.1768
+I CMT_CPBP 12-02 14:24:48.237 utils.py:45] accuracy_rhythm/train: 0.9223
+I CMT_CPBP 12-02 14:24:48.237 utils.py:45] accuracy_pitch/train: 0.4185
+I CMT_CPBP 12-02 14:24:48.239 trainer.py:129] ==========valid 10 epoch==========
+I CMT_CPBP 12-02 14:24:48.309 utils.py:43] nll/eval: 1.6516
+I CMT_CPBP 12-02 14:24:48.309 utils.py:43] nll_pitch/eval: 1.4980
+I CMT_CPBP 12-02 14:24:48.309 utils.py:43] nll_rhythm/eval: 0.1536
+I CMT_CPBP 12-02 14:24:48.309 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:24:48.309 utils.py:45] accuracy_pitch/eval: 0.5236
+I CMT_CPBP 12-02 14:24:48.310 trainer.py:83] saving model, Epoch 10, step 250
+I CMT_CPBP 12-02 14:24:48.540 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:24:48.540 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:24:49.979 trainer.py:259] ==========sampling result of epoch 010==========
+I CMT_CPBP 12-02 14:24:49.982 trainer.py:263] Sample 00 : [ 4 48 48  9 14 16 48 48 14  9 48 11  9 48  7 11 48 14 11 48]
+I CMT_CPBP 12-02 14:24:50.172 trainer.py:282] Groundtruth 00 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:24:50.299 trainer.py:263] Sample 01 : [48 48 14 12 48 48 14 48 11 48 48 48 14 48 48 14 48 16 12 48]
+I CMT_CPBP 12-02 14:24:50.433 trainer.py:282] Groundtruth 01 : [ 9 48  9 12 48 48 14 48 11  7 48  7  7 48 12 14 48 16  9 48]
+I CMT_CPBP 12-02 14:24:50.548 trainer.py:263] Sample 02 : [ 9 48 48 11 48  9  7 48 11 11 48  9 14 48  9 13 48 14 16 48]
+I CMT_CPBP 12-02 14:24:50.705 trainer.py:282] Groundtruth 02 : [14 48 11 48 48 48 11 48  9  7 48  6  9 48  9  7 48  4  1 48]
+I CMT_CPBP 12-02 14:24:50.840 trainer.py:263] Sample 03 : [ 2 48 48  2 48  4  4 48  4  4 48 48  4 48  4 48 48  4  4 48]
+I CMT_CPBP 12-02 14:24:50.956 trainer.py:282] Groundtruth 03 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:24:51.071 trainer.py:263] Sample 04 : [14 48 14 16 48 18 14 48 16 18 48 19 16 48 14 11 48  9  7 48]
+I CMT_CPBP 12-02 14:24:51.199 trainer.py:282] Groundtruth 04 : [14 48  9 48 48 14 14 48 13 14 48  7  6 48  7 10 48 11 14 48]
+I CMT_CPBP 12-02 14:24:51.319 trainer.py:263] Sample 05 : [14 48 16 48 48 16 16 48 48 14 48 12 48 48  9 11 48 48 14 48]
+I CMT_CPBP 12-02 14:24:51.450 trainer.py:282] Groundtruth 05 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:24:51.547 trainer.py:263] Sample 06 : [16 48 18 14 48 18 14 48 16 18 48 19 21 48 19 21 48 19 16 48]
+I CMT_CPBP 12-02 14:24:51.658 trainer.py:282] Groundtruth 06 : [14 48 48 16 48 18 19 48 21 21 48 19 18 48 19 21 48 23 23 48]
+I CMT_CPBP 12-02 14:24:51.784 trainer.py:263] Sample 07 : [48 48  7  7 48 48  9 48 14 48 48 11  7 48 48 11 48  9 48 48]
+I CMT_CPBP 12-02 14:24:51.907 trainer.py:282] Groundtruth 07 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:24:52.089 trainer.py:263] Sample 08 : [ 9 48  7  7 48 11  7 48  6  9 48 11  9 48 48 11 48  9  9 48]
+I CMT_CPBP 12-02 14:24:52.208 trainer.py:282] Groundtruth 08 : [13 48 14 16 48 18 19 48 18 16 48 14 16 48 21 19 48 18  9 48]
+I CMT_CPBP 12-02 14:24:52.327 trainer.py:263] Sample 09 : [21 48 19 48 48 21 21 48 48 48 48 21 48 48 21 21 48 19 21 48]
+I CMT_CPBP 12-02 14:24:52.424 trainer.py:282] Groundtruth 09 : [18 48 19 21 48 23 23 48 21 19 48 18 19 48 21 16 48 18 19 48]
+I CMT_CPBP 12-02 14:24:52.535 trainer.py:263] Sample 10 : [48 48 48 16 48 48 18 48  9 48 48 48 16 48 48 48 48  9 13 48]
+I CMT_CPBP 12-02 14:24:52.643 trainer.py:282] Groundtruth 10 : [16 48 13 13 48 11 11 48  9  9 48  9 13 48 11 13 48  9 16 48]
+I CMT_CPBP 12-02 14:24:52.792 trainer.py:263] Sample 11 : [49 49  9 48 48 14 48 16 48 48  9  9 48 48 14 48 16 48 48 18]
+I CMT_CPBP 12-02 14:24:52.924 trainer.py:282] Groundtruth 11 : [49 49 49  9 48  9 18 48 18 13 48 16 14 48  9 48 48 48  9 48]
+I CMT_CPBP 12-02 14:24:53.064 trainer.py:263] Sample 12 : [19 48 18 16 48 14 19 48 18 19 48 18 19 48 16 18 48 19 19 48]
+I CMT_CPBP 12-02 14:24:53.203 trainer.py:282] Groundtruth 12 : [16 48 11 14 48 14 14 48 11 11 48  9  5 48  5  7 48  2  2 48]
+I CMT_CPBP 12-02 14:24:53.318 trainer.py:263] Sample 13 : [19 48 48 18 48 19 21 48 19 21 48 19 21 48 19 21 48 19 21 48]
+I CMT_CPBP 12-02 14:24:53.492 trainer.py:282] Groundtruth 13 : [19 48 21 48 48 48 18 48 48 19 48 21 19 48 18 19 48 16 13 48]
+I CMT_CPBP 12-02 14:24:53.612 trainer.py:263] Sample 14 : [48 48 16 48 48 48 14 48 48 48 48 18 48 48 48 16 48 48 48 48]
+I CMT_CPBP 12-02 14:24:53.740 trainer.py:282] Groundtruth 14 : [48 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:24:53.881 trainer.py:263] Sample 15 : [14 48 48 14 48 19 14 48 19 21 48 19 21 48 19 21 48 19 21 48]
+I CMT_CPBP 12-02 14:24:54.015 trainer.py:282] Groundtruth 15 : [ 7 48 48 14 18 19 21 48 19 19 48 14 11 48  9 11 48  9  9 48]
+I CMT_CPBP 12-02 14:24:54.125 trainer.py:263] Sample 16 : [ 4 48  2  2 48 48  4 48  2  6 48  2  2 48  6  2 48  2  4 48]
+I CMT_CPBP 12-02 14:24:54.241 trainer.py:282] Groundtruth 16 : [ 7 48  9  9 48 11  9 48  9 14 48  9  6 48  4  2 48  7 48 48]
+I CMT_CPBP 12-02 14:24:54.366 trainer.py:263] Sample 17 : [ 9 48  9 14 48 12  9 48 11 48 48  7  7 48  9  7 48  9 11 48]
+I CMT_CPBP 12-02 14:24:54.486 trainer.py:282] Groundtruth 17 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:24:54.602 trainer.py:263] Sample 18 : [14 48 16 14 48 16 16 48 14 14 48 12 11 48  9  7 48 11  7 48]
+I CMT_CPBP 12-02 14:24:54.740 trainer.py:282] Groundtruth 18 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:24:54.880 trainer.py:263] Sample 19 : [ 9 48  9  9 48 11 12 48 14 11 48 14 11 48 48 14 16 14 16 48]
+I CMT_CPBP 12-02 14:24:55.042 trainer.py:282] Groundtruth 19 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:24:55.153 trainer.py:263] Sample 20 : [49 49 49 49 49  9  6  2  4 48  2  2 48 48  4 48  2 48 48  4]
+I CMT_CPBP 12-02 14:24:55.251 trainer.py:282] Groundtruth 20 : [49 49 49 16 48 18 48 48 48 18 48 19 18 48 16 13 48  9 16 48]
+I CMT_CPBP 12-02 14:24:55.397 trainer.py:263] Sample 21 : [ 9 48 14  9 48 14  9 48 11 48 48 48 48 48 48  9 48 14  9 48]
+I CMT_CPBP 12-02 14:24:55.514 trainer.py:282] Groundtruth 21 : [48 48  9  9 48  7  6 48  4  6 48  4  9 48 11 13 48 14 48 48]
+I CMT_CPBP 12-02 14:24:55.840 trainer.py:263] Sample 22 : [ 7 48  9  7 48  9  7 48 48  7 48  9  7 48  9 11 48 48  9 48]
+I CMT_CPBP 12-02 14:24:55.940 trainer.py:282] Groundtruth 22 : [11 48 12 14 48 12 11 48  9  7 48  6 48 48  4  2 48  4  6 48]
+I CMT_CPBP 12-02 14:24:56.043 trainer.py:263] Sample 23 : [48 11 14 13 14 14 14 48 48  9 48  9 11 48 13  9 48 11 13 48]
+I CMT_CPBP 12-02 14:24:56.222 trainer.py:282] Groundtruth 23 : [ 7 48  6  9 48 14 18 48 48 14 48 13 16 48 19 23 48 21 13 48]
+I CMT_CPBP 12-02 14:24:56.327 trainer.py:263] Sample 24 : [ 4 48  4  2 48  4 48 48  4  4 48 48  4 48  4 48 48  4  4 48]
+I CMT_CPBP 12-02 14:24:56.509 trainer.py:282] Groundtruth 24 : [ 4 48 48  9 48  9 12 48 12 12 48 16 16 48 11 14 48 14 14 48]
+I CMT_CPBP 12-02 14:24:56.620 trainer.py:263] Sample 25 : [48 48 11 13 48 11 13 48 14 48 48 48 11 48 48 48 48 14 48 48]
+I CMT_CPBP 12-02 14:24:56.786 trainer.py:282] Groundtruth 25 : [48 48 48 14 48 48 16 48 18 19 48 18 16 48 18 16 48 14 16 48]
+I CMT_CPBP 12-02 14:24:56.919 trainer.py:263] Sample 26 : [ 2 48 48  7 48  9 48 48 48  7 48 48  7 48  9 48 48 48  7 48]
+I CMT_CPBP 12-02 14:24:57.012 trainer.py:282] Groundtruth 26 : [19 48 18 17 48 16 48 48 48 11 48 48 48 48 12 48 48 48 16 48]
+I CMT_CPBP 12-02 14:24:57.136 trainer.py:263] Sample 27 : [14 48 48 11 12 14 16 48 14 11 48  9 11 48 14 16 48 14 14 48]
+I CMT_CPBP 12-02 14:24:57.254 trainer.py:282] Groundtruth 27 : [ 7 48 48 14 48 23 48 48 23 23 48 48 21 48 19 48 48 19 19 48]
+I CMT_CPBP 12-02 14:24:57.375 trainer.py:263] Sample 28 : [11 48  9 14 48 18 14 48 48 16 48 18 19 48 18 19 48 18 16 48]
+I CMT_CPBP 12-02 14:24:57.502 trainer.py:282] Groundtruth 28 : [11 48  9 48 48  6  6 48 48  9 48  7 16 48 14 13 48 11 13 48]
+I CMT_CPBP 12-02 14:24:57.669 trainer.py:263] Sample 29 : [18 48 48 14 48 18 48 48 16 18 48 16 18 48 16 16 48 18 19 48]
+I CMT_CPBP 12-02 14:24:57.784 trainer.py:282] Groundtruth 29 : [14 48 48 14 16 18 19 48 21 21 48 19 18 48 19 21 48 23 23 48]
+I CMT_CPBP 12-02 14:24:57.937 trainer.py:263] Sample 30 : [ 7 48 11  9 48 48 14 48 16 14 48 16 16 48 14  9 48 14 16 48]
+I CMT_CPBP 12-02 14:24:58.032 trainer.py:282] Groundtruth 30 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:24:58.144 trainer.py:263] Sample 31 : [49 49 49 49  9  7  9  7 48  7  7 48 48  7 48  9  7 48  7  7]
+I CMT_CPBP 12-02 14:24:58.264 trainer.py:282] Groundtruth 31 : [ 7 48 48 48 48 12 11 48 12  7 48  6  7 48  4  3 48  4  0 48]
+I CMT_CPBP 12-02 14:24:58.378 trainer.py:263] Sample 32 : [14 48 48  9 14 14 16 48 18 16 48 18 16 48 14  9 48 11  9 48]
+I CMT_CPBP 12-02 14:24:58.533 trainer.py:282] Groundtruth 32 : [14 48 48 14 16 18 48 48 48 19 48 18 19 48 21 48 48 48 18 48]
+I CMT_CPBP 12-02 14:24:58.697 trainer.py:120] 
+I CMT_CPBP 12-02 14:24:58.697 trainer.py:121] 11 epoch
+I CMT_CPBP 12-02 14:24:58.697 trainer.py:124] ==========train 11 epoch==========
+I CMT_CPBP 12-02 14:25:01.563 utils.py:43] nll/train: 2.1425
+I CMT_CPBP 12-02 14:25:01.564 utils.py:43] nll_pitch/train: 1.9660
+I CMT_CPBP 12-02 14:25:01.564 utils.py:43] nll_rhythm/train: 0.1764
+I CMT_CPBP 12-02 14:25:01.564 utils.py:45] accuracy_rhythm/train: 0.9224
+I CMT_CPBP 12-02 14:25:01.564 utils.py:45] accuracy_pitch/train: 0.4407
+I CMT_CPBP 12-02 14:25:01.565 trainer.py:129] ==========valid 11 epoch==========
+I CMT_CPBP 12-02 14:25:01.636 utils.py:43] nll/eval: 1.4413
+I CMT_CPBP 12-02 14:25:01.636 utils.py:43] nll_pitch/eval: 1.2804
+I CMT_CPBP 12-02 14:25:01.636 utils.py:43] nll_rhythm/eval: 0.1610
+I CMT_CPBP 12-02 14:25:01.636 utils.py:45] accuracy_rhythm/eval: 0.9250
+I CMT_CPBP 12-02 14:25:01.636 utils.py:45] accuracy_pitch/eval: 0.5299
+I CMT_CPBP 12-02 14:25:01.637 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:01.637 trainer.py:121] 12 epoch
+I CMT_CPBP 12-02 14:25:01.638 trainer.py:124] ==========train 12 epoch==========
+I CMT_CPBP 12-02 14:25:04.468 trainer.py:215] 300 training steps
+I CMT_CPBP 12-02 14:25:04.468 utils.py:43] nll: 1.9023
+I CMT_CPBP 12-02 14:25:04.468 utils.py:43] nll_pitch: 1.7252
+I CMT_CPBP 12-02 14:25:04.468 utils.py:43] nll_rhythm: 0.1771
+I CMT_CPBP 12-02 14:25:04.468 utils.py:45] accuracy_rhythm/train: 0.9266
+I CMT_CPBP 12-02 14:25:04.469 utils.py:45] accuracy_pitch/train: 0.4606
+I CMT_CPBP 12-02 14:25:04.469 utils.py:43] nll/train: 1.9047
+I CMT_CPBP 12-02 14:25:04.469 utils.py:43] nll_pitch/train: 1.7287
+I CMT_CPBP 12-02 14:25:04.469 utils.py:43] nll_rhythm/train: 0.1760
+I CMT_CPBP 12-02 14:25:04.469 utils.py:45] accuracy_rhythm/train: 0.9223
+I CMT_CPBP 12-02 14:25:04.469 utils.py:45] accuracy_pitch/train: 0.4571
+I CMT_CPBP 12-02 14:25:04.471 trainer.py:129] ==========valid 12 epoch==========
+I CMT_CPBP 12-02 14:25:04.541 utils.py:43] nll/eval: 1.4102
+I CMT_CPBP 12-02 14:25:04.541 utils.py:43] nll_pitch/eval: 1.2524
+I CMT_CPBP 12-02 14:25:04.541 utils.py:43] nll_rhythm/eval: 0.1578
+I CMT_CPBP 12-02 14:25:04.541 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:25:04.541 utils.py:45] accuracy_pitch/eval: 0.5336
+I CMT_CPBP 12-02 14:25:04.542 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:04.542 trainer.py:121] 13 epoch
+I CMT_CPBP 12-02 14:25:04.542 trainer.py:124] ==========train 13 epoch==========
+I CMT_CPBP 12-02 14:25:07.391 utils.py:43] nll/train: 1.7243
+I CMT_CPBP 12-02 14:25:07.391 utils.py:43] nll_pitch/train: 1.5496
+I CMT_CPBP 12-02 14:25:07.391 utils.py:43] nll_rhythm/train: 0.1747
+I CMT_CPBP 12-02 14:25:07.392 utils.py:45] accuracy_rhythm/train: 0.9228
+I CMT_CPBP 12-02 14:25:07.392 utils.py:45] accuracy_pitch/train: 0.4725
+I CMT_CPBP 12-02 14:25:07.393 trainer.py:129] ==========valid 13 epoch==========
+I CMT_CPBP 12-02 14:25:07.462 utils.py:43] nll/eval: 1.3080
+I CMT_CPBP 12-02 14:25:07.463 utils.py:43] nll_pitch/eval: 1.1503
+I CMT_CPBP 12-02 14:25:07.463 utils.py:43] nll_rhythm/eval: 0.1577
+I CMT_CPBP 12-02 14:25:07.463 utils.py:45] accuracy_rhythm/eval: 0.9278
+I CMT_CPBP 12-02 14:25:07.463 utils.py:45] accuracy_pitch/eval: 0.5448
+I CMT_CPBP 12-02 14:25:07.463 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:07.464 trainer.py:121] 14 epoch
+I CMT_CPBP 12-02 14:25:07.464 trainer.py:124] ==========train 14 epoch==========
+I CMT_CPBP 12-02 14:25:10.306 utils.py:43] nll/train: 1.5660
+I CMT_CPBP 12-02 14:25:10.306 utils.py:43] nll_pitch/train: 1.3917
+I CMT_CPBP 12-02 14:25:10.306 utils.py:43] nll_rhythm/train: 0.1744
+I CMT_CPBP 12-02 14:25:10.306 utils.py:45] accuracy_rhythm/train: 0.9233
+I CMT_CPBP 12-02 14:25:10.306 utils.py:45] accuracy_pitch/train: 0.4861
+I CMT_CPBP 12-02 14:25:10.308 trainer.py:129] ==========valid 14 epoch==========
+I CMT_CPBP 12-02 14:25:10.385 utils.py:43] nll/eval: 1.3150
+I CMT_CPBP 12-02 14:25:10.385 utils.py:43] nll_pitch/eval: 1.1579
+I CMT_CPBP 12-02 14:25:10.386 utils.py:43] nll_rhythm/eval: 0.1572
+I CMT_CPBP 12-02 14:25:10.386 utils.py:45] accuracy_rhythm/eval: 0.9260
+I CMT_CPBP 12-02 14:25:10.386 utils.py:45] accuracy_pitch/eval: 0.5362
+I CMT_CPBP 12-02 14:25:10.386 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:10.387 trainer.py:121] 15 epoch
+I CMT_CPBP 12-02 14:25:10.387 trainer.py:124] ==========train 15 epoch==========
+I CMT_CPBP 12-02 14:25:13.246 utils.py:43] nll/train: 1.4417
+I CMT_CPBP 12-02 14:25:13.246 utils.py:43] nll_pitch/train: 1.2675
+I CMT_CPBP 12-02 14:25:13.247 utils.py:43] nll_rhythm/train: 0.1743
+I CMT_CPBP 12-02 14:25:13.247 utils.py:45] accuracy_rhythm/train: 0.9231
+I CMT_CPBP 12-02 14:25:13.247 utils.py:45] accuracy_pitch/train: 0.4974
+I CMT_CPBP 12-02 14:25:13.248 trainer.py:129] ==========valid 15 epoch==========
+I CMT_CPBP 12-02 14:25:13.318 utils.py:43] nll/eval: 1.1623
+I CMT_CPBP 12-02 14:25:13.318 utils.py:43] nll_pitch/eval: 1.0085
+I CMT_CPBP 12-02 14:25:13.318 utils.py:43] nll_rhythm/eval: 0.1538
+I CMT_CPBP 12-02 14:25:13.318 utils.py:45] accuracy_rhythm/eval: 0.9292
+I CMT_CPBP 12-02 14:25:13.318 utils.py:45] accuracy_pitch/eval: 0.5394
+I CMT_CPBP 12-02 14:25:13.319 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:13.319 trainer.py:121] 16 epoch
+I CMT_CPBP 12-02 14:25:13.319 trainer.py:124] ==========train 16 epoch==========
+I CMT_CPBP 12-02 14:25:16.158 trainer.py:215] 400 training steps
+I CMT_CPBP 12-02 14:25:16.158 utils.py:43] nll: 1.2727
+I CMT_CPBP 12-02 14:25:16.158 utils.py:43] nll_pitch: 1.0938
+I CMT_CPBP 12-02 14:25:16.158 utils.py:43] nll_rhythm: 0.1789
+I CMT_CPBP 12-02 14:25:16.158 utils.py:45] accuracy_rhythm/train: 0.9199
+I CMT_CPBP 12-02 14:25:16.158 utils.py:45] accuracy_pitch/train: 0.5190
+I CMT_CPBP 12-02 14:25:16.159 utils.py:43] nll/train: 1.3505
+I CMT_CPBP 12-02 14:25:16.159 utils.py:43] nll_pitch/train: 1.1769
+I CMT_CPBP 12-02 14:25:16.159 utils.py:43] nll_rhythm/train: 0.1736
+I CMT_CPBP 12-02 14:25:16.159 utils.py:45] accuracy_rhythm/train: 0.9231
+I CMT_CPBP 12-02 14:25:16.159 utils.py:45] accuracy_pitch/train: 0.5051
+I CMT_CPBP 12-02 14:25:16.161 trainer.py:129] ==========valid 16 epoch==========
+I CMT_CPBP 12-02 14:25:16.230 utils.py:43] nll/eval: 1.1477
+I CMT_CPBP 12-02 14:25:16.230 utils.py:43] nll_pitch/eval: 0.9923
+I CMT_CPBP 12-02 14:25:16.230 utils.py:43] nll_rhythm/eval: 0.1555
+I CMT_CPBP 12-02 14:25:16.230 utils.py:45] accuracy_rhythm/eval: 0.9279
+I CMT_CPBP 12-02 14:25:16.230 utils.py:45] accuracy_pitch/eval: 0.5516
+I CMT_CPBP 12-02 14:25:16.231 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:16.231 trainer.py:121] 17 epoch
+I CMT_CPBP 12-02 14:25:16.232 trainer.py:124] ==========train 17 epoch==========
+I CMT_CPBP 12-02 14:25:19.065 utils.py:43] nll/train: 1.2582
+I CMT_CPBP 12-02 14:25:19.065 utils.py:43] nll_pitch/train: 1.0854
+I CMT_CPBP 12-02 14:25:19.065 utils.py:43] nll_rhythm/train: 0.1729
+I CMT_CPBP 12-02 14:25:19.065 utils.py:45] accuracy_rhythm/train: 0.9233
+I CMT_CPBP 12-02 14:25:19.066 utils.py:45] accuracy_pitch/train: 0.5203
+I CMT_CPBP 12-02 14:25:19.067 trainer.py:129] ==========valid 17 epoch==========
+I CMT_CPBP 12-02 14:25:19.136 utils.py:43] nll/eval: 1.0806
+I CMT_CPBP 12-02 14:25:19.136 utils.py:43] nll_pitch/eval: 0.9219
+I CMT_CPBP 12-02 14:25:19.136 utils.py:43] nll_rhythm/eval: 0.1587
+I CMT_CPBP 12-02 14:25:19.136 utils.py:45] accuracy_rhythm/eval: 0.9264
+I CMT_CPBP 12-02 14:25:19.136 utils.py:45] accuracy_pitch/eval: 0.5388
+I CMT_CPBP 12-02 14:25:19.137 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:19.137 trainer.py:121] 18 epoch
+I CMT_CPBP 12-02 14:25:19.138 trainer.py:124] ==========train 18 epoch==========
+I CMT_CPBP 12-02 14:25:21.989 utils.py:43] nll/train: 1.1953
+I CMT_CPBP 12-02 14:25:21.989 utils.py:43] nll_pitch/train: 1.0225
+I CMT_CPBP 12-02 14:25:21.989 utils.py:43] nll_rhythm/train: 0.1728
+I CMT_CPBP 12-02 14:25:21.989 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:25:21.989 utils.py:45] accuracy_pitch/train: 0.5240
+I CMT_CPBP 12-02 14:25:21.991 trainer.py:129] ==========valid 18 epoch==========
+I CMT_CPBP 12-02 14:25:22.060 utils.py:43] nll/eval: 0.9939
+I CMT_CPBP 12-02 14:25:22.060 utils.py:43] nll_pitch/eval: 0.8361
+I CMT_CPBP 12-02 14:25:22.060 utils.py:43] nll_rhythm/eval: 0.1578
+I CMT_CPBP 12-02 14:25:22.060 utils.py:45] accuracy_rhythm/eval: 0.9259
+I CMT_CPBP 12-02 14:25:22.061 utils.py:45] accuracy_pitch/eval: 0.5543
+I CMT_CPBP 12-02 14:25:22.061 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:22.061 trainer.py:121] 19 epoch
+I CMT_CPBP 12-02 14:25:22.062 trainer.py:124] ==========train 19 epoch==========
+I CMT_CPBP 12-02 14:25:24.942 utils.py:43] nll/train: 1.1338
+I CMT_CPBP 12-02 14:25:24.943 utils.py:43] nll_pitch/train: 0.9613
+I CMT_CPBP 12-02 14:25:24.943 utils.py:43] nll_rhythm/train: 0.1724
+I CMT_CPBP 12-02 14:25:24.943 utils.py:45] accuracy_rhythm/train: 0.9235
+I CMT_CPBP 12-02 14:25:24.943 utils.py:45] accuracy_pitch/train: 0.5328
+I CMT_CPBP 12-02 14:25:24.944 trainer.py:129] ==========valid 19 epoch==========
+I CMT_CPBP 12-02 14:25:25.013 utils.py:43] nll/eval: 1.0413
+I CMT_CPBP 12-02 14:25:25.013 utils.py:43] nll_pitch/eval: 0.8826
+I CMT_CPBP 12-02 14:25:25.013 utils.py:43] nll_rhythm/eval: 0.1587
+I CMT_CPBP 12-02 14:25:25.013 utils.py:45] accuracy_rhythm/eval: 0.9249
+I CMT_CPBP 12-02 14:25:25.013 utils.py:45] accuracy_pitch/eval: 0.5529
+I CMT_CPBP 12-02 14:25:25.014 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:25.014 trainer.py:121] 20 epoch
+I CMT_CPBP 12-02 14:25:25.015 trainer.py:124] ==========train 20 epoch==========
+I CMT_CPBP 12-02 14:25:27.859 trainer.py:215] 500 training steps
+I CMT_CPBP 12-02 14:25:27.859 utils.py:43] nll: 0.9908
+I CMT_CPBP 12-02 14:25:27.860 utils.py:43] nll_pitch: 0.8176
+I CMT_CPBP 12-02 14:25:27.860 utils.py:43] nll_rhythm: 0.1732
+I CMT_CPBP 12-02 14:25:27.860 utils.py:45] accuracy_rhythm/train: 0.9207
+I CMT_CPBP 12-02 14:25:27.860 utils.py:45] accuracy_pitch/train: 0.5615
+I CMT_CPBP 12-02 14:25:27.860 utils.py:43] nll/train: 1.0761
+I CMT_CPBP 12-02 14:25:27.860 utils.py:43] nll_pitch/train: 0.9040
+I CMT_CPBP 12-02 14:25:27.860 utils.py:43] nll_rhythm/train: 0.1722
+I CMT_CPBP 12-02 14:25:27.860 utils.py:45] accuracy_rhythm/train: 0.9238
+I CMT_CPBP 12-02 14:25:27.860 utils.py:45] accuracy_pitch/train: 0.5420
+I CMT_CPBP 12-02 14:25:27.862 trainer.py:129] ==========valid 20 epoch==========
+I CMT_CPBP 12-02 14:25:27.931 utils.py:43] nll/eval: 1.0152
+I CMT_CPBP 12-02 14:25:27.931 utils.py:43] nll_pitch/eval: 0.8592
+I CMT_CPBP 12-02 14:25:27.931 utils.py:43] nll_rhythm/eval: 0.1560
+I CMT_CPBP 12-02 14:25:27.931 utils.py:45] accuracy_rhythm/eval: 0.9275
+I CMT_CPBP 12-02 14:25:27.931 utils.py:45] accuracy_pitch/eval: 0.5628
+I CMT_CPBP 12-02 14:25:27.932 trainer.py:83] saving model, Epoch 20, step 500
+I CMT_CPBP 12-02 14:25:28.153 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:25:28.153 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:25:29.445 trainer.py:259] ==========sampling result of epoch 020==========
+I CMT_CPBP 12-02 14:25:29.446 trainer.py:263] Sample 00 : [ 6 48 48  9 14 16 18 48 19 16 48 18 19 48 14 16 48 14 14 48]
+I CMT_CPBP 12-02 14:25:29.565 trainer.py:282] Groundtruth 00 : [ 2 48 48  6 48  7  4 48  1  9 48 48  7 48  6  9 48 14 18 48]
+I CMT_CPBP 12-02 14:25:29.663 trainer.py:263] Sample 01 : [14 48 48 48 48 19 16 48 14 11 48 14 16 48 14 48 48 48 14 48]
+I CMT_CPBP 12-02 14:25:29.795 trainer.py:282] Groundtruth 01 : [19 48 11 12 48 14 48 16 14 14 48 11 12 48 14 48 16 14 14 48]
+I CMT_CPBP 12-02 14:25:30.008 trainer.py:263] Sample 02 : [12 48 48  7 48  9 11 48  7  7 48 48  7 48  9 11 48  7  9 48]
+I CMT_CPBP 12-02 14:25:30.149 trainer.py:282] Groundtruth 02 : [16 48 11 14 48 14 14 48 11 11 48  9  5 48  5  7 48  2  2 48]
+I CMT_CPBP 12-02 14:25:30.286 trainer.py:263] Sample 03 : [48 48 14 12 48 48 14 48 18 48 48 19 18 48 48 14 48 11 48 48]
+I CMT_CPBP 12-02 14:25:30.396 trainer.py:282] Groundtruth 03 : [48 48 14 12 48 48 11 48  9 11 48  7  6 48  4  2 48  7 48 48]
+I CMT_CPBP 12-02 14:25:30.500 trainer.py:263] Sample 04 : [48 48 14 48 48 11 11 48 48 14 48 14 48 48 48 16 48 14 16 48]
+I CMT_CPBP 12-02 14:25:30.606 trainer.py:282] Groundtruth 04 : [48 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:25:30.715 trainer.py:263] Sample 05 : [14 48 18 19 48 18 19 48 18 16 48 14 12 48 11  7 48 11  7 48]
+I CMT_CPBP 12-02 14:25:30.850 trainer.py:282] Groundtruth 05 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:25:30.993 trainer.py:263] Sample 06 : [48 48 14 16 48 48 14 48 11 48 48 13 14 48 48 16 48  9 48 48]
+I CMT_CPBP 12-02 14:25:31.135 trainer.py:282] Groundtruth 06 : [11 48  9  6 48 48  2 48 11 14 48 14 14 48 12 11 48 12 12 48]
+I CMT_CPBP 12-02 14:25:31.236 trainer.py:263] Sample 07 : [ 9 48  9 14 48 11  9 48 11  7 48  7  7 48  9 11 48  9  9 48]
+I CMT_CPBP 12-02 14:25:31.380 trainer.py:282] Groundtruth 07 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:25:31.488 trainer.py:263] Sample 08 : [14 48 16 48 48 16 11 48 48 48 48  9  7 48  9 11 48  7 14 48]
+I CMT_CPBP 12-02 14:25:31.606 trainer.py:282] Groundtruth 08 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:25:31.732 trainer.py:263] Sample 09 : [49 49 49  9  7  6 48 48  9 11 48  9  7 48  6 48 48  9 14 48]
+I CMT_CPBP 12-02 14:25:31.837 trainer.py:282] Groundtruth 09 : [49 49 49  9 48 18 48 48 16 14 48 13 11 48  9 48 48  6  6 48]
+I CMT_CPBP 12-02 14:25:31.946 trainer.py:263] Sample 10 : [48 48 48 21 48 20 21 48 20 48 48 48 18 48 48 48 48  9 11 48]
+I CMT_CPBP 12-02 14:25:32.067 trainer.py:282] Groundtruth 10 : [20 48 18 16 48 14 13 48 11 13 48 14 13 48 11  9 48 21 48 48]
+I CMT_CPBP 12-02 14:25:32.169 trainer.py:263] Sample 11 : [ 4 48 48  9 48  9 48 48  9  9 48 11 12 48 16 48 48 48 14 48]
+I CMT_CPBP 12-02 14:25:32.284 trainer.py:282] Groundtruth 11 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:25:32.391 trainer.py:263] Sample 12 : [ 7 48  9  4 48 48  6 48  4 48 48 48  2 48  4  6 48  4 48 48]
+I CMT_CPBP 12-02 14:25:32.540 trainer.py:282] Groundtruth 12 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:25:32.692 trainer.py:263] Sample 13 : [ 9 48 48 14 16 16 18 48 19 11 48  7 11 48 14 16 48 18 19 48]
+I CMT_CPBP 12-02 14:25:32.825 trainer.py:282] Groundtruth 13 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:25:32.942 trainer.py:263] Sample 14 : [19 48 17 48 48 17 16 48 17 19 48 16 48 48 48 48 48 12 14 48]
+I CMT_CPBP 12-02 14:25:33.058 trainer.py:282] Groundtruth 14 : [17 48 14 17 48 14 10 48 48 11 48 12 48 48 12 12 48 14 16 48]
+I CMT_CPBP 12-02 14:25:33.179 trainer.py:263] Sample 15 : [ 9 48 48  7 48  9 11 48 12 12 48 14 16 48  7  9 48 11  7 48]
+I CMT_CPBP 12-02 14:25:33.285 trainer.py:282] Groundtruth 15 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:25:33.452 trainer.py:263] Sample 16 : [49 49 49  9  7  6 48 48  9 11 48  9  6 48  9 48 48  9 14 48]
+I CMT_CPBP 12-02 14:25:33.568 trainer.py:282] Groundtruth 16 : [49 49 49  9 48 14 48 48  9  9 48 11  9 48 14 48 48  9  9 48]
+I CMT_CPBP 12-02 14:25:33.670 trainer.py:263] Sample 17 : [14 48 16 18 48 16 14 48  9 13 48  9  9 48 13 13 48  9 13 48]
+I CMT_CPBP 12-02 14:25:33.805 trainer.py:282] Groundtruth 17 : [16 48 13 13 48 11 11 48  9 48 48 48 16 48 48 13 48 16 18 48]
+I CMT_CPBP 12-02 14:25:33.922 trainer.py:263] Sample 18 : [48 48  9 12 48 48 14 48 11 48 48 48 11 48 48 48 48  9 48 48]
+I CMT_CPBP 12-02 14:25:34.096 trainer.py:282] Groundtruth 18 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:25:34.241 trainer.py:263] Sample 19 : [16 48 14  9 48  6  9 48 11  7 48  4  7 48  6  9 48 14 16 48]
+I CMT_CPBP 12-02 14:25:34.393 trainer.py:282] Groundtruth 19 : [48 48  9  9 48  7  6 48  4  6 48  4  9 48 11 13 48 14 48 48]
+I CMT_CPBP 12-02 14:25:34.515 trainer.py:263] Sample 20 : [ 9 48  9 14 48 11  9 48  7  9 48  7  7 48 11  7 48  9  9 48]
+I CMT_CPBP 12-02 14:25:34.612 trainer.py:282] Groundtruth 20 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:25:34.720 trainer.py:263] Sample 21 : [48 48 14 12 48 48 14 48 14 48 48 48 11 48 48 48 48 14 48 48]
+I CMT_CPBP 12-02 14:25:34.872 trainer.py:282] Groundtruth 21 : [17 48 16 16 48 18 19 48 14 11 48  7  7 48  6  7 48  4  9 48]
+I CMT_CPBP 12-02 14:25:34.994 trainer.py:263] Sample 22 : [14 48 11 48 48  9  9 48 48 14 48 12 11 48  9  9 48 48 11 48]
+I CMT_CPBP 12-02 14:25:35.131 trainer.py:282] Groundtruth 22 : [14 48 16 21 48 19 16 48 48 14 48 16  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:25:35.288 trainer.py:263] Sample 23 : [18 48 14 16 48 18 18 48 16 14 48 13 14 48 11  7 48 11 11 48]
+I CMT_CPBP 12-02 14:25:35.426 trainer.py:282] Groundtruth 23 : [14 48 11 14 48 11  9 48  6  2 48  2  6 48  9 11 48 48  9 48]
+I CMT_CPBP 12-02 14:25:35.578 trainer.py:263] Sample 24 : [12 48 48 14 48 14 48 48 14 14 48 11  7 48  7 48 48  7  7 48]
+I CMT_CPBP 12-02 14:25:35.673 trainer.py:282] Groundtruth 24 : [12 48 48 48 48  7  6 48  7 11 48 10 11 48 14 13 48 14 11 48]
+I CMT_CPBP 12-02 14:25:35.798 trainer.py:263] Sample 25 : [10 48 10 10 48 10 22 48 10 10 48 10 10 48 10 12 48 14 16 48]
+I CMT_CPBP 12-02 14:25:35.926 trainer.py:282] Groundtruth 25 : [ 7 48 48 48 48 19 14 48 14 22 48 21 19 48 21 14 48 14 24 48]
+I CMT_CPBP 12-02 14:25:36.060 trainer.py:263] Sample 26 : [ 2 48 48  7  4  4  9 48  9  9 48 48  7 48  4  9 48  9  9 48]
+I CMT_CPBP 12-02 14:25:36.197 trainer.py:282] Groundtruth 26 : [ 4 48 48  9 11 12 12 48 12 12 48 48 11 48  9 12 48 11  9 48]
+I CMT_CPBP 12-02 14:25:36.308 trainer.py:263] Sample 27 : [14 48 48 19 48 21 19 48 17 21 48 19 17 48 19 16 48 14 14 48]
+I CMT_CPBP 12-02 14:25:36.426 trainer.py:282] Groundtruth 27 : [24 48 48 22 48 21 48 48 21 17 48 48 17 48 14 17 48 14 10 48]
+I CMT_CPBP 12-02 14:25:36.522 trainer.py:263] Sample 28 : [14 48 14 48 48 11 14 48 11  7 48  9 11 48  9  9 48 11 14 48]
+I CMT_CPBP 12-02 14:25:36.617 trainer.py:282] Groundtruth 28 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:25:36.749 trainer.py:263] Sample 29 : [ 7 48  6  9 48 14 13 48 11 48 48 48  9 48 48  6 48  9 48 48]
+I CMT_CPBP 12-02 14:25:36.899 trainer.py:282] Groundtruth 29 : [48 48  6  9 48 48  6 48  9 48 48  7  4 48 48  9 48  9 18 48]
+I CMT_CPBP 12-02 14:25:37.058 trainer.py:263] Sample 30 : [ 9 48 48 11 48  9 48 48  9  9 48 11 12 48 14 48 48 16 19 48]
+I CMT_CPBP 12-02 14:25:37.168 trainer.py:282] Groundtruth 30 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:25:37.284 trainer.py:263] Sample 31 : [ 9 48 48  7 48 11 48 48 48 11 48 48 48 48  7  6 48  7  9 48]
+I CMT_CPBP 12-02 14:25:37.407 trainer.py:282] Groundtruth 31 : [ 7 48 48 11 48 16 11 48 16 19 48 23 19 48 16 11 48 16 19 48]
+I CMT_CPBP 12-02 14:25:37.517 trainer.py:263] Sample 32 : [19 48 16 14 48 11 48 48  7  7 48  9 11 48  9 48 48 11 13 48]
+I CMT_CPBP 12-02 14:25:37.659 trainer.py:282] Groundtruth 32 : [19 48 18 16 48 14 48 48 11 11 48 13 14 48 13 48 48  9  9 48]
+I CMT_CPBP 12-02 14:25:37.805 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:37.805 trainer.py:121] 21 epoch
+I CMT_CPBP 12-02 14:25:37.805 trainer.py:124] ==========train 21 epoch==========
+I CMT_CPBP 12-02 14:25:40.663 utils.py:43] nll/train: 1.0377
+I CMT_CPBP 12-02 14:25:40.663 utils.py:43] nll_pitch/train: 0.8655
+I CMT_CPBP 12-02 14:25:40.663 utils.py:43] nll_rhythm/train: 0.1723
+I CMT_CPBP 12-02 14:25:40.663 utils.py:45] accuracy_rhythm/train: 0.9239
+I CMT_CPBP 12-02 14:25:40.664 utils.py:45] accuracy_pitch/train: 0.5486
+I CMT_CPBP 12-02 14:25:40.665 trainer.py:129] ==========valid 21 epoch==========
+I CMT_CPBP 12-02 14:25:40.735 utils.py:43] nll/eval: 1.0424
+I CMT_CPBP 12-02 14:25:40.735 utils.py:43] nll_pitch/eval: 0.8885
+I CMT_CPBP 12-02 14:25:40.735 utils.py:43] nll_rhythm/eval: 0.1539
+I CMT_CPBP 12-02 14:25:40.735 utils.py:45] accuracy_rhythm/eval: 0.9295
+I CMT_CPBP 12-02 14:25:40.735 utils.py:45] accuracy_pitch/eval: 0.5517
+I CMT_CPBP 12-02 14:25:40.736 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:25:40.736 trainer.py:98] adjusting learning rate from 0.000100 to 0.000050
+I CMT_CPBP 12-02 14:25:40.736 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:40.737 trainer.py:121] 22 epoch
+I CMT_CPBP 12-02 14:25:40.737 trainer.py:124] ==========train 22 epoch==========
+I CMT_CPBP 12-02 14:25:43.574 utils.py:43] nll/train: 1.0024
+I CMT_CPBP 12-02 14:25:43.574 utils.py:43] nll_pitch/train: 0.8303
+I CMT_CPBP 12-02 14:25:43.574 utils.py:43] nll_rhythm/train: 0.1721
+I CMT_CPBP 12-02 14:25:43.574 utils.py:45] accuracy_rhythm/train: 0.9238
+I CMT_CPBP 12-02 14:25:43.574 utils.py:45] accuracy_pitch/train: 0.5530
+I CMT_CPBP 12-02 14:25:43.576 trainer.py:129] ==========valid 22 epoch==========
+I CMT_CPBP 12-02 14:25:43.645 utils.py:43] nll/eval: 0.9451
+I CMT_CPBP 12-02 14:25:43.645 utils.py:43] nll_pitch/eval: 0.7918
+I CMT_CPBP 12-02 14:25:43.645 utils.py:43] nll_rhythm/eval: 0.1533
+I CMT_CPBP 12-02 14:25:43.645 utils.py:45] accuracy_rhythm/eval: 0.9291
+I CMT_CPBP 12-02 14:25:43.645 utils.py:45] accuracy_pitch/eval: 0.5659
+I CMT_CPBP 12-02 14:25:43.646 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:43.646 trainer.py:121] 23 epoch
+I CMT_CPBP 12-02 14:25:43.647 trainer.py:124] ==========train 23 epoch==========
+I CMT_CPBP 12-02 14:25:46.492 utils.py:43] nll/train: 0.9791
+I CMT_CPBP 12-02 14:25:46.493 utils.py:43] nll_pitch/train: 0.8064
+I CMT_CPBP 12-02 14:25:46.493 utils.py:43] nll_rhythm/train: 0.1726
+I CMT_CPBP 12-02 14:25:46.493 utils.py:45] accuracy_rhythm/train: 0.9239
+I CMT_CPBP 12-02 14:25:46.493 utils.py:45] accuracy_pitch/train: 0.5592
+I CMT_CPBP 12-02 14:25:46.495 trainer.py:129] ==========valid 23 epoch==========
+I CMT_CPBP 12-02 14:25:46.564 utils.py:43] nll/eval: 0.9084
+I CMT_CPBP 12-02 14:25:46.564 utils.py:43] nll_pitch/eval: 0.7518
+I CMT_CPBP 12-02 14:25:46.564 utils.py:43] nll_rhythm/eval: 0.1566
+I CMT_CPBP 12-02 14:25:46.564 utils.py:45] accuracy_rhythm/eval: 0.9271
+I CMT_CPBP 12-02 14:25:46.564 utils.py:45] accuracy_pitch/eval: 0.5658
+I CMT_CPBP 12-02 14:25:46.565 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:46.565 trainer.py:121] 24 epoch
+I CMT_CPBP 12-02 14:25:46.565 trainer.py:124] ==========train 24 epoch==========
+I CMT_CPBP 12-02 14:25:49.416 trainer.py:215] 600 training steps
+I CMT_CPBP 12-02 14:25:49.416 utils.py:43] nll: 0.9135
+I CMT_CPBP 12-02 14:25:49.416 utils.py:43] nll_pitch: 0.7488
+I CMT_CPBP 12-02 14:25:49.416 utils.py:43] nll_rhythm: 0.1647
+I CMT_CPBP 12-02 14:25:49.416 utils.py:45] accuracy_rhythm/train: 0.9284
+I CMT_CPBP 12-02 14:25:49.416 utils.py:45] accuracy_pitch/train: 0.5604
+I CMT_CPBP 12-02 14:25:49.417 utils.py:43] nll/train: 0.9603
+I CMT_CPBP 12-02 14:25:49.417 utils.py:43] nll_pitch/train: 0.7881
+I CMT_CPBP 12-02 14:25:49.417 utils.py:43] nll_rhythm/train: 0.1722
+I CMT_CPBP 12-02 14:25:49.417 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:25:49.417 utils.py:45] accuracy_pitch/train: 0.5629
+I CMT_CPBP 12-02 14:25:49.418 trainer.py:129] ==========valid 24 epoch==========
+I CMT_CPBP 12-02 14:25:49.487 utils.py:43] nll/eval: 0.8827
+I CMT_CPBP 12-02 14:25:49.487 utils.py:43] nll_pitch/eval: 0.7289
+I CMT_CPBP 12-02 14:25:49.487 utils.py:43] nll_rhythm/eval: 0.1538
+I CMT_CPBP 12-02 14:25:49.487 utils.py:45] accuracy_rhythm/eval: 0.9279
+I CMT_CPBP 12-02 14:25:49.487 utils.py:45] accuracy_pitch/eval: 0.5782
+I CMT_CPBP 12-02 14:25:49.488 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:49.488 trainer.py:121] 25 epoch
+I CMT_CPBP 12-02 14:25:49.489 trainer.py:124] ==========train 25 epoch==========
+I CMT_CPBP 12-02 14:25:52.331 utils.py:43] nll/train: 0.9458
+I CMT_CPBP 12-02 14:25:52.331 utils.py:43] nll_pitch/train: 0.7740
+I CMT_CPBP 12-02 14:25:52.331 utils.py:43] nll_rhythm/train: 0.1719
+I CMT_CPBP 12-02 14:25:52.331 utils.py:45] accuracy_rhythm/train: 0.9239
+I CMT_CPBP 12-02 14:25:52.331 utils.py:45] accuracy_pitch/train: 0.5646
+I CMT_CPBP 12-02 14:25:52.333 trainer.py:129] ==========valid 25 epoch==========
+I CMT_CPBP 12-02 14:25:52.402 utils.py:43] nll/eval: 0.9163
+I CMT_CPBP 12-02 14:25:52.402 utils.py:43] nll_pitch/eval: 0.7586
+I CMT_CPBP 12-02 14:25:52.402 utils.py:43] nll_rhythm/eval: 0.1577
+I CMT_CPBP 12-02 14:25:52.402 utils.py:45] accuracy_rhythm/eval: 0.9257
+I CMT_CPBP 12-02 14:25:52.402 utils.py:45] accuracy_pitch/eval: 0.5677
+I CMT_CPBP 12-02 14:25:52.403 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:25:52.403 trainer.py:98] adjusting learning rate from 0.000050 to 0.000025
+I CMT_CPBP 12-02 14:25:52.404 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:52.404 trainer.py:121] 26 epoch
+I CMT_CPBP 12-02 14:25:52.404 trainer.py:124] ==========train 26 epoch==========
+I CMT_CPBP 12-02 14:25:55.236 utils.py:43] nll/train: 0.9206
+I CMT_CPBP 12-02 14:25:55.236 utils.py:43] nll_pitch/train: 0.7482
+I CMT_CPBP 12-02 14:25:55.236 utils.py:43] nll_rhythm/train: 0.1724
+I CMT_CPBP 12-02 14:25:55.236 utils.py:45] accuracy_rhythm/train: 0.9238
+I CMT_CPBP 12-02 14:25:55.236 utils.py:45] accuracy_pitch/train: 0.5697
+I CMT_CPBP 12-02 14:25:55.238 trainer.py:129] ==========valid 26 epoch==========
+I CMT_CPBP 12-02 14:25:55.307 utils.py:43] nll/eval: 0.9291
+I CMT_CPBP 12-02 14:25:55.307 utils.py:43] nll_pitch/eval: 0.7709
+I CMT_CPBP 12-02 14:25:55.307 utils.py:43] nll_rhythm/eval: 0.1582
+I CMT_CPBP 12-02 14:25:55.307 utils.py:45] accuracy_rhythm/eval: 0.9248
+I CMT_CPBP 12-02 14:25:55.307 utils.py:45] accuracy_pitch/eval: 0.5747
+I CMT_CPBP 12-02 14:25:55.308 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:25:55.308 trainer.py:98] adjusting learning rate from 0.000025 to 0.000013
+I CMT_CPBP 12-02 14:25:55.308 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:55.309 trainer.py:121] 27 epoch
+I CMT_CPBP 12-02 14:25:55.309 trainer.py:124] ==========train 27 epoch==========
+I CMT_CPBP 12-02 14:25:58.147 utils.py:43] nll/train: 0.9117
+I CMT_CPBP 12-02 14:25:58.147 utils.py:43] nll_pitch/train: 0.7403
+I CMT_CPBP 12-02 14:25:58.147 utils.py:43] nll_rhythm/train: 0.1713
+I CMT_CPBP 12-02 14:25:58.147 utils.py:45] accuracy_rhythm/train: 0.9233
+I CMT_CPBP 12-02 14:25:58.147 utils.py:45] accuracy_pitch/train: 0.5739
+I CMT_CPBP 12-02 14:25:58.149 trainer.py:129] ==========valid 27 epoch==========
+I CMT_CPBP 12-02 14:25:58.218 utils.py:43] nll/eval: 0.8953
+I CMT_CPBP 12-02 14:25:58.218 utils.py:43] nll_pitch/eval: 0.7423
+I CMT_CPBP 12-02 14:25:58.218 utils.py:43] nll_rhythm/eval: 0.1530
+I CMT_CPBP 12-02 14:25:58.218 utils.py:45] accuracy_rhythm/eval: 0.9272
+I CMT_CPBP 12-02 14:25:58.218 utils.py:45] accuracy_pitch/eval: 0.5789
+I CMT_CPBP 12-02 14:25:58.219 trainer.py:120] 
+I CMT_CPBP 12-02 14:25:58.219 trainer.py:121] 28 epoch
+I CMT_CPBP 12-02 14:25:58.219 trainer.py:124] ==========train 28 epoch==========
+I CMT_CPBP 12-02 14:26:01.054 trainer.py:215] 700 training steps
+I CMT_CPBP 12-02 14:26:01.054 utils.py:43] nll: 0.8730
+I CMT_CPBP 12-02 14:26:01.054 utils.py:43] nll_pitch: 0.7008
+I CMT_CPBP 12-02 14:26:01.054 utils.py:43] nll_rhythm: 0.1722
+I CMT_CPBP 12-02 14:26:01.055 utils.py:45] accuracy_rhythm/train: 0.9235
+I CMT_CPBP 12-02 14:26:01.055 utils.py:45] accuracy_pitch/train: 0.5709
+I CMT_CPBP 12-02 14:26:01.055 utils.py:43] nll/train: 0.9063
+I CMT_CPBP 12-02 14:26:01.055 utils.py:43] nll_pitch/train: 0.7344
+I CMT_CPBP 12-02 14:26:01.055 utils.py:43] nll_rhythm/train: 0.1719
+I CMT_CPBP 12-02 14:26:01.055 utils.py:45] accuracy_rhythm/train: 0.9240
+I CMT_CPBP 12-02 14:26:01.055 utils.py:45] accuracy_pitch/train: 0.5735
+I CMT_CPBP 12-02 14:26:01.057 trainer.py:129] ==========valid 28 epoch==========
+I CMT_CPBP 12-02 14:26:01.126 utils.py:43] nll/eval: 0.8814
+I CMT_CPBP 12-02 14:26:01.126 utils.py:43] nll_pitch/eval: 0.7225
+I CMT_CPBP 12-02 14:26:01.126 utils.py:43] nll_rhythm/eval: 0.1589
+I CMT_CPBP 12-02 14:26:01.126 utils.py:45] accuracy_rhythm/eval: 0.9269
+I CMT_CPBP 12-02 14:26:01.126 utils.py:45] accuracy_pitch/eval: 0.5728
+I CMT_CPBP 12-02 14:26:01.127 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:01.127 trainer.py:121] 29 epoch
+I CMT_CPBP 12-02 14:26:01.128 trainer.py:124] ==========train 29 epoch==========
+I CMT_CPBP 12-02 14:26:03.952 utils.py:43] nll/train: 0.9018
+I CMT_CPBP 12-02 14:26:03.952 utils.py:43] nll_pitch/train: 0.7305
+I CMT_CPBP 12-02 14:26:03.952 utils.py:43] nll_rhythm/train: 0.1713
+I CMT_CPBP 12-02 14:26:03.952 utils.py:45] accuracy_rhythm/train: 0.9235
+I CMT_CPBP 12-02 14:26:03.952 utils.py:45] accuracy_pitch/train: 0.5719
+I CMT_CPBP 12-02 14:26:03.954 trainer.py:129] ==========valid 29 epoch==========
+I CMT_CPBP 12-02 14:26:04.022 utils.py:43] nll/eval: 0.9327
+I CMT_CPBP 12-02 14:26:04.022 utils.py:43] nll_pitch/eval: 0.7726
+I CMT_CPBP 12-02 14:26:04.022 utils.py:43] nll_rhythm/eval: 0.1601
+I CMT_CPBP 12-02 14:26:04.022 utils.py:45] accuracy_rhythm/eval: 0.9250
+I CMT_CPBP 12-02 14:26:04.022 utils.py:45] accuracy_pitch/eval: 0.5686
+I CMT_CPBP 12-02 14:26:04.022 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:04.023 trainer.py:98] adjusting learning rate from 0.000013 to 0.000006
+I CMT_CPBP 12-02 14:26:04.023 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:04.023 trainer.py:121] 30 epoch
+I CMT_CPBP 12-02 14:26:04.024 trainer.py:124] ==========train 30 epoch==========
+I CMT_CPBP 12-02 14:26:06.871 utils.py:43] nll/train: 0.8993
+I CMT_CPBP 12-02 14:26:06.871 utils.py:43] nll_pitch/train: 0.7287
+I CMT_CPBP 12-02 14:26:06.871 utils.py:43] nll_rhythm/train: 0.1707
+I CMT_CPBP 12-02 14:26:06.871 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:26:06.871 utils.py:45] accuracy_pitch/train: 0.5751
+I CMT_CPBP 12-02 14:26:06.873 trainer.py:129] ==========valid 30 epoch==========
+I CMT_CPBP 12-02 14:26:06.941 utils.py:43] nll/eval: 0.9079
+I CMT_CPBP 12-02 14:26:06.941 utils.py:43] nll_pitch/eval: 0.7492
+I CMT_CPBP 12-02 14:26:06.941 utils.py:43] nll_rhythm/eval: 0.1587
+I CMT_CPBP 12-02 14:26:06.941 utils.py:45] accuracy_rhythm/eval: 0.9262
+I CMT_CPBP 12-02 14:26:06.941 utils.py:45] accuracy_pitch/eval: 0.5787
+I CMT_CPBP 12-02 14:26:06.942 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:06.942 trainer.py:98] adjusting learning rate from 0.000006 to 0.000003
+I CMT_CPBP 12-02 14:26:06.943 trainer.py:83] saving model, Epoch 30, step 750
+I CMT_CPBP 12-02 14:26:07.159 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:26:07.159 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:26:08.576 trainer.py:259] ==========sampling result of epoch 030==========
+I CMT_CPBP 12-02 14:26:08.577 trainer.py:263] Sample 00 : [49 49 49 14 48 18 48 48  9 14 48 48  9 48 11 48 48  9  7 48]
+I CMT_CPBP 12-02 14:26:08.718 trainer.py:282] Groundtruth 00 : [49 49 49  9 48 14 16 48 18 18 48 16 14 48 11 14 48 11  9 48]
+I CMT_CPBP 12-02 14:26:08.845 trainer.py:263] Sample 01 : [14 48 16 12 48 14 12 48 11 48 48  9  9 48 48 11 48  9 48 48]
+I CMT_CPBP 12-02 14:26:09.024 trainer.py:282] Groundtruth 01 : [48 48 12 12 48 14 16 48 17 48 48 21 24 48 48 22 48 21 48 48]
+I CMT_CPBP 12-02 14:26:09.120 trainer.py:263] Sample 02 : [14 48 16 48 48 16 19 48 48 18 48 16 48 48  9 11 48 48 48 48]
+I CMT_CPBP 12-02 14:26:09.274 trainer.py:282] Groundtruth 02 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:09.369 trainer.py:263] Sample 03 : [14 48 16 48 48 14 12 48 48 14 48 16 48 48 12 11 48  9  7 48]
+I CMT_CPBP 12-02 14:26:09.506 trainer.py:282] Groundtruth 03 : [14 48 16 21 48 19 16 48 48 14 48 16  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:09.646 trainer.py:263] Sample 04 : [14 48 13 14 48 16 48 48 48 12 48 48 11 48 12 48 48 12 16 48]
+I CMT_CPBP 12-02 14:26:09.768 trainer.py:282] Groundtruth 04 : [19 48 18 17 48 16 48 48 48 11 48 48 48 48 12 48 48 48 16 48]
+I CMT_CPBP 12-02 14:26:09.861 trainer.py:263] Sample 05 : [14 48 19 16 48 19 16 48 18 19 48 21 21 48 18 19 48 16 14 48]
+I CMT_CPBP 12-02 14:26:09.963 trainer.py:282] Groundtruth 05 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:10.077 trainer.py:263] Sample 06 : [14 48 13  9 48 11 13 48 48 11 48  9 11 48  9 16 48 48 16 48]
+I CMT_CPBP 12-02 14:26:10.247 trainer.py:282] Groundtruth 06 : [16 48 16 18 48 16 13 48 48  9 48 21 20 48 18 16 48 14 13 48]
+I CMT_CPBP 12-02 14:26:10.411 trainer.py:263] Sample 07 : [ 9 48 11 12 48 11  9 48 16 14 48 19 14 48 48 48 48 12 48 48]
+I CMT_CPBP 12-02 14:26:10.542 trainer.py:282] Groundtruth 07 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:26:10.663 trainer.py:263] Sample 08 : [14 48 19 48 48 19 16 48 48 18 48 21 21 48 19 18 48 48 14 48]
+I CMT_CPBP 12-02 14:26:10.764 trainer.py:282] Groundtruth 08 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:10.859 trainer.py:263] Sample 09 : [16 48 14 48 48 18 16 48 13  9 48 11 48 48  9  9 48 11  9 48]
+I CMT_CPBP 12-02 14:26:11.009 trainer.py:282] Groundtruth 09 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:26:11.167 trainer.py:263] Sample 10 : [ 9 48  9  9 48 48 14 48 11 16 48 14 13 48 11  7 48  9 14 48]
+I CMT_CPBP 12-02 14:26:11.300 trainer.py:282] Groundtruth 10 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:26:11.413 trainer.py:263] Sample 11 : [14 48 18 16 48 14 13 48  9 13 48 11 16 48 14 13 48  9  9 48]
+I CMT_CPBP 12-02 14:26:11.522 trainer.py:282] Groundtruth 11 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:26:11.636 trainer.py:263] Sample 12 : [11 48 19 48 48 19 19 48 18 16 48 21 48 48 48 19 48 48 48 48]
+I CMT_CPBP 12-02 14:26:11.796 trainer.py:282] Groundtruth 12 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:11.946 trainer.py:263] Sample 13 : [14 48 13 48 48 14 17 48 48 19 48 16 48 48 18 19 48 14 16 48]
+I CMT_CPBP 12-02 14:26:12.085 trainer.py:282] Groundtruth 13 : [17 48 14 17 48 14 10 48 48 11 48 12 48 48 12 12 48 14 16 48]
+I CMT_CPBP 12-02 14:26:12.229 trainer.py:263] Sample 14 : [48 48  9  9 48  7  4 48  6 48 48  4  9 48 48 11 48  9 11 48]
+I CMT_CPBP 12-02 14:26:12.357 trainer.py:282] Groundtruth 14 : [11 48  9  6 48 48  2 48 11 14 48 14 14 48 12 11 48 12 12 48]
+I CMT_CPBP 12-02 14:26:12.452 trainer.py:263] Sample 15 : [48 48 48 12 48 48 48 48 14 48 48 48 12 48  9 11 48 12 48 48]
+I CMT_CPBP 12-02 14:26:12.560 trainer.py:282] Groundtruth 15 : [ 3 48  4  5 48 48  7 48  9 48 48 48  9 48 48 48 48  9 48 48]
+I CMT_CPBP 12-02 14:26:12.683 trainer.py:263] Sample 16 : [ 9 48 14 48 48 14 14 48 16 18 48 11 13 48 11  9 48 11 13 48]
+I CMT_CPBP 12-02 14:26:12.810 trainer.py:282] Groundtruth 16 : [ 9 48 14 48 48 16 18 48 48 19 48 21 18 48 14 16 48 18 16 48]
+I CMT_CPBP 12-02 14:26:12.974 trainer.py:263] Sample 17 : [21 48 19 18 48 19 14 48 16 14 48 16 19 48 11  9 48 14 18 48]
+I CMT_CPBP 12-02 14:26:13.121 trainer.py:282] Groundtruth 17 : [19 48 16 11 48 16 19 48 48 21 48 23 21 48 19 21 48 19 18 48]
+I CMT_CPBP 12-02 14:26:13.258 trainer.py:263] Sample 18 : [13 48 14 13 48 11 11 48 11  9 48  7  4 48  6 11 48 14 48 48]
+I CMT_CPBP 12-02 14:26:13.373 trainer.py:282] Groundtruth 18 : [48 48 16 18 48 48 14 48 16 48 48 14 11 48 48 13 48 14 48 48]
+I CMT_CPBP 12-02 14:26:13.471 trainer.py:263] Sample 19 : [11 48 13 14 48 16 18 48 16 14 48 13 48 48 48  9 48 11  9 48]
+I CMT_CPBP 12-02 14:26:13.586 trainer.py:282] Groundtruth 19 : [12 48 12 14 48 16 17 48 19 14 48 14 14 48 12 11 48  9 12 48]
+I CMT_CPBP 12-02 14:26:13.729 trainer.py:263] Sample 20 : [14 48 48 13 48  9 48 48 14  9 48 11 14 48  9 48 48 14 13 48]
+I CMT_CPBP 12-02 14:26:13.851 trainer.py:282] Groundtruth 20 : [14 48 48 16 48 18 48 48 18 18 48 16 14 48 16 48 48 18 19 48]
+I CMT_CPBP 12-02 14:26:13.983 trainer.py:263] Sample 21 : [ 2 48 48  9 12 12 11 48 12  9 48 11 12 48 11 12 48  9 16 48]
+I CMT_CPBP 12-02 14:26:14.125 trainer.py:282] Groundtruth 21 : [ 4 48 48  9 11 12 12 48 12 12 48 48 11 48  9 12 48 11  9 48]
+I CMT_CPBP 12-02 14:26:14.229 trainer.py:263] Sample 22 : [48 48  9 16 48 48 14 48 14 48 48 11 14 48 11  7 48  9 11 48]
+I CMT_CPBP 12-02 14:26:14.368 trainer.py:282] Groundtruth 22 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:26:14.508 trainer.py:263] Sample 23 : [49 49 49 49 49 14 48 48  9 48 14 48 48 14 19 48 21 23 48 18]
+I CMT_CPBP 12-02 14:26:14.681 trainer.py:282] Groundtruth 23 : [49 49 49 18 16 14  9 48  9  9 48 48 14 48 11 14 48 11  9 48]
+I CMT_CPBP 12-02 14:26:14.836 trainer.py:263] Sample 24 : [ 9 48 48 48 48  4  9 48  7  9 48  7  9 48  7  9 48 11 16 48]
+I CMT_CPBP 12-02 14:26:14.999 trainer.py:282] Groundtruth 24 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:26:15.146 trainer.py:263] Sample 25 : [ 9 48 48 11 48 14 48 48 14 14 48 13 11 48 14 48 48 14 14 48]
+I CMT_CPBP 12-02 14:26:15.266 trainer.py:282] Groundtruth 25 : [ 7 48 48 14 48 23 48 48 23 23 48 48 21 48 19 48 48 19 19 48]
+I CMT_CPBP 12-02 14:26:15.384 trainer.py:263] Sample 26 : [14 48 48 14 14 18 16 48 14  9 48  6  2 48  9  9 48 11  9 48]
+I CMT_CPBP 12-02 14:26:15.511 trainer.py:282] Groundtruth 26 : [14 48 48 18 19 21 18 48 14 14 48 13 14 48 18 21 48 18 14 48]
+I CMT_CPBP 12-02 14:26:15.663 trainer.py:263] Sample 27 : [ 9 48 14 48 48  9  9 48 11 13 48 14 16 48 14 13 48  9  9 48]
+I CMT_CPBP 12-02 14:26:15.800 trainer.py:282] Groundtruth 27 : [ 9 48 14 48 48 16 18 48 48 19 48 21 18 48 14 16 48 18 16 48]
+I CMT_CPBP 12-02 14:26:15.921 trainer.py:263] Sample 28 : [ 9 48  9  9 48  7  4 48  2  7 48  7 14 48 11  7 48  9 48 48]
+I CMT_CPBP 12-02 14:26:16.032 trainer.py:282] Groundtruth 28 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:26:16.201 trainer.py:263] Sample 29 : [14 48 48  6 48  9 11 48  9  9 48 48  6 48  7  9 48 11 13 48]
+I CMT_CPBP 12-02 14:26:16.299 trainer.py:282] Groundtruth 29 : [14 48 48 18 19 21 18 48 14 14 48 18 21 48 19 16 48 13 13 48]
+I CMT_CPBP 12-02 14:26:16.429 trainer.py:263] Sample 30 : [19 48 16 48 48 11 19 48 48 14 48 16 48 48 48 14 48 48 48 48]
+I CMT_CPBP 12-02 14:26:16.588 trainer.py:282] Groundtruth 30 : [48 48 21 19 48 16 19 48 48 48 48 19 48 48 16 14 48 16 19 48]
+I CMT_CPBP 12-02 14:26:16.747 trainer.py:263] Sample 31 : [14 48 16 19 48 18 19 48 48 18 48 21 18 48 19 11 48 48 19 48]
+I CMT_CPBP 12-02 14:26:16.900 trainer.py:282] Groundtruth 31 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:17.018 trainer.py:263] Sample 32 : [21 48 10 22 48 48 10 48 15 14 48 15 22 48 10  9 48 10 22 48]
+I CMT_CPBP 12-02 14:26:17.128 trainer.py:282] Groundtruth 32 : [14 48 14 19 48 14 14 48 14 12 48 10  9 48 48 10 48  7 10 48]
+I CMT_CPBP 12-02 14:26:17.256 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:17.256 trainer.py:121] 31 epoch
+I CMT_CPBP 12-02 14:26:17.256 trainer.py:124] ==========train 31 epoch==========
+I CMT_CPBP 12-02 14:26:20.157 utils.py:43] nll/train: 0.9071
+I CMT_CPBP 12-02 14:26:20.158 utils.py:43] nll_pitch/train: 0.7353
+I CMT_CPBP 12-02 14:26:20.158 utils.py:43] nll_rhythm/train: 0.1718
+I CMT_CPBP 12-02 14:26:20.158 utils.py:45] accuracy_rhythm/train: 0.9240
+I CMT_CPBP 12-02 14:26:20.158 utils.py:45] accuracy_pitch/train: 0.5723
+I CMT_CPBP 12-02 14:26:20.161 trainer.py:129] ==========valid 31 epoch==========
+I CMT_CPBP 12-02 14:26:20.231 utils.py:43] nll/eval: 0.8328
+I CMT_CPBP 12-02 14:26:20.231 utils.py:43] nll_pitch/eval: 0.6740
+I CMT_CPBP 12-02 14:26:20.231 utils.py:43] nll_rhythm/eval: 0.1587
+I CMT_CPBP 12-02 14:26:20.231 utils.py:45] accuracy_rhythm/eval: 0.9265
+I CMT_CPBP 12-02 14:26:20.231 utils.py:45] accuracy_pitch/eval: 0.5836
+I CMT_CPBP 12-02 14:26:20.231 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:20.232 trainer.py:121] 32 epoch
+I CMT_CPBP 12-02 14:26:20.232 trainer.py:124] ==========train 32 epoch==========
+I CMT_CPBP 12-02 14:26:23.089 trainer.py:215] 800 training steps
+I CMT_CPBP 12-02 14:26:23.089 utils.py:43] nll: 0.9120
+I CMT_CPBP 12-02 14:26:23.089 utils.py:43] nll_pitch: 0.7453
+I CMT_CPBP 12-02 14:26:23.089 utils.py:43] nll_rhythm: 0.1667
+I CMT_CPBP 12-02 14:26:23.089 utils.py:45] accuracy_rhythm/train: 0.9279
+I CMT_CPBP 12-02 14:26:23.090 utils.py:45] accuracy_pitch/train: 0.5823
+I CMT_CPBP 12-02 14:26:23.090 utils.py:43] nll/train: 0.8955
+I CMT_CPBP 12-02 14:26:23.090 utils.py:43] nll_pitch/train: 0.7238
+I CMT_CPBP 12-02 14:26:23.090 utils.py:43] nll_rhythm/train: 0.1716
+I CMT_CPBP 12-02 14:26:23.090 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:26:23.090 utils.py:45] accuracy_pitch/train: 0.5763
+I CMT_CPBP 12-02 14:26:23.092 trainer.py:129] ==========valid 32 epoch==========
+I CMT_CPBP 12-02 14:26:23.163 utils.py:43] nll/eval: 0.8156
+I CMT_CPBP 12-02 14:26:23.163 utils.py:43] nll_pitch/eval: 0.6572
+I CMT_CPBP 12-02 14:26:23.163 utils.py:43] nll_rhythm/eval: 0.1583
+I CMT_CPBP 12-02 14:26:23.163 utils.py:45] accuracy_rhythm/eval: 0.9261
+I CMT_CPBP 12-02 14:26:23.163 utils.py:45] accuracy_pitch/eval: 0.5828
+I CMT_CPBP 12-02 14:26:23.164 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:23.165 trainer.py:121] 33 epoch
+I CMT_CPBP 12-02 14:26:23.165 trainer.py:124] ==========train 33 epoch==========
+I CMT_CPBP 12-02 14:26:26.021 utils.py:43] nll/train: 0.8939
+I CMT_CPBP 12-02 14:26:26.021 utils.py:43] nll_pitch/train: 0.7225
+I CMT_CPBP 12-02 14:26:26.021 utils.py:43] nll_rhythm/train: 0.1714
+I CMT_CPBP 12-02 14:26:26.021 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:26:26.021 utils.py:45] accuracy_pitch/train: 0.5748
+I CMT_CPBP 12-02 14:26:26.023 trainer.py:129] ==========valid 33 epoch==========
+I CMT_CPBP 12-02 14:26:26.094 utils.py:43] nll/eval: 0.8826
+I CMT_CPBP 12-02 14:26:26.094 utils.py:43] nll_pitch/eval: 0.7330
+I CMT_CPBP 12-02 14:26:26.095 utils.py:43] nll_rhythm/eval: 0.1495
+I CMT_CPBP 12-02 14:26:26.095 utils.py:45] accuracy_rhythm/eval: 0.9309
+I CMT_CPBP 12-02 14:26:26.095 utils.py:45] accuracy_pitch/eval: 0.5733
+I CMT_CPBP 12-02 14:26:26.095 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:26.096 trainer.py:98] adjusting learning rate from 0.000003 to 0.000002
+I CMT_CPBP 12-02 14:26:26.096 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:26.096 trainer.py:121] 34 epoch
+I CMT_CPBP 12-02 14:26:26.097 trainer.py:124] ==========train 34 epoch==========
+I CMT_CPBP 12-02 14:26:28.934 utils.py:43] nll/train: 0.8956
+I CMT_CPBP 12-02 14:26:28.934 utils.py:43] nll_pitch/train: 0.7244
+I CMT_CPBP 12-02 14:26:28.935 utils.py:43] nll_rhythm/train: 0.1712
+I CMT_CPBP 12-02 14:26:28.935 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:26:28.935 utils.py:45] accuracy_pitch/train: 0.5768
+I CMT_CPBP 12-02 14:26:28.937 trainer.py:129] ==========valid 34 epoch==========
+I CMT_CPBP 12-02 14:26:29.006 utils.py:43] nll/eval: 0.8411
+I CMT_CPBP 12-02 14:26:29.006 utils.py:43] nll_pitch/eval: 0.6867
+I CMT_CPBP 12-02 14:26:29.006 utils.py:43] nll_rhythm/eval: 0.1543
+I CMT_CPBP 12-02 14:26:29.006 utils.py:45] accuracy_rhythm/eval: 0.9271
+I CMT_CPBP 12-02 14:26:29.006 utils.py:45] accuracy_pitch/eval: 0.5856
+I CMT_CPBP 12-02 14:26:29.007 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:29.007 trainer.py:121] 35 epoch
+I CMT_CPBP 12-02 14:26:29.008 trainer.py:124] ==========train 35 epoch==========
+I CMT_CPBP 12-02 14:26:31.871 utils.py:43] nll/train: 0.8942
+I CMT_CPBP 12-02 14:26:31.871 utils.py:43] nll_pitch/train: 0.7227
+I CMT_CPBP 12-02 14:26:31.872 utils.py:43] nll_rhythm/train: 0.1714
+I CMT_CPBP 12-02 14:26:31.872 utils.py:45] accuracy_rhythm/train: 0.9238
+I CMT_CPBP 12-02 14:26:31.872 utils.py:45] accuracy_pitch/train: 0.5772
+I CMT_CPBP 12-02 14:26:31.874 trainer.py:129] ==========valid 35 epoch==========
+I CMT_CPBP 12-02 14:26:31.944 utils.py:43] nll/eval: 0.8520
+I CMT_CPBP 12-02 14:26:31.944 utils.py:43] nll_pitch/eval: 0.6969
+I CMT_CPBP 12-02 14:26:31.944 utils.py:43] nll_rhythm/eval: 0.1551
+I CMT_CPBP 12-02 14:26:31.944 utils.py:45] accuracy_rhythm/eval: 0.9278
+I CMT_CPBP 12-02 14:26:31.944 utils.py:45] accuracy_pitch/eval: 0.5853
+I CMT_CPBP 12-02 14:26:31.945 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:31.945 trainer.py:98] adjusting learning rate from 0.000002 to 0.000001
+I CMT_CPBP 12-02 14:26:31.946 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:31.946 trainer.py:121] 36 epoch
+I CMT_CPBP 12-02 14:26:31.946 trainer.py:124] ==========train 36 epoch==========
+I CMT_CPBP 12-02 14:26:34.784 trainer.py:215] 900 training steps
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll: 0.8726
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll_pitch: 0.6973
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll_rhythm: 0.1754
+I CMT_CPBP 12-02 14:26:34.784 utils.py:45] accuracy_rhythm/train: 0.9227
+I CMT_CPBP 12-02 14:26:34.784 utils.py:45] accuracy_pitch/train: 0.5646
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll/train: 0.8995
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll_pitch/train: 0.7289
+I CMT_CPBP 12-02 14:26:34.784 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:26:34.784 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:26:34.785 utils.py:45] accuracy_pitch/train: 0.5765
+I CMT_CPBP 12-02 14:26:34.786 trainer.py:129] ==========valid 36 epoch==========
+I CMT_CPBP 12-02 14:26:34.856 utils.py:43] nll/eval: 0.8962
+I CMT_CPBP 12-02 14:26:34.856 utils.py:43] nll_pitch/eval: 0.7432
+I CMT_CPBP 12-02 14:26:34.856 utils.py:43] nll_rhythm/eval: 0.1530
+I CMT_CPBP 12-02 14:26:34.856 utils.py:45] accuracy_rhythm/eval: 0.9292
+I CMT_CPBP 12-02 14:26:34.856 utils.py:45] accuracy_pitch/eval: 0.5696
+I CMT_CPBP 12-02 14:26:34.856 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:34.857 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:34.857 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:34.858 trainer.py:121] 37 epoch
+I CMT_CPBP 12-02 14:26:34.858 trainer.py:124] ==========train 37 epoch==========
+I CMT_CPBP 12-02 14:26:37.690 utils.py:43] nll/train: 0.8909
+I CMT_CPBP 12-02 14:26:37.690 utils.py:43] nll_pitch/train: 0.7191
+I CMT_CPBP 12-02 14:26:37.690 utils.py:43] nll_rhythm/train: 0.1718
+I CMT_CPBP 12-02 14:26:37.690 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:26:37.690 utils.py:45] accuracy_pitch/train: 0.5754
+I CMT_CPBP 12-02 14:26:37.692 trainer.py:129] ==========valid 37 epoch==========
+I CMT_CPBP 12-02 14:26:37.761 utils.py:43] nll/eval: 0.8398
+I CMT_CPBP 12-02 14:26:37.761 utils.py:43] nll_pitch/eval: 0.6807
+I CMT_CPBP 12-02 14:26:37.761 utils.py:43] nll_rhythm/eval: 0.1591
+I CMT_CPBP 12-02 14:26:37.761 utils.py:45] accuracy_rhythm/eval: 0.9251
+I CMT_CPBP 12-02 14:26:37.761 utils.py:45] accuracy_pitch/eval: 0.5778
+I CMT_CPBP 12-02 14:26:37.762 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:37.762 trainer.py:121] 38 epoch
+I CMT_CPBP 12-02 14:26:37.762 trainer.py:124] ==========train 38 epoch==========
+I CMT_CPBP 12-02 14:26:40.593 utils.py:43] nll/train: 0.8982
+I CMT_CPBP 12-02 14:26:40.593 utils.py:43] nll_pitch/train: 0.7267
+I CMT_CPBP 12-02 14:26:40.593 utils.py:43] nll_rhythm/train: 0.1715
+I CMT_CPBP 12-02 14:26:40.593 utils.py:45] accuracy_rhythm/train: 0.9235
+I CMT_CPBP 12-02 14:26:40.593 utils.py:45] accuracy_pitch/train: 0.5752
+I CMT_CPBP 12-02 14:26:40.595 trainer.py:129] ==========valid 38 epoch==========
+I CMT_CPBP 12-02 14:26:40.664 utils.py:43] nll/eval: 0.8751
+I CMT_CPBP 12-02 14:26:40.664 utils.py:43] nll_pitch/eval: 0.7185
+I CMT_CPBP 12-02 14:26:40.664 utils.py:43] nll_rhythm/eval: 0.1566
+I CMT_CPBP 12-02 14:26:40.664 utils.py:45] accuracy_rhythm/eval: 0.9264
+I CMT_CPBP 12-02 14:26:40.664 utils.py:45] accuracy_pitch/eval: 0.5804
+I CMT_CPBP 12-02 14:26:40.665 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:40.665 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:40.666 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:40.666 trainer.py:121] 39 epoch
+I CMT_CPBP 12-02 14:26:40.666 trainer.py:124] ==========train 39 epoch==========
+I CMT_CPBP 12-02 14:26:43.508 utils.py:43] nll/train: 0.8929
+I CMT_CPBP 12-02 14:26:43.508 utils.py:43] nll_pitch/train: 0.7219
+I CMT_CPBP 12-02 14:26:43.508 utils.py:43] nll_rhythm/train: 0.1710
+I CMT_CPBP 12-02 14:26:43.509 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:26:43.509 utils.py:45] accuracy_pitch/train: 0.5767
+I CMT_CPBP 12-02 14:26:43.510 trainer.py:129] ==========valid 39 epoch==========
+I CMT_CPBP 12-02 14:26:43.580 utils.py:43] nll/eval: 0.8910
+I CMT_CPBP 12-02 14:26:43.581 utils.py:43] nll_pitch/eval: 0.7360
+I CMT_CPBP 12-02 14:26:43.581 utils.py:43] nll_rhythm/eval: 0.1550
+I CMT_CPBP 12-02 14:26:43.581 utils.py:45] accuracy_rhythm/eval: 0.9281
+I CMT_CPBP 12-02 14:26:43.581 utils.py:45] accuracy_pitch/eval: 0.5745
+I CMT_CPBP 12-02 14:26:43.581 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:43.582 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:43.583 trainer.py:120] 
+I CMT_CPBP 12-02 14:26:43.583 trainer.py:121] 40 epoch
+I CMT_CPBP 12-02 14:26:43.583 trainer.py:124] ==========train 40 epoch==========
+I CMT_CPBP 12-02 14:26:46.421 trainer.py:215] 1000 training steps
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll: 0.8799
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll_pitch: 0.7060
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll_rhythm: 0.1739
+I CMT_CPBP 12-02 14:26:46.421 utils.py:45] accuracy_rhythm/train: 0.9204
+I CMT_CPBP 12-02 14:26:46.421 utils.py:45] accuracy_pitch/train: 0.5611
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll/train: 0.8910
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll_pitch/train: 0.7195
+I CMT_CPBP 12-02 14:26:46.421 utils.py:43] nll_rhythm/train: 0.1715
+I CMT_CPBP 12-02 14:26:46.421 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:26:46.421 utils.py:45] accuracy_pitch/train: 0.5741
+I CMT_CPBP 12-02 14:26:46.423 trainer.py:129] ==========valid 40 epoch==========
+I CMT_CPBP 12-02 14:26:46.491 utils.py:43] nll/eval: 0.8884
+I CMT_CPBP 12-02 14:26:46.492 utils.py:43] nll_pitch/eval: 0.7368
+I CMT_CPBP 12-02 14:26:46.492 utils.py:43] nll_rhythm/eval: 0.1516
+I CMT_CPBP 12-02 14:26:46.492 utils.py:45] accuracy_rhythm/eval: 0.9298
+I CMT_CPBP 12-02 14:26:46.492 utils.py:45] accuracy_pitch/eval: 0.5757
+I CMT_CPBP 12-02 14:26:46.492 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:46.492 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:26:46.493 trainer.py:83] saving model, Epoch 40, step 1000
+I CMT_CPBP 12-02 14:26:46.713 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:26:46.713 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:26:49.075 trainer.py:259] ==========sampling result of epoch 040==========
+I CMT_CPBP 12-02 14:26:49.077 trainer.py:263] Sample 00 : [11 48 11  9 48  7  7 48 14 16 48 14 12 48 11  7 48  6  4 48]
+I CMT_CPBP 12-02 14:26:49.287 trainer.py:282] Groundtruth 00 : [11 48  2  7 48 11 14 48 12 11 48 12 11 48 12  9 48 14 12 48]
+I CMT_CPBP 12-02 14:26:49.497 trainer.py:263] Sample 01 : [ 9 48 48  4 48  4  9 48  4  9 48 48 11 48 11 48 48 11 16 48]
+I CMT_CPBP 12-02 14:26:49.683 trainer.py:282] Groundtruth 01 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:26:49.858 trainer.py:263] Sample 02 : [21 48 23 26 48 23 23 48 48 19 21 23 23 48 19 16 48 16 14 48]
+I CMT_CPBP 12-02 14:26:50.017 trainer.py:282] Groundtruth 02 : [21 48 23 19 48 16 14 48 11 14 48 16 14 48 11  7 48 11 14 48]
+I CMT_CPBP 12-02 14:26:50.198 trainer.py:263] Sample 03 : [19 48 17 16 48 14 19 48 48 14 48 16 19 48 18 16 48 14 12 48]
+I CMT_CPBP 12-02 14:26:50.337 trainer.py:282] Groundtruth 03 : [17 48 14 17 48 14 10 48 48 11 48 12 48 48 12 12 48 14 16 48]
+I CMT_CPBP 12-02 14:26:50.507 trainer.py:263] Sample 04 : [14 48 16 14 48 11  7 48 48 11 48  9  7 48  9 14 48 16 14 48]
+I CMT_CPBP 12-02 14:26:50.693 trainer.py:282] Groundtruth 04 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:50.907 trainer.py:263] Sample 05 : [48 48  7  7 48  7  9 48 11 48 48  7  9 48 48 14 48 14 48 48]
+I CMT_CPBP 12-02 14:26:51.081 trainer.py:282] Groundtruth 05 : [ 6 48  7  9 48 48  7 48 11 48 48 48 11 48 48 12 48 14 16 48]
+I CMT_CPBP 12-02 14:26:51.218 trainer.py:263] Sample 06 : [48 48 21 21 48 48 19 48 18 48 48 19 11 48 48 11 13 18 48 48]
+I CMT_CPBP 12-02 14:26:51.429 trainer.py:282] Groundtruth 06 : [48 48 16 18 48 48 14 48 16 48 48 14 11 48 13 14 48  9 11 48]
+I CMT_CPBP 12-02 14:26:51.615 trainer.py:263] Sample 07 : [49 49 49 49 49 14 48 48 14  7 48 48 14 48 16 48 48 14 11 48]
+I CMT_CPBP 12-02 14:26:51.760 trainer.py:282] Groundtruth 07 : [49 49 49  2 48  7 48 48  7  7 48 11 14 48 19 48 48 14 14 48]
+I CMT_CPBP 12-02 14:26:51.922 trainer.py:263] Sample 08 : [ 6 48 48  9 48  6  4 48  6  4 48 48  9 48  6  9 48  6  9 48]
+I CMT_CPBP 12-02 14:26:52.211 trainer.py:282] Groundtruth 08 : [ 2 48 48  6 48  7  4 48  1  9 48 48  7 48  6  9 48 14 18 48]
+I CMT_CPBP 12-02 14:26:52.396 trainer.py:263] Sample 09 : [48 48 14 14 48 48 16 48 18 48 48 48 14 48 48 11 48 12 48 48]
+I CMT_CPBP 12-02 14:26:52.551 trainer.py:282] Groundtruth 09 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:26:52.708 trainer.py:263] Sample 10 : [14 48 11  9 48  7  7 48 48  6 48  2  7 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:26:52.877 trainer.py:282] Groundtruth 10 : [14 48 11 14 48 11  9 48 48 19 48 18 16 48 14  9 48 14 13 48]
+I CMT_CPBP 12-02 14:26:53.048 trainer.py:263] Sample 11 : [12 48 48 48 48  9 48 48  7  7 48 48 12 48  9 48 48  7  7 48]
+I CMT_CPBP 12-02 14:26:53.200 trainer.py:282] Groundtruth 11 : [12 48 11 10 48  9 48 48 12  5 48  9 12 48 17 48 48 48 17 48]
+I CMT_CPBP 12-02 14:26:53.439 trainer.py:263] Sample 12 : [16 48 14 48 48 18 16 48 48 14 48 13 48 48 16 13 48 48  9 48]
+I CMT_CPBP 12-02 14:26:53.620 trainer.py:282] Groundtruth 12 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:26:53.806 trainer.py:263] Sample 13 : [ 9 48 48 14 48  9 11 48 13 16 48 18 16 48 13 48 48 14 13 48]
+I CMT_CPBP 12-02 14:26:53.978 trainer.py:282] Groundtruth 13 : [ 9 48 48 11 48 13 48 48 16 16 48 18 16 48 16 18 48 16 13 48]
+I CMT_CPBP 12-02 14:26:54.136 trainer.py:263] Sample 14 : [11 48 48 12 48  9 11 48  9  9 48 48 11 48 11 48 48 11  9 48]
+I CMT_CPBP 12-02 14:26:54.302 trainer.py:282] Groundtruth 14 : [16 48 14 16 48 18 48 48 21 21 48 18 21 48 23 21 48 18 21 48]
+I CMT_CPBP 12-02 14:26:54.442 trainer.py:263] Sample 15 : [14 48 19 48 48 19 19 48 18 16 48 18 21 48 19 11 48  9 11 48]
+I CMT_CPBP 12-02 14:26:54.685 trainer.py:282] Groundtruth 15 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:54.905 trainer.py:263] Sample 16 : [16 48 18 19 48 16 14 48 12 11 48  9  9 48 12 11 48  7 11 48]
+I CMT_CPBP 12-02 14:26:55.073 trainer.py:282] Groundtruth 16 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:26:55.590 trainer.py:263] Sample 17 : [48 12 48 11 48 48 14 19 48 48 11 48 12 16 48 14 11 48 12 14]
+I CMT_CPBP 12-02 14:26:55.821 trainer.py:282] Groundtruth 17 : [16 48 14 11 48  7  7 48  9 11 48 12 14 48 16 14 48 12 11 48]
+I CMT_CPBP 12-02 14:26:56.005 trainer.py:263] Sample 18 : [ 7 48 48 14 48 11 48 48 12 11 48 12 11 48 11 48 48  9  2 48]
+I CMT_CPBP 12-02 14:26:56.179 trainer.py:282] Groundtruth 18 : [ 7 48 48 14 18 19 21 48 19 19 48 14 11 48  9 11 48  9  9 48]
+I CMT_CPBP 12-02 14:26:56.441 trainer.py:263] Sample 19 : [48 48 14 12 48 11  7 48  7 48 48 11 14 48 48 14 48 16 48 48]
+I CMT_CPBP 12-02 14:26:56.663 trainer.py:282] Groundtruth 19 : [17 48 16 16 48 18 19 48 14 11 48  7  7 48  6  7 48  4  9 48]
+I CMT_CPBP 12-02 14:26:56.841 trainer.py:263] Sample 20 : [ 7 48  9 11 48  7 48 48  7  9 48  7  7 48  4  9 48  9  9 48]
+I CMT_CPBP 12-02 14:26:57.003 trainer.py:282] Groundtruth 20 : [ 4 48 48  9 48  9 12 48 12 12 48 16 16 48 11 14 48 14 14 48]
+I CMT_CPBP 12-02 14:26:57.194 trainer.py:263] Sample 21 : [19 48 48 19 48 19 48 48 19 19 48 48 21 48 21 48 48 21 21 48]
+I CMT_CPBP 12-02 14:26:57.439 trainer.py:282] Groundtruth 21 : [48 48 48 48 48 12 48 48 12  7 48  9 10 48  9 48 48  5  2 48]
+I CMT_CPBP 12-02 14:26:57.615 trainer.py:263] Sample 22 : [ 9 48 48 11 48 12 48 48 48 12 48 48 11 48 16 14 48 11 11 48]
+I CMT_CPBP 12-02 14:26:57.784 trainer.py:282] Groundtruth 22 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:26:57.999 trainer.py:263] Sample 23 : [ 9 48 48  4  9  9 11 48  9  9 48 11 12 48 16 14 48 12 12 48]
+I CMT_CPBP 12-02 14:26:58.148 trainer.py:282] Groundtruth 23 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:26:58.345 trainer.py:263] Sample 24 : [ 9 48 48 11 48 16 48 48 16 12 48 48 14 48 11 48 48 14 19 48]
+I CMT_CPBP 12-02 14:26:58.527 trainer.py:282] Groundtruth 24 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:26:58.698 trainer.py:263] Sample 25 : [14 48 48 14 16 18 48 48 11 11 48  9  7 48  6  7 48  9 11 48]
+I CMT_CPBP 12-02 14:26:58.911 trainer.py:282] Groundtruth 25 : [14 48 48  6 48 11 48 48 48 14 48 48 48 48 13 48 48 48 16 48]
+I CMT_CPBP 12-02 14:26:59.123 trainer.py:263] Sample 26 : [14 48 14 48 48 48  9 48 48 48 48 11 13 48 11  9 48 16 13 48]
+I CMT_CPBP 12-02 14:26:59.304 trainer.py:282] Groundtruth 26 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:26:59.451 trainer.py:263] Sample 27 : [13 48 48 11 48 48  9 48 14 13 48 14 16 48 13  9 48 14 48 48]
+I CMT_CPBP 12-02 14:26:59.639 trainer.py:282] Groundtruth 27 : [48 48 48 14 48 48 16 48 18 19 48 18 16 48 18 16 48 14 16 48]
+I CMT_CPBP 12-02 14:26:59.796 trainer.py:263] Sample 28 : [14 48 14 19 48 16 14 48 12 11 48 16  9 48 11 14 48 11 48 48]
+I CMT_CPBP 12-02 14:27:00.026 trainer.py:282] Groundtruth 28 : [14 48 11  7 48 11 14 48 19 14 48 11  9 48 48 14 48 19 23 48]
+I CMT_CPBP 12-02 14:27:00.166 trainer.py:263] Sample 29 : [ 2 48 48  9 48 14 48 48  9  9 48 48  9 48 14 48 48 11  9 48]
+I CMT_CPBP 12-02 14:27:00.327 trainer.py:282] Groundtruth 29 : [ 2 48  6  9 48 14 48 48 48 14 48 16 18 48 13 48 48 48 13 48]
+I CMT_CPBP 12-02 14:27:00.460 trainer.py:263] Sample 30 : [48 48  9 48 48 48  9 48 48 14 48 16 48 48 16 11 48 12 14 48]
+I CMT_CPBP 12-02 14:27:00.624 trainer.py:282] Groundtruth 30 : [48 48 12 48 48 16 21 48 48 19 48 19 48 48 48 48 48 48 48 48]
+I CMT_CPBP 12-02 14:27:00.792 trainer.py:263] Sample 31 : [ 7 48 11 12 48 14 19 48 48 48 48 11 14 48 14 19 48 21 18 48]
+I CMT_CPBP 12-02 14:27:00.976 trainer.py:282] Groundtruth 31 : [ 7 48 48 19 21 23 22 48 23 14 48 19 23 48 14 19 48 23 26 48]
+I CMT_CPBP 12-02 14:27:01.122 trainer.py:263] Sample 32 : [ 9 48  7  9 48 11 12 48 14 16 48 14 14 48 16 17 48 16 48 48]
+I CMT_CPBP 12-02 14:27:01.272 trainer.py:282] Groundtruth 32 : [48 48  4  0 48 48  1 48  2  4 48  5  7 48  9 11 48 12 48 48]
+I CMT_CPBP 12-02 14:27:01.459 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:01.460 trainer.py:121] 41 epoch
+I CMT_CPBP 12-02 14:27:01.460 trainer.py:124] ==========train 41 epoch==========
+I CMT_CPBP 12-02 14:27:04.341 utils.py:43] nll/train: 0.8958
+I CMT_CPBP 12-02 14:27:04.342 utils.py:43] nll_pitch/train: 0.7243
+I CMT_CPBP 12-02 14:27:04.342 utils.py:43] nll_rhythm/train: 0.1715
+I CMT_CPBP 12-02 14:27:04.342 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:27:04.342 utils.py:45] accuracy_pitch/train: 0.5739
+I CMT_CPBP 12-02 14:27:04.345 trainer.py:129] ==========valid 41 epoch==========
+I CMT_CPBP 12-02 14:27:04.419 utils.py:43] nll/eval: 0.8827
+I CMT_CPBP 12-02 14:27:04.420 utils.py:43] nll_pitch/eval: 0.7239
+I CMT_CPBP 12-02 14:27:04.420 utils.py:43] nll_rhythm/eval: 0.1589
+I CMT_CPBP 12-02 14:27:04.420 utils.py:45] accuracy_rhythm/eval: 0.9252
+I CMT_CPBP 12-02 14:27:04.420 utils.py:45] accuracy_pitch/eval: 0.5772
+I CMT_CPBP 12-02 14:27:04.420 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:04.420 trainer.py:121] 42 epoch
+I CMT_CPBP 12-02 14:27:04.421 trainer.py:124] ==========train 42 epoch==========
+I CMT_CPBP 12-02 14:27:07.270 utils.py:43] nll/train: 0.8884
+I CMT_CPBP 12-02 14:27:07.271 utils.py:43] nll_pitch/train: 0.7168
+I CMT_CPBP 12-02 14:27:07.271 utils.py:43] nll_rhythm/train: 0.1716
+I CMT_CPBP 12-02 14:27:07.271 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:27:07.271 utils.py:45] accuracy_pitch/train: 0.5782
+I CMT_CPBP 12-02 14:27:07.272 trainer.py:129] ==========valid 42 epoch==========
+I CMT_CPBP 12-02 14:27:07.342 utils.py:43] nll/eval: 0.8778
+I CMT_CPBP 12-02 14:27:07.343 utils.py:43] nll_pitch/eval: 0.7243
+I CMT_CPBP 12-02 14:27:07.343 utils.py:43] nll_rhythm/eval: 0.1535
+I CMT_CPBP 12-02 14:27:07.343 utils.py:45] accuracy_rhythm/eval: 0.9281
+I CMT_CPBP 12-02 14:27:07.343 utils.py:45] accuracy_pitch/eval: 0.5779
+I CMT_CPBP 12-02 14:27:07.343 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:07.344 trainer.py:121] 43 epoch
+I CMT_CPBP 12-02 14:27:07.344 trainer.py:124] ==========train 43 epoch==========
+I CMT_CPBP 12-02 14:27:10.174 utils.py:43] nll/train: 0.8939
+I CMT_CPBP 12-02 14:27:10.174 utils.py:43] nll_pitch/train: 0.7217
+I CMT_CPBP 12-02 14:27:10.174 utils.py:43] nll_rhythm/train: 0.1722
+I CMT_CPBP 12-02 14:27:10.174 utils.py:45] accuracy_rhythm/train: 0.9236
+I CMT_CPBP 12-02 14:27:10.174 utils.py:45] accuracy_pitch/train: 0.5743
+I CMT_CPBP 12-02 14:27:10.176 trainer.py:129] ==========valid 43 epoch==========
+I CMT_CPBP 12-02 14:27:10.244 utils.py:43] nll/eval: 0.8899
+I CMT_CPBP 12-02 14:27:10.244 utils.py:43] nll_pitch/eval: 0.7325
+I CMT_CPBP 12-02 14:27:10.244 utils.py:43] nll_rhythm/eval: 0.1574
+I CMT_CPBP 12-02 14:27:10.244 utils.py:45] accuracy_rhythm/eval: 0.9268
+I CMT_CPBP 12-02 14:27:10.244 utils.py:45] accuracy_pitch/eval: 0.5773
+I CMT_CPBP 12-02 14:27:10.245 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:10.245 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:10.246 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:10.246 trainer.py:121] 44 epoch
+I CMT_CPBP 12-02 14:27:10.246 trainer.py:124] ==========train 44 epoch==========
+I CMT_CPBP 12-02 14:27:13.077 trainer.py:215] 1100 training steps
+I CMT_CPBP 12-02 14:27:13.077 utils.py:43] nll: 0.8783
+I CMT_CPBP 12-02 14:27:13.077 utils.py:43] nll_pitch: 0.7003
+I CMT_CPBP 12-02 14:27:13.077 utils.py:43] nll_rhythm: 0.1780
+I CMT_CPBP 12-02 14:27:13.078 utils.py:45] accuracy_rhythm/train: 0.9194
+I CMT_CPBP 12-02 14:27:13.078 utils.py:45] accuracy_pitch/train: 0.5524
+I CMT_CPBP 12-02 14:27:13.078 utils.py:43] nll/train: 0.8878
+I CMT_CPBP 12-02 14:27:13.078 utils.py:43] nll_pitch/train: 0.7166
+I CMT_CPBP 12-02 14:27:13.078 utils.py:43] nll_rhythm/train: 0.1712
+I CMT_CPBP 12-02 14:27:13.078 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:27:13.078 utils.py:45] accuracy_pitch/train: 0.5772
+I CMT_CPBP 12-02 14:27:13.080 trainer.py:129] ==========valid 44 epoch==========
+I CMT_CPBP 12-02 14:27:13.148 utils.py:43] nll/eval: 0.8446
+I CMT_CPBP 12-02 14:27:13.148 utils.py:43] nll_pitch/eval: 0.6910
+I CMT_CPBP 12-02 14:27:13.148 utils.py:43] nll_rhythm/eval: 0.1536
+I CMT_CPBP 12-02 14:27:13.148 utils.py:45] accuracy_rhythm/eval: 0.9281
+I CMT_CPBP 12-02 14:27:13.148 utils.py:45] accuracy_pitch/eval: 0.5857
+I CMT_CPBP 12-02 14:27:13.149 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:13.149 trainer.py:121] 45 epoch
+I CMT_CPBP 12-02 14:27:13.150 trainer.py:124] ==========train 45 epoch==========
+I CMT_CPBP 12-02 14:27:15.985 utils.py:43] nll/train: 0.8880
+I CMT_CPBP 12-02 14:27:15.985 utils.py:43] nll_pitch/train: 0.7169
+I CMT_CPBP 12-02 14:27:15.985 utils.py:43] nll_rhythm/train: 0.1711
+I CMT_CPBP 12-02 14:27:15.985 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:27:15.985 utils.py:45] accuracy_pitch/train: 0.5780
+I CMT_CPBP 12-02 14:27:15.988 trainer.py:129] ==========valid 45 epoch==========
+I CMT_CPBP 12-02 14:27:16.058 utils.py:43] nll/eval: 0.9016
+I CMT_CPBP 12-02 14:27:16.058 utils.py:43] nll_pitch/eval: 0.7419
+I CMT_CPBP 12-02 14:27:16.058 utils.py:43] nll_rhythm/eval: 0.1597
+I CMT_CPBP 12-02 14:27:16.058 utils.py:45] accuracy_rhythm/eval: 0.9232
+I CMT_CPBP 12-02 14:27:16.058 utils.py:45] accuracy_pitch/eval: 0.5779
+I CMT_CPBP 12-02 14:27:16.059 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:16.059 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:16.059 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:16.060 trainer.py:121] 46 epoch
+I CMT_CPBP 12-02 14:27:16.060 trainer.py:124] ==========train 46 epoch==========
+I CMT_CPBP 12-02 14:27:18.900 utils.py:43] nll/train: 0.8866
+I CMT_CPBP 12-02 14:27:18.900 utils.py:43] nll_pitch/train: 0.7160
+I CMT_CPBP 12-02 14:27:18.900 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:27:18.900 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:27:18.900 utils.py:45] accuracy_pitch/train: 0.5769
+I CMT_CPBP 12-02 14:27:18.902 trainer.py:129] ==========valid 46 epoch==========
+I CMT_CPBP 12-02 14:27:18.971 utils.py:43] nll/eval: 0.8965
+I CMT_CPBP 12-02 14:27:18.971 utils.py:43] nll_pitch/eval: 0.7367
+I CMT_CPBP 12-02 14:27:18.971 utils.py:43] nll_rhythm/eval: 0.1598
+I CMT_CPBP 12-02 14:27:18.971 utils.py:45] accuracy_rhythm/eval: 0.9251
+I CMT_CPBP 12-02 14:27:18.971 utils.py:45] accuracy_pitch/eval: 0.5693
+I CMT_CPBP 12-02 14:27:18.971 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:18.972 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:18.972 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:18.973 trainer.py:121] 47 epoch
+I CMT_CPBP 12-02 14:27:18.973 trainer.py:124] ==========train 47 epoch==========
+I CMT_CPBP 12-02 14:27:21.817 utils.py:43] nll/train: 0.8863
+I CMT_CPBP 12-02 14:27:21.817 utils.py:43] nll_pitch/train: 0.7148
+I CMT_CPBP 12-02 14:27:21.817 utils.py:43] nll_rhythm/train: 0.1715
+I CMT_CPBP 12-02 14:27:21.817 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:27:21.817 utils.py:45] accuracy_pitch/train: 0.5782
+I CMT_CPBP 12-02 14:27:21.819 trainer.py:129] ==========valid 47 epoch==========
+I CMT_CPBP 12-02 14:27:21.887 utils.py:43] nll/eval: 0.8486
+I CMT_CPBP 12-02 14:27:21.887 utils.py:43] nll_pitch/eval: 0.6920
+I CMT_CPBP 12-02 14:27:21.887 utils.py:43] nll_rhythm/eval: 0.1566
+I CMT_CPBP 12-02 14:27:21.887 utils.py:45] accuracy_rhythm/eval: 0.9256
+I CMT_CPBP 12-02 14:27:21.887 utils.py:45] accuracy_pitch/eval: 0.5783
+I CMT_CPBP 12-02 14:27:21.888 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:21.888 trainer.py:121] 48 epoch
+I CMT_CPBP 12-02 14:27:21.888 trainer.py:124] ==========train 48 epoch==========
+I CMT_CPBP 12-02 14:27:24.712 trainer.py:215] 1200 training steps
+I CMT_CPBP 12-02 14:27:24.712 utils.py:43] nll: 0.8740
+I CMT_CPBP 12-02 14:27:24.712 utils.py:43] nll_pitch: 0.6976
+I CMT_CPBP 12-02 14:27:24.712 utils.py:43] nll_rhythm: 0.1764
+I CMT_CPBP 12-02 14:27:24.712 utils.py:45] accuracy_rhythm/train: 0.9215
+I CMT_CPBP 12-02 14:27:24.712 utils.py:45] accuracy_pitch/train: 0.5693
+I CMT_CPBP 12-02 14:27:24.712 utils.py:43] nll/train: 0.8861
+I CMT_CPBP 12-02 14:27:24.713 utils.py:43] nll_pitch/train: 0.7153
+I CMT_CPBP 12-02 14:27:24.713 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:27:24.713 utils.py:45] accuracy_rhythm/train: 0.9238
+I CMT_CPBP 12-02 14:27:24.713 utils.py:45] accuracy_pitch/train: 0.5769
+I CMT_CPBP 12-02 14:27:24.714 trainer.py:129] ==========valid 48 epoch==========
+I CMT_CPBP 12-02 14:27:24.782 utils.py:43] nll/eval: 0.8575
+I CMT_CPBP 12-02 14:27:24.782 utils.py:43] nll_pitch/eval: 0.7055
+I CMT_CPBP 12-02 14:27:24.782 utils.py:43] nll_rhythm/eval: 0.1521
+I CMT_CPBP 12-02 14:27:24.782 utils.py:45] accuracy_rhythm/eval: 0.9276
+I CMT_CPBP 12-02 14:27:24.782 utils.py:45] accuracy_pitch/eval: 0.5815
+I CMT_CPBP 12-02 14:27:24.783 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:24.783 trainer.py:121] 49 epoch
+I CMT_CPBP 12-02 14:27:24.784 trainer.py:124] ==========train 49 epoch==========
+I CMT_CPBP 12-02 14:27:27.619 utils.py:43] nll/train: 0.8903
+I CMT_CPBP 12-02 14:27:27.619 utils.py:43] nll_pitch/train: 0.7193
+I CMT_CPBP 12-02 14:27:27.619 utils.py:43] nll_rhythm/train: 0.1710
+I CMT_CPBP 12-02 14:27:27.619 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:27:27.619 utils.py:45] accuracy_pitch/train: 0.5765
+I CMT_CPBP 12-02 14:27:27.621 trainer.py:129] ==========valid 49 epoch==========
+I CMT_CPBP 12-02 14:27:27.689 utils.py:43] nll/eval: 0.8790
+I CMT_CPBP 12-02 14:27:27.689 utils.py:43] nll_pitch/eval: 0.7260
+I CMT_CPBP 12-02 14:27:27.689 utils.py:43] nll_rhythm/eval: 0.1530
+I CMT_CPBP 12-02 14:27:27.689 utils.py:45] accuracy_rhythm/eval: 0.9286
+I CMT_CPBP 12-02 14:27:27.690 utils.py:45] accuracy_pitch/eval: 0.5771
+I CMT_CPBP 12-02 14:27:27.690 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:27.690 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:27.691 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:27.691 trainer.py:121] 50 epoch
+I CMT_CPBP 12-02 14:27:27.691 trainer.py:124] ==========train 50 epoch==========
+I CMT_CPBP 12-02 14:27:30.525 utils.py:43] nll/train: 0.8866
+I CMT_CPBP 12-02 14:27:30.525 utils.py:43] nll_pitch/train: 0.7152
+I CMT_CPBP 12-02 14:27:30.525 utils.py:43] nll_rhythm/train: 0.1714
+I CMT_CPBP 12-02 14:27:30.526 utils.py:45] accuracy_rhythm/train: 0.9239
+I CMT_CPBP 12-02 14:27:30.526 utils.py:45] accuracy_pitch/train: 0.5762
+I CMT_CPBP 12-02 14:27:30.528 trainer.py:129] ==========valid 50 epoch==========
+I CMT_CPBP 12-02 14:27:30.596 utils.py:43] nll/eval: 0.8930
+I CMT_CPBP 12-02 14:27:30.596 utils.py:43] nll_pitch/eval: 0.7371
+I CMT_CPBP 12-02 14:27:30.596 utils.py:43] nll_rhythm/eval: 0.1559
+I CMT_CPBP 12-02 14:27:30.596 utils.py:45] accuracy_rhythm/eval: 0.9276
+I CMT_CPBP 12-02 14:27:30.596 utils.py:45] accuracy_pitch/eval: 0.5743
+I CMT_CPBP 12-02 14:27:30.597 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:30.597 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:30.597 trainer.py:83] saving model, Epoch 50, step 1250
+I CMT_CPBP 12-02 14:27:30.818 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:27:30.818 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:27:32.628 trainer.py:259] ==========sampling result of epoch 050==========
+I CMT_CPBP 12-02 14:27:32.630 trainer.py:263] Sample 00 : [ 9 48 18 48 48 18 18 48 16 14 48 11  9 48 11 14 48 16 19 48]
+I CMT_CPBP 12-02 14:27:32.869 trainer.py:282] Groundtruth 00 : [11 48  9 48 48 14  9 48  7  6 48  4 48 48  6  7 48  6  4 48]
+I CMT_CPBP 12-02 14:27:33.088 trainer.py:263] Sample 01 : [14 48 19 48 48 16 19 48 48 48 48 21 48 48 21 19 48 48 16 48]
+I CMT_CPBP 12-02 14:27:33.267 trainer.py:282] Groundtruth 01 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:27:33.465 trainer.py:263] Sample 02 : [14 48 10 48 48 10 22 48 48 10 48 10 48 48 14 15 48 48 15 48]
+I CMT_CPBP 12-02 14:27:33.678 trainer.py:282] Groundtruth 02 : [14 48  7 10 48 14 13 48 48 14 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:27:33.832 trainer.py:263] Sample 03 : [16 48 16 18 48 19 16 48 18 19 48 21 19 48 18 16 48 14 11 48]
+I CMT_CPBP 12-02 14:27:34.011 trainer.py:282] Groundtruth 03 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:27:34.193 trainer.py:263] Sample 04 : [12 48 16 14 48 11 11 48 12 11 48  9 11 48  9  7 48  9 11 48]
+I CMT_CPBP 12-02 14:27:34.351 trainer.py:282] Groundtruth 04 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:27:34.590 trainer.py:263] Sample 05 : [ 6 48  9 11 48 13 14 48 16 14 48 11  9 48 48  9 48  6  2 48]
+I CMT_CPBP 12-02 14:27:34.723 trainer.py:282] Groundtruth 05 : [ 6 48  9 11 48 48  9 48 13 16 48 16 16 48 48  9 48 14 16 48]
+I CMT_CPBP 12-02 14:27:34.945 trainer.py:263] Sample 06 : [14 48 18 48 48 18 18 48 48 16 48  9 48 48 16  9 48 48 16 48]
+I CMT_CPBP 12-02 14:27:35.098 trainer.py:282] Groundtruth 06 : [ 7 48  6  9 48 14 18 48 48 14 48 13 16 48 19 23 48 21 13 48]
+I CMT_CPBP 12-02 14:27:35.309 trainer.py:263] Sample 07 : [ 9 48 48 10 48 10 14 48 10  9 48 10 12 48 10 12 48 14  9 48]
+I CMT_CPBP 12-02 14:27:35.489 trainer.py:282] Groundtruth 07 : [ 7 48 48 48 48 19 14 48 14 22 48 21 19 48 21 14 48 14 24 48]
+I CMT_CPBP 12-02 14:27:35.679 trainer.py:263] Sample 08 : [48 48 11 12 48  9 14 48 11  9 48  7  7 48 11 14 48 16 48 48]
+I CMT_CPBP 12-02 14:27:35.850 trainer.py:282] Groundtruth 08 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:27:36.065 trainer.py:263] Sample 09 : [11 48 48 14 16 18 48 48 16 18 48 48 14 48 16 48 48 14 14 48]
+I CMT_CPBP 12-02 14:27:36.210 trainer.py:282] Groundtruth 09 : [14 48 48  9 48 14 16 48 18 18 48 16 14 48 11 14 48 11  9 48]
+I CMT_CPBP 12-02 14:27:36.400 trainer.py:263] Sample 10 : [48 48 14  9 48 48 11 48 12 48 48 11  9 48 48  7 48  6 48 48]
+I CMT_CPBP 12-02 14:27:36.612 trainer.py:282] Groundtruth 10 : [48 48 18 18 48 16 14 48 16 18 48 16 16 48 13  9 48 14 18 48]
+I CMT_CPBP 12-02 14:27:36.829 trainer.py:263] Sample 11 : [49 49 14 16 14 48 48 48 19 48 48 18 48 16 48 48 48 11 48 48]
+I CMT_CPBP 12-02 14:27:37.008 trainer.py:282] Groundtruth 11 : [ 2 48 48 48 48  4 48 48 48 11 48 48  9 48 11 48 48  7  4 48]
+I CMT_CPBP 12-02 14:27:37.211 trainer.py:263] Sample 12 : [13 48 14 13 48 11 48 48 16 13 48 48 48 48  9 48 48 48  9 48]
+I CMT_CPBP 12-02 14:27:37.405 trainer.py:282] Groundtruth 12 : [21 48 20 21 48  9 13 48 16 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:27:37.565 trainer.py:263] Sample 13 : [48 48 48 19 48 48 48 48 18 48 48 14 13 48 48 11 48  9 48 48]
+I CMT_CPBP 12-02 14:27:37.709 trainer.py:282] Groundtruth 13 : [48 48 16 16 48 25 23 48 21 48 48 18 18 48 48 21 48 30 48 48]
+I CMT_CPBP 12-02 14:27:37.879 trainer.py:263] Sample 14 : [19 48 48 16 17 12 14 48 19 19 48 18 19 48 21 19 48 14 14 48]
+I CMT_CPBP 12-02 14:27:38.070 trainer.py:282] Groundtruth 14 : [48 48 48 48 48 12 48 48 12  7 48  9 10 48  9 48 48  5  2 48]
+I CMT_CPBP 12-02 14:27:38.223 trainer.py:263] Sample 15 : [14 48 18 48 48 18 18 48 19 21 48 19 48 48 18 18 48 16 14 48]
+I CMT_CPBP 12-02 14:27:38.459 trainer.py:282] Groundtruth 15 : [ 9 48 14 11 48  9  9 48 11  9 48 14 48 48 18 21 48 48 19 48]
+I CMT_CPBP 12-02 14:27:38.684 trainer.py:263] Sample 16 : [48 48  7  4 48 48  7 48  4  9 48  6  9 48  7  6 48  4 48 48]
+I CMT_CPBP 12-02 14:27:38.849 trainer.py:282] Groundtruth 16 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:27:39.096 trainer.py:263] Sample 17 : [14 48 11 48 48  7  7 48 48  9 48 11 48 48 48  9 48 48 48 48]
+I CMT_CPBP 12-02 14:27:39.253 trainer.py:282] Groundtruth 17 : [14 48  7 48 48 11  2 48  7 11 48 14 13 48 14 17 48 16 15 48]
+I CMT_CPBP 12-02 14:27:39.405 trainer.py:263] Sample 18 : [48 48 16 13 48 48 16 48  9 48 48 11 11 48 48 13 48  9 48 48]
+I CMT_CPBP 12-02 14:27:39.576 trainer.py:282] Groundtruth 18 : [18 48 16 13 48  9 16 48 13  9 48 11 13 48 14 16 48 13  9 48]
+I CMT_CPBP 12-02 14:27:39.784 trainer.py:263] Sample 19 : [14 48 12 12 48 14 16 48 18 14 48 12 11 48 48 48 48  7 48 48]
+I CMT_CPBP 12-02 14:27:39.997 trainer.py:282] Groundtruth 19 : [11 48 12  2 48  6  9 48 14 18 48 21 19 48 14 12 48 11  9 48]
+I CMT_CPBP 12-02 14:27:40.165 trainer.py:263] Sample 20 : [ 9 48  9 12 48  9  4 48  2 48 48  2  7 48  9 11 48 12 48 48]
+I CMT_CPBP 12-02 14:27:40.339 trainer.py:282] Groundtruth 20 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:27:40.487 trainer.py:263] Sample 21 : [49 49 49  4 48  9 48 48 11  9 48 48 11 48  9 48 48 48  9 48]
+I CMT_CPBP 12-02 14:27:40.641 trainer.py:282] Groundtruth 21 : [49 49 49 16 48 21 48 48 16 13 48 48  9 48  9 13 48 16 21 48]
+I CMT_CPBP 12-02 14:27:40.775 trainer.py:263] Sample 22 : [19 48  9 14 48 48 14 12 11 48 48 11 11 48 48 14 48 19 18 48]
+I CMT_CPBP 12-02 14:27:40.994 trainer.py:282] Groundtruth 22 : [ 9 48  9 12 48 48 14 48 11  7 48  7  7 48 12 14 48 16  9 48]
+I CMT_CPBP 12-02 14:27:41.138 trainer.py:263] Sample 23 : [21 48 48 48 48 21 20 48 21 20 48 20 21 48 20 18 48 20 21 48]
+I CMT_CPBP 12-02 14:27:41.304 trainer.py:282] Groundtruth 23 : [ 9 48  9  9 48 13 16 48 21 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:27:41.518 trainer.py:263] Sample 24 : [14 48 16 12 48 11 16 48 48 14 48 16 12 48  9 11 48  9  7 48]
+I CMT_CPBP 12-02 14:27:41.692 trainer.py:282] Groundtruth 24 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:27:41.860 trainer.py:263] Sample 25 : [ 9 48 11 12 48 11  9 48 11  9 48 11 14 48 16 14 48 16  9 48]
+I CMT_CPBP 12-02 14:27:42.088 trainer.py:282] Groundtruth 25 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:27:42.250 trainer.py:263] Sample 26 : [19 48 48 18 48 14 13 48 11 14 48 16 11 48  9 48 48  9  9 48]
+I CMT_CPBP 12-02 14:27:42.417 trainer.py:282] Groundtruth 26 : [19 48 18 16 48 14 48 48 11 11 48 13 14 48 13 48 48  9  9 48]
+I CMT_CPBP 12-02 14:27:42.569 trainer.py:263] Sample 27 : [ 9 48 48  4 48  4  9 48  9  4 48  6  4 48  4  7 48  9 16 48]
+I CMT_CPBP 12-02 14:27:42.741 trainer.py:282] Groundtruth 27 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:27:42.969 trainer.py:263] Sample 28 : [ 9 48 48 16 14 13 48 48 48  9 48 48  9 48  9 14 48 13 13 48]
+I CMT_CPBP 12-02 14:27:43.143 trainer.py:282] Groundtruth 28 : [ 9 48 48 48 48  4  9 48 13 16 48 48 48 48  4  9 48 16 13 48]
+I CMT_CPBP 12-02 14:27:43.300 trainer.py:263] Sample 29 : [14 48 48  6 48  9 11 48  9  9 48  6  2 48  9 11 48  9  9 48]
+I CMT_CPBP 12-02 14:27:43.487 trainer.py:282] Groundtruth 29 : [14 48 48 18 19 21 18 48 14 14 48 13 14 48 18 21 48 18 14 48]
+I CMT_CPBP 12-02 14:27:43.678 trainer.py:263] Sample 30 : [48 48  7 48 48 48 19 48 48 19 48 21 23 48 21 21 48 48 19 48]
+I CMT_CPBP 12-02 14:27:43.868 trainer.py:282] Groundtruth 30 : [48 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:27:44.041 trainer.py:263] Sample 31 : [49 49 49  9 48  9 48 48 14 14 48 48  9 48 14 48 48 14 14 48]
+I CMT_CPBP 12-02 14:27:44.205 trainer.py:282] Groundtruth 31 : [49 49 49 18 48 14 48 48  9  9 48  6  9 48 11 48 48  9  9 48]
+I CMT_CPBP 12-02 14:27:44.355 trainer.py:263] Sample 32 : [ 9 48 48 11 12 12  9 48  9  9 48 48 11 48 12 14 48 16 16 48]
+I CMT_CPBP 12-02 14:27:44.492 trainer.py:282] Groundtruth 32 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:27:44.656 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:44.656 trainer.py:121] 51 epoch
+I CMT_CPBP 12-02 14:27:44.656 trainer.py:124] ==========train 51 epoch==========
+I CMT_CPBP 12-02 14:27:47.673 utils.py:43] nll/train: 0.8885
+I CMT_CPBP 12-02 14:27:47.673 utils.py:43] nll_pitch/train: 0.7176
+I CMT_CPBP 12-02 14:27:47.673 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:27:47.673 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:27:47.673 utils.py:45] accuracy_pitch/train: 0.5778
+I CMT_CPBP 12-02 14:27:47.676 trainer.py:129] ==========valid 51 epoch==========
+I CMT_CPBP 12-02 14:27:47.758 utils.py:43] nll/eval: 0.8416
+I CMT_CPBP 12-02 14:27:47.758 utils.py:43] nll_pitch/eval: 0.6850
+I CMT_CPBP 12-02 14:27:47.758 utils.py:43] nll_rhythm/eval: 0.1566
+I CMT_CPBP 12-02 14:27:47.758 utils.py:45] accuracy_rhythm/eval: 0.9268
+I CMT_CPBP 12-02 14:27:47.758 utils.py:45] accuracy_pitch/eval: 0.5833
+I CMT_CPBP 12-02 14:27:47.759 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:47.759 trainer.py:121] 52 epoch
+I CMT_CPBP 12-02 14:27:47.760 trainer.py:124] ==========train 52 epoch==========
+I CMT_CPBP 12-02 14:27:50.623 trainer.py:215] 1300 training steps
+I CMT_CPBP 12-02 14:27:50.624 utils.py:43] nll: 0.8933
+I CMT_CPBP 12-02 14:27:50.624 utils.py:43] nll_pitch: 0.7215
+I CMT_CPBP 12-02 14:27:50.624 utils.py:43] nll_rhythm: 0.1719
+I CMT_CPBP 12-02 14:27:50.624 utils.py:45] accuracy_rhythm/train: 0.9251
+I CMT_CPBP 12-02 14:27:50.624 utils.py:45] accuracy_pitch/train: 0.5704
+I CMT_CPBP 12-02 14:27:50.624 utils.py:43] nll/train: 0.8872
+I CMT_CPBP 12-02 14:27:50.625 utils.py:43] nll_pitch/train: 0.7158
+I CMT_CPBP 12-02 14:27:50.625 utils.py:43] nll_rhythm/train: 0.1714
+I CMT_CPBP 12-02 14:27:50.625 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:27:50.625 utils.py:45] accuracy_pitch/train: 0.5763
+I CMT_CPBP 12-02 14:27:50.628 trainer.py:129] ==========valid 52 epoch==========
+I CMT_CPBP 12-02 14:27:50.705 utils.py:43] nll/eval: 0.8215
+I CMT_CPBP 12-02 14:27:50.705 utils.py:43] nll_pitch/eval: 0.6708
+I CMT_CPBP 12-02 14:27:50.705 utils.py:43] nll_rhythm/eval: 0.1507
+I CMT_CPBP 12-02 14:27:50.705 utils.py:45] accuracy_rhythm/eval: 0.9284
+I CMT_CPBP 12-02 14:27:50.705 utils.py:45] accuracy_pitch/eval: 0.5840
+I CMT_CPBP 12-02 14:27:50.706 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:50.706 trainer.py:121] 53 epoch
+I CMT_CPBP 12-02 14:27:50.707 trainer.py:124] ==========train 53 epoch==========
+I CMT_CPBP 12-02 14:27:53.545 utils.py:43] nll/train: 0.8839
+I CMT_CPBP 12-02 14:27:53.545 utils.py:43] nll_pitch/train: 0.7132
+I CMT_CPBP 12-02 14:27:53.545 utils.py:43] nll_rhythm/train: 0.1707
+I CMT_CPBP 12-02 14:27:53.545 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:27:53.545 utils.py:45] accuracy_pitch/train: 0.5766
+I CMT_CPBP 12-02 14:27:53.546 trainer.py:129] ==========valid 53 epoch==========
+I CMT_CPBP 12-02 14:27:53.617 utils.py:43] nll/eval: 0.8966
+I CMT_CPBP 12-02 14:27:53.617 utils.py:43] nll_pitch/eval: 0.7409
+I CMT_CPBP 12-02 14:27:53.617 utils.py:43] nll_rhythm/eval: 0.1557
+I CMT_CPBP 12-02 14:27:53.617 utils.py:45] accuracy_rhythm/eval: 0.9258
+I CMT_CPBP 12-02 14:27:53.617 utils.py:45] accuracy_pitch/eval: 0.5786
+I CMT_CPBP 12-02 14:27:53.618 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:53.618 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:53.619 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:53.619 trainer.py:121] 54 epoch
+I CMT_CPBP 12-02 14:27:53.619 trainer.py:124] ==========train 54 epoch==========
+I CMT_CPBP 12-02 14:27:56.457 utils.py:43] nll/train: 0.8804
+I CMT_CPBP 12-02 14:27:56.458 utils.py:43] nll_pitch/train: 0.7090
+I CMT_CPBP 12-02 14:27:56.458 utils.py:43] nll_rhythm/train: 0.1714
+I CMT_CPBP 12-02 14:27:56.458 utils.py:45] accuracy_rhythm/train: 0.9240
+I CMT_CPBP 12-02 14:27:56.458 utils.py:45] accuracy_pitch/train: 0.5787
+I CMT_CPBP 12-02 14:27:56.460 trainer.py:129] ==========valid 54 epoch==========
+I CMT_CPBP 12-02 14:27:56.531 utils.py:43] nll/eval: 0.8738
+I CMT_CPBP 12-02 14:27:56.531 utils.py:43] nll_pitch/eval: 0.7184
+I CMT_CPBP 12-02 14:27:56.531 utils.py:43] nll_rhythm/eval: 0.1553
+I CMT_CPBP 12-02 14:27:56.531 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:27:56.531 utils.py:45] accuracy_pitch/eval: 0.5817
+I CMT_CPBP 12-02 14:27:56.531 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:56.532 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:27:56.532 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:56.533 trainer.py:121] 55 epoch
+I CMT_CPBP 12-02 14:27:56.533 trainer.py:124] ==========train 55 epoch==========
+I CMT_CPBP 12-02 14:27:59.396 utils.py:43] nll/train: 0.8836
+I CMT_CPBP 12-02 14:27:59.396 utils.py:43] nll_pitch/train: 0.7120
+I CMT_CPBP 12-02 14:27:59.396 utils.py:43] nll_rhythm/train: 0.1715
+I CMT_CPBP 12-02 14:27:59.396 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:27:59.396 utils.py:45] accuracy_pitch/train: 0.5790
+I CMT_CPBP 12-02 14:27:59.398 trainer.py:129] ==========valid 55 epoch==========
+I CMT_CPBP 12-02 14:27:59.466 utils.py:43] nll/eval: 0.8542
+I CMT_CPBP 12-02 14:27:59.466 utils.py:43] nll_pitch/eval: 0.7000
+I CMT_CPBP 12-02 14:27:59.466 utils.py:43] nll_rhythm/eval: 0.1542
+I CMT_CPBP 12-02 14:27:59.467 utils.py:45] accuracy_rhythm/eval: 0.9272
+I CMT_CPBP 12-02 14:27:59.467 utils.py:45] accuracy_pitch/eval: 0.5810
+I CMT_CPBP 12-02 14:27:59.467 trainer.py:120] 
+I CMT_CPBP 12-02 14:27:59.467 trainer.py:121] 56 epoch
+I CMT_CPBP 12-02 14:27:59.468 trainer.py:124] ==========train 56 epoch==========
+I CMT_CPBP 12-02 14:28:02.318 trainer.py:215] 1400 training steps
+I CMT_CPBP 12-02 14:28:02.318 utils.py:43] nll: 0.9186
+I CMT_CPBP 12-02 14:28:02.318 utils.py:43] nll_pitch: 0.7408
+I CMT_CPBP 12-02 14:28:02.318 utils.py:43] nll_rhythm: 0.1778
+I CMT_CPBP 12-02 14:28:02.318 utils.py:45] accuracy_rhythm/train: 0.9202
+I CMT_CPBP 12-02 14:28:02.318 utils.py:45] accuracy_pitch/train: 0.5683
+I CMT_CPBP 12-02 14:28:02.319 utils.py:43] nll/train: 0.8854
+I CMT_CPBP 12-02 14:28:02.319 utils.py:43] nll_pitch/train: 0.7144
+I CMT_CPBP 12-02 14:28:02.319 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:28:02.319 utils.py:45] accuracy_rhythm/train: 0.9246
+I CMT_CPBP 12-02 14:28:02.319 utils.py:45] accuracy_pitch/train: 0.5768
+I CMT_CPBP 12-02 14:28:02.321 trainer.py:129] ==========valid 56 epoch==========
+I CMT_CPBP 12-02 14:28:02.389 utils.py:43] nll/eval: 0.8688
+I CMT_CPBP 12-02 14:28:02.389 utils.py:43] nll_pitch/eval: 0.7128
+I CMT_CPBP 12-02 14:28:02.389 utils.py:43] nll_rhythm/eval: 0.1560
+I CMT_CPBP 12-02 14:28:02.389 utils.py:45] accuracy_rhythm/eval: 0.9256
+I CMT_CPBP 12-02 14:28:02.389 utils.py:45] accuracy_pitch/eval: 0.5901
+I CMT_CPBP 12-02 14:28:02.390 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:02.390 trainer.py:121] 57 epoch
+I CMT_CPBP 12-02 14:28:02.390 trainer.py:124] ==========train 57 epoch==========
+I CMT_CPBP 12-02 14:28:05.236 utils.py:43] nll/train: 0.8918
+I CMT_CPBP 12-02 14:28:05.237 utils.py:43] nll_pitch/train: 0.7204
+I CMT_CPBP 12-02 14:28:05.237 utils.py:43] nll_rhythm/train: 0.1713
+I CMT_CPBP 12-02 14:28:05.237 utils.py:45] accuracy_rhythm/train: 0.9240
+I CMT_CPBP 12-02 14:28:05.237 utils.py:45] accuracy_pitch/train: 0.5779
+I CMT_CPBP 12-02 14:28:05.239 trainer.py:129] ==========valid 57 epoch==========
+I CMT_CPBP 12-02 14:28:05.313 utils.py:43] nll/eval: 0.8611
+I CMT_CPBP 12-02 14:28:05.313 utils.py:43] nll_pitch/eval: 0.7068
+I CMT_CPBP 12-02 14:28:05.313 utils.py:43] nll_rhythm/eval: 0.1543
+I CMT_CPBP 12-02 14:28:05.313 utils.py:45] accuracy_rhythm/eval: 0.9272
+I CMT_CPBP 12-02 14:28:05.313 utils.py:45] accuracy_pitch/eval: 0.5842
+I CMT_CPBP 12-02 14:28:05.314 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:05.314 trainer.py:121] 58 epoch
+I CMT_CPBP 12-02 14:28:05.314 trainer.py:124] ==========train 58 epoch==========
+I CMT_CPBP 12-02 14:28:08.164 utils.py:43] nll/train: 0.8831
+I CMT_CPBP 12-02 14:28:08.164 utils.py:43] nll_pitch/train: 0.7118
+I CMT_CPBP 12-02 14:28:08.164 utils.py:43] nll_rhythm/train: 0.1713
+I CMT_CPBP 12-02 14:28:08.164 utils.py:45] accuracy_rhythm/train: 0.9249
+I CMT_CPBP 12-02 14:28:08.165 utils.py:45] accuracy_pitch/train: 0.5778
+I CMT_CPBP 12-02 14:28:08.167 trainer.py:129] ==========valid 58 epoch==========
+I CMT_CPBP 12-02 14:28:08.235 utils.py:43] nll/eval: 0.8975
+I CMT_CPBP 12-02 14:28:08.235 utils.py:43] nll_pitch/eval: 0.7417
+I CMT_CPBP 12-02 14:28:08.235 utils.py:43] nll_rhythm/eval: 0.1558
+I CMT_CPBP 12-02 14:28:08.235 utils.py:45] accuracy_rhythm/eval: 0.9259
+I CMT_CPBP 12-02 14:28:08.235 utils.py:45] accuracy_pitch/eval: 0.5731
+I CMT_CPBP 12-02 14:28:08.236 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:08.236 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:08.236 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:08.237 trainer.py:121] 59 epoch
+I CMT_CPBP 12-02 14:28:08.237 trainer.py:124] ==========train 59 epoch==========
+I CMT_CPBP 12-02 14:28:11.086 utils.py:43] nll/train: 0.8872
+I CMT_CPBP 12-02 14:28:11.086 utils.py:43] nll_pitch/train: 0.7161
+I CMT_CPBP 12-02 14:28:11.086 utils.py:43] nll_rhythm/train: 0.1711
+I CMT_CPBP 12-02 14:28:11.086 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:28:11.086 utils.py:45] accuracy_pitch/train: 0.5772
+I CMT_CPBP 12-02 14:28:11.088 trainer.py:129] ==========valid 59 epoch==========
+I CMT_CPBP 12-02 14:28:11.156 utils.py:43] nll/eval: 0.8538
+I CMT_CPBP 12-02 14:28:11.156 utils.py:43] nll_pitch/eval: 0.6990
+I CMT_CPBP 12-02 14:28:11.156 utils.py:43] nll_rhythm/eval: 0.1548
+I CMT_CPBP 12-02 14:28:11.156 utils.py:45] accuracy_rhythm/eval: 0.9268
+I CMT_CPBP 12-02 14:28:11.156 utils.py:45] accuracy_pitch/eval: 0.5833
+I CMT_CPBP 12-02 14:28:11.157 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:11.157 trainer.py:121] 60 epoch
+I CMT_CPBP 12-02 14:28:11.158 trainer.py:124] ==========train 60 epoch==========
+I CMT_CPBP 12-02 14:28:14.026 trainer.py:215] 1500 training steps
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll: 0.9017
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll_pitch: 0.7325
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll_rhythm: 0.1692
+I CMT_CPBP 12-02 14:28:14.027 utils.py:45] accuracy_rhythm/train: 0.9268
+I CMT_CPBP 12-02 14:28:14.027 utils.py:45] accuracy_pitch/train: 0.5835
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll/train: 0.8849
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll_pitch/train: 0.7143
+I CMT_CPBP 12-02 14:28:14.027 utils.py:43] nll_rhythm/train: 0.1707
+I CMT_CPBP 12-02 14:28:14.027 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:28:14.027 utils.py:45] accuracy_pitch/train: 0.5780
+I CMT_CPBP 12-02 14:28:14.029 trainer.py:129] ==========valid 60 epoch==========
+I CMT_CPBP 12-02 14:28:14.097 utils.py:43] nll/eval: 0.8581
+I CMT_CPBP 12-02 14:28:14.098 utils.py:43] nll_pitch/eval: 0.6978
+I CMT_CPBP 12-02 14:28:14.098 utils.py:43] nll_rhythm/eval: 0.1603
+I CMT_CPBP 12-02 14:28:14.098 utils.py:45] accuracy_rhythm/eval: 0.9240
+I CMT_CPBP 12-02 14:28:14.098 utils.py:45] accuracy_pitch/eval: 0.5745
+I CMT_CPBP 12-02 14:28:14.098 trainer.py:83] saving model, Epoch 60, step 1500
+I CMT_CPBP 12-02 14:28:14.378 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:28:14.378 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:28:15.968 trainer.py:259] ==========sampling result of epoch 060==========
+I CMT_CPBP 12-02 14:28:15.969 trainer.py:263] Sample 00 : [19 48 16 48 48  9 13 48 48 13 48 14 13 48 14 16 48 13  9 48]
+I CMT_CPBP 12-02 14:28:16.117 trainer.py:282] Groundtruth 00 : [16 48 16 18 48 16 13 48 48  9 48 21 20 48 18 16 48 14 13 48]
+I CMT_CPBP 12-02 14:28:16.260 trainer.py:263] Sample 01 : [48 48 18 16 48 13 16 48 14 48 48 48 14 48 48 48 48  9 11 48]
+I CMT_CPBP 12-02 14:28:16.475 trainer.py:282] Groundtruth 01 : [20 48 18 16 48 14 13 48 11 13 48 14 13 48 11  9 48 21 48 48]
+I CMT_CPBP 12-02 14:28:16.651 trainer.py:263] Sample 02 : [11 48  9 11 48  9  9 48 11 13 48  9 14 48 13 13 48 14 16 48]
+I CMT_CPBP 12-02 14:28:16.827 trainer.py:282] Groundtruth 02 : [14 48  9 14 48 14 18 48 14 14 48 16 19 48 18 16 48 14 13 48]
+I CMT_CPBP 12-02 14:28:16.992 trainer.py:263] Sample 03 : [14 48 10 48 48 10 22 48 48 10 48 10 22 48 10 15 48 15 14 48]
+I CMT_CPBP 12-02 14:28:17.134 trainer.py:282] Groundtruth 03 : [14 48  7 10 48 14 13 48 48 14 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:28:17.290 trainer.py:263] Sample 04 : [ 9 48  9 12 48 48 16 48 14 13 48 14 14 48 11 14 48  4  9 48]
+I CMT_CPBP 12-02 14:28:17.467 trainer.py:282] Groundtruth 04 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:28:17.644 trainer.py:263] Sample 05 : [ 9 48 14 48 48 14 48 48 11  9 48 14  9 48  7  9 48  7  6 48]
+I CMT_CPBP 12-02 14:28:17.869 trainer.py:282] Groundtruth 05 : [26 48 48 21 48 21 18 48 14 26 48 48 25 48 25 48 48 23 23 48]
+I CMT_CPBP 12-02 14:28:18.092 trainer.py:263] Sample 06 : [13 48 14 13 48 14 18 48 16 48 48 48 16 48 48 48 48 14 48 48]
+I CMT_CPBP 12-02 14:28:18.286 trainer.py:282] Groundtruth 06 : [48 48  6  9 48 48  6 48  9 48 48  7  4 48 48  9 48  9 18 48]
+I CMT_CPBP 12-02 14:28:18.476 trainer.py:263] Sample 07 : [21 48 48 20 48 20 21 48 20 18 48 48 16 48 20 21 48 20 18 48]
+I CMT_CPBP 12-02 14:28:18.662 trainer.py:282] Groundtruth 07 : [ 9 48  9  9 48 13 16 48 21 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:28:18.853 trainer.py:263] Sample 08 : [14 48 16 48 48  9 14 48 13 14 48 16 48 48 14 14 48 48 11 48]
+I CMT_CPBP 12-02 14:28:19.027 trainer.py:282] Groundtruth 08 : [48 48 21 19 48 16 19 48 48 48 48 19 48 48 16 14 48 16 19 48]
+I CMT_CPBP 12-02 14:28:19.204 trainer.py:263] Sample 09 : [48 14 11 11 48  7 14 48 12 48 14 48 12 48 14  9 48 11 48  9]
+I CMT_CPBP 12-02 14:28:19.389 trainer.py:282] Groundtruth 09 : [48 16 14 14 48 12 11 48 12 11 48 12  9 48 18 19 48 21  9 48]
+I CMT_CPBP 12-02 14:28:19.576 trainer.py:263] Sample 10 : [14 48 48  6 48  9  6 48  9 14 48 48 14 48 18 19 48 18 14 48]
+I CMT_CPBP 12-02 14:28:19.744 trainer.py:282] Groundtruth 10 : [14 48 48 18 19 21 18 48 14 14 48 13 14 48 18 21 48 18 14 48]
+I CMT_CPBP 12-02 14:28:20.034 trainer.py:263] Sample 11 : [16 48 18 14 48 16 13 48  9 16 48 48 48 48 18 21 48 18 14 48]
+I CMT_CPBP 12-02 14:28:20.233 trainer.py:282] Groundtruth 11 : [18 48 16 14 48 16 13 48  9  9 48 14 16 48 18 19 48 18 18 48]
+I CMT_CPBP 12-02 14:28:20.409 trainer.py:263] Sample 12 : [ 9 48 11  9 48  9  4 48  2  7 48 11 14 48 16 14 48 16  9 48]
+I CMT_CPBP 12-02 14:28:20.567 trainer.py:282] Groundtruth 12 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:28:20.800 trainer.py:263] Sample 13 : [18 48 16 16 48 13  9 48 14 48 48 48 12 48 48 48 48  9  6 48]
+I CMT_CPBP 12-02 14:28:20.989 trainer.py:282] Groundtruth 13 : [48 48 16 16 48 25 23 48 21 48 48 18 18 48 48 21 48 30 48 48]
+I CMT_CPBP 12-02 14:28:21.171 trainer.py:263] Sample 14 : [13 48  9  9 48 13  9 48  9 13 48  9  9 48 14 18 48 16 14 48]
+I CMT_CPBP 12-02 14:28:21.368 trainer.py:282] Groundtruth 14 : [13 48 11 13 48  9 16 48  9 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:28:21.528 trainer.py:263] Sample 15 : [10 48 48 10 48 10 14 48 10 14 48 48 48 48 14 16 48 12  9 48]
+I CMT_CPBP 12-02 14:28:21.722 trainer.py:282] Groundtruth 15 : [ 7 48 48 48 48 19 14 48 14 22 48 21 19 48 21 14 48 14 24 48]
+I CMT_CPBP 12-02 14:28:21.890 trainer.py:263] Sample 16 : [14 48 11 48 48 14  9 48 48 14 48  9 11 48  9 14 48 13 14 48]
+I CMT_CPBP 12-02 14:28:22.121 trainer.py:282] Groundtruth 16 : [14 48 11 14 48 11  9 48  6  2 48  2  6 48  9 11 48 48  9 48]
+I CMT_CPBP 12-02 14:28:22.288 trainer.py:263] Sample 17 : [ 9 48 48  9  9  9 11 48 12  9 48 11 12 48 16 14 48 16 16 48]
+I CMT_CPBP 12-02 14:28:22.466 trainer.py:282] Groundtruth 17 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:28:22.643 trainer.py:263] Sample 18 : [ 9 48 48 16 48 16 13 48 16 16 48 13 16 48 16 13 48  9  9 48]
+I CMT_CPBP 12-02 14:28:22.782 trainer.py:282] Groundtruth 18 : [ 9 48 48 11 48 13 48 48 16 16 48 18 16 48 16 18 48 16 13 48]
+I CMT_CPBP 12-02 14:28:22.937 trainer.py:263] Sample 19 : [ 9 48 48  6  7  7  9 48  7  7 48  9 11 48  9 14 48 14 14 48]
+I CMT_CPBP 12-02 14:28:23.105 trainer.py:282] Groundtruth 19 : [14 48 48 16 18 19 48 48 19 19 48 21 23 48 18 48 48 18 18 48]
+I CMT_CPBP 12-02 14:28:23.262 trainer.py:263] Sample 20 : [14 48 18 19 48 18 19 48 48 21 48 21 21 48 19 19 48 16 14 48]
+I CMT_CPBP 12-02 14:28:23.456 trainer.py:282] Groundtruth 20 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:28:23.663 trainer.py:263] Sample 21 : [14 48 16 19 48 18 16 48 18 19 48 21 19 48  9  9 48 11  7 48]
+I CMT_CPBP 12-02 14:28:23.805 trainer.py:282] Groundtruth 21 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:28:23.992 trainer.py:263] Sample 22 : [ 9 48 48 48 48 14 48 48 48 14 48 48 48 48 16 48 48 14 12 48]
+I CMT_CPBP 12-02 14:28:24.175 trainer.py:282] Groundtruth 22 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:28:24.350 trainer.py:263] Sample 23 : [48 48  9  9 48 11  9 48  9 48 48 14 14 48 48 16 48  7 48 48]
+I CMT_CPBP 12-02 14:28:24.490 trainer.py:282] Groundtruth 23 : [48 48 48  9 48 48  7 48  9 48 48  6  2 48  4  6 48  4 48 48]
+I CMT_CPBP 12-02 14:28:24.664 trainer.py:263] Sample 24 : [ 9 48 48 11 12 14 48 48 16 16 48 48 14 48 12 14 48 16 12 48]
+I CMT_CPBP 12-02 14:28:24.805 trainer.py:282] Groundtruth 24 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:28:24.973 trainer.py:263] Sample 25 : [48 48  7  7 48 48  9 48  9 48 48 48  9 48 48 48 48 12 48 48]
+I CMT_CPBP 12-02 14:28:25.142 trainer.py:282] Groundtruth 25 : [ 3 48  4  5 48 48  7 48  9 48 48 48  9 48 48 48 48  9 48 48]
+I CMT_CPBP 12-02 14:28:25.306 trainer.py:263] Sample 26 : [49 49 49 49 49 11 12 14 11 48  9  6 48 48 11 48  9 11 48 14]
+I CMT_CPBP 12-02 14:28:25.460 trainer.py:282] Groundtruth 26 : [49 49 11 12 48 14 48 16 14 14 48 16 18 48 19 48 48 48 19 48]
+I CMT_CPBP 12-02 14:28:25.671 trainer.py:263] Sample 27 : [14 48 48 18 21 21 18 48 48 14 48 16 18 48 19 14 48 13  9 48]
+I CMT_CPBP 12-02 14:28:25.952 trainer.py:282] Groundtruth 27 : [11 48  9 48 48  6  6 48 48  9 48  7 16 48 14 13 48 11 13 48]
+I CMT_CPBP 12-02 14:28:26.109 trainer.py:263] Sample 28 : [14 48 18  9 48 11  9 48 48 11 48 13 14 48 16  9 48 16 13 48]
+I CMT_CPBP 12-02 14:28:26.267 trainer.py:282] Groundtruth 28 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:28:26.456 trainer.py:263] Sample 29 : [ 9 11 48 13 14 48 18 21 48 18 16 48 21 21 48 18 14 48 14 18]
+I CMT_CPBP 12-02 14:28:26.657 trainer.py:282] Groundtruth 29 : [21 48 48 18 48 14 16 48 14 14 48 18 21 48 26 48 48 48 26 48]
+I CMT_CPBP 12-02 14:28:26.848 trainer.py:263] Sample 30 : [48 48  9 12 48 48 14 48 16 14 48 11  7 48 48  9 48  9 11 48]
+I CMT_CPBP 12-02 14:28:27.046 trainer.py:282] Groundtruth 30 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:28:27.199 trainer.py:263] Sample 31 : [11 48  9 14 48 16 14 48 48 48 48 12 14 48 16 12 48 14 12 48]
+I CMT_CPBP 12-02 14:28:27.392 trainer.py:282] Groundtruth 31 : [18 48 19 23 48 21 19 48 14 11 48 12 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:28:27.555 trainer.py:263] Sample 32 : [12 48 48 11 48  9 48 48  9  9 48 48 11 48 12 48 48 14 12 48]
+I CMT_CPBP 12-02 14:28:27.698 trainer.py:282] Groundtruth 32 : [12 48 11 10 48  9 48 48 12  5 48  9 12 48 17 48 48 48 17 48]
+I CMT_CPBP 12-02 14:28:27.884 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:27.884 trainer.py:121] 61 epoch
+I CMT_CPBP 12-02 14:28:27.884 trainer.py:124] ==========train 61 epoch==========
+I CMT_CPBP 12-02 14:28:30.770 utils.py:43] nll/train: 0.8848
+I CMT_CPBP 12-02 14:28:30.770 utils.py:43] nll_pitch/train: 0.7144
+I CMT_CPBP 12-02 14:28:30.770 utils.py:43] nll_rhythm/train: 0.1704
+I CMT_CPBP 12-02 14:28:30.770 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:28:30.770 utils.py:45] accuracy_pitch/train: 0.5767
+I CMT_CPBP 12-02 14:28:30.772 trainer.py:129] ==========valid 61 epoch==========
+I CMT_CPBP 12-02 14:28:30.842 utils.py:43] nll/eval: 0.8999
+I CMT_CPBP 12-02 14:28:30.842 utils.py:43] nll_pitch/eval: 0.7504
+I CMT_CPBP 12-02 14:28:30.842 utils.py:43] nll_rhythm/eval: 0.1495
+I CMT_CPBP 12-02 14:28:30.842 utils.py:45] accuracy_rhythm/eval: 0.9297
+I CMT_CPBP 12-02 14:28:30.842 utils.py:45] accuracy_pitch/eval: 0.5820
+I CMT_CPBP 12-02 14:28:30.843 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:30.843 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:30.844 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:30.844 trainer.py:121] 62 epoch
+I CMT_CPBP 12-02 14:28:30.845 trainer.py:124] ==========train 62 epoch==========
+I CMT_CPBP 12-02 14:28:33.697 utils.py:43] nll/train: 0.8866
+I CMT_CPBP 12-02 14:28:33.697 utils.py:43] nll_pitch/train: 0.7158
+I CMT_CPBP 12-02 14:28:33.697 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:28:33.697 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:28:33.697 utils.py:45] accuracy_pitch/train: 0.5758
+I CMT_CPBP 12-02 14:28:33.699 trainer.py:129] ==========valid 62 epoch==========
+I CMT_CPBP 12-02 14:28:33.768 utils.py:43] nll/eval: 0.9204
+I CMT_CPBP 12-02 14:28:33.768 utils.py:43] nll_pitch/eval: 0.7624
+I CMT_CPBP 12-02 14:28:33.769 utils.py:43] nll_rhythm/eval: 0.1579
+I CMT_CPBP 12-02 14:28:33.769 utils.py:45] accuracy_rhythm/eval: 0.9264
+I CMT_CPBP 12-02 14:28:33.769 utils.py:45] accuracy_pitch/eval: 0.5729
+I CMT_CPBP 12-02 14:28:33.769 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:33.770 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:33.770 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:33.771 trainer.py:121] 63 epoch
+I CMT_CPBP 12-02 14:28:33.771 trainer.py:124] ==========train 63 epoch==========
+I CMT_CPBP 12-02 14:28:36.607 utils.py:43] nll/train: 0.8782
+I CMT_CPBP 12-02 14:28:36.607 utils.py:43] nll_pitch/train: 0.7081
+I CMT_CPBP 12-02 14:28:36.607 utils.py:43] nll_rhythm/train: 0.1701
+I CMT_CPBP 12-02 14:28:36.608 utils.py:45] accuracy_rhythm/train: 0.9246
+I CMT_CPBP 12-02 14:28:36.608 utils.py:45] accuracy_pitch/train: 0.5787
+I CMT_CPBP 12-02 14:28:36.609 trainer.py:129] ==========valid 63 epoch==========
+I CMT_CPBP 12-02 14:28:36.678 utils.py:43] nll/eval: 0.8767
+I CMT_CPBP 12-02 14:28:36.678 utils.py:43] nll_pitch/eval: 0.7204
+I CMT_CPBP 12-02 14:28:36.678 utils.py:43] nll_rhythm/eval: 0.1563
+I CMT_CPBP 12-02 14:28:36.678 utils.py:45] accuracy_rhythm/eval: 0.9251
+I CMT_CPBP 12-02 14:28:36.678 utils.py:45] accuracy_pitch/eval: 0.5808
+I CMT_CPBP 12-02 14:28:36.679 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:36.679 trainer.py:121] 64 epoch
+I CMT_CPBP 12-02 14:28:36.679 trainer.py:124] ==========train 64 epoch==========
+I CMT_CPBP 12-02 14:28:39.522 trainer.py:215] 1600 training steps
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll: 0.7833
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll_pitch: 0.6117
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll_rhythm: 0.1717
+I CMT_CPBP 12-02 14:28:39.523 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:28:39.523 utils.py:45] accuracy_pitch/train: 0.5855
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll/train: 0.8821
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll_pitch/train: 0.7114
+I CMT_CPBP 12-02 14:28:39.523 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:28:39.523 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:28:39.523 utils.py:45] accuracy_pitch/train: 0.5791
+I CMT_CPBP 12-02 14:28:39.525 trainer.py:129] ==========valid 64 epoch==========
+I CMT_CPBP 12-02 14:28:39.594 utils.py:43] nll/eval: 0.8508
+I CMT_CPBP 12-02 14:28:39.594 utils.py:43] nll_pitch/eval: 0.6934
+I CMT_CPBP 12-02 14:28:39.595 utils.py:43] nll_rhythm/eval: 0.1574
+I CMT_CPBP 12-02 14:28:39.595 utils.py:45] accuracy_rhythm/eval: 0.9253
+I CMT_CPBP 12-02 14:28:39.595 utils.py:45] accuracy_pitch/eval: 0.5903
+I CMT_CPBP 12-02 14:28:39.595 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:39.595 trainer.py:121] 65 epoch
+I CMT_CPBP 12-02 14:28:39.596 trainer.py:124] ==========train 65 epoch==========
+I CMT_CPBP 12-02 14:28:42.442 utils.py:43] nll/train: 0.8831
+I CMT_CPBP 12-02 14:28:42.442 utils.py:43] nll_pitch/train: 0.7129
+I CMT_CPBP 12-02 14:28:42.442 utils.py:43] nll_rhythm/train: 0.1701
+I CMT_CPBP 12-02 14:28:42.442 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:28:42.442 utils.py:45] accuracy_pitch/train: 0.5774
+I CMT_CPBP 12-02 14:28:42.445 trainer.py:129] ==========valid 65 epoch==========
+I CMT_CPBP 12-02 14:28:42.515 utils.py:43] nll/eval: 0.8365
+I CMT_CPBP 12-02 14:28:42.516 utils.py:43] nll_pitch/eval: 0.6859
+I CMT_CPBP 12-02 14:28:42.516 utils.py:43] nll_rhythm/eval: 0.1506
+I CMT_CPBP 12-02 14:28:42.516 utils.py:45] accuracy_rhythm/eval: 0.9301
+I CMT_CPBP 12-02 14:28:42.516 utils.py:45] accuracy_pitch/eval: 0.5876
+I CMT_CPBP 12-02 14:28:42.516 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:42.516 trainer.py:121] 66 epoch
+I CMT_CPBP 12-02 14:28:42.517 trainer.py:124] ==========train 66 epoch==========
+I CMT_CPBP 12-02 14:28:45.346 utils.py:43] nll/train: 0.8818
+I CMT_CPBP 12-02 14:28:45.346 utils.py:43] nll_pitch/train: 0.7113
+I CMT_CPBP 12-02 14:28:45.346 utils.py:43] nll_rhythm/train: 0.1705
+I CMT_CPBP 12-02 14:28:45.347 utils.py:45] accuracy_rhythm/train: 0.9250
+I CMT_CPBP 12-02 14:28:45.347 utils.py:45] accuracy_pitch/train: 0.5769
+I CMT_CPBP 12-02 14:28:45.348 trainer.py:129] ==========valid 66 epoch==========
+I CMT_CPBP 12-02 14:28:45.417 utils.py:43] nll/eval: 0.8664
+I CMT_CPBP 12-02 14:28:45.417 utils.py:43] nll_pitch/eval: 0.7117
+I CMT_CPBP 12-02 14:28:45.417 utils.py:43] nll_rhythm/eval: 0.1546
+I CMT_CPBP 12-02 14:28:45.417 utils.py:45] accuracy_rhythm/eval: 0.9276
+I CMT_CPBP 12-02 14:28:45.417 utils.py:45] accuracy_pitch/eval: 0.5748
+I CMT_CPBP 12-02 14:28:45.417 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:45.418 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:45.418 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:45.419 trainer.py:121] 67 epoch
+I CMT_CPBP 12-02 14:28:45.419 trainer.py:124] ==========train 67 epoch==========
+I CMT_CPBP 12-02 14:28:48.256 utils.py:43] nll/train: 0.8749
+I CMT_CPBP 12-02 14:28:48.256 utils.py:43] nll_pitch/train: 0.7047
+I CMT_CPBP 12-02 14:28:48.256 utils.py:43] nll_rhythm/train: 0.1702
+I CMT_CPBP 12-02 14:28:48.256 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:28:48.256 utils.py:45] accuracy_pitch/train: 0.5792
+I CMT_CPBP 12-02 14:28:48.258 trainer.py:129] ==========valid 67 epoch==========
+I CMT_CPBP 12-02 14:28:48.327 utils.py:43] nll/eval: 0.8908
+I CMT_CPBP 12-02 14:28:48.328 utils.py:43] nll_pitch/eval: 0.7347
+I CMT_CPBP 12-02 14:28:48.328 utils.py:43] nll_rhythm/eval: 0.1560
+I CMT_CPBP 12-02 14:28:48.328 utils.py:45] accuracy_rhythm/eval: 0.9268
+I CMT_CPBP 12-02 14:28:48.328 utils.py:45] accuracy_pitch/eval: 0.5777
+I CMT_CPBP 12-02 14:28:48.329 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:48.329 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:48.330 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:48.330 trainer.py:121] 68 epoch
+I CMT_CPBP 12-02 14:28:48.330 trainer.py:124] ==========train 68 epoch==========
+I CMT_CPBP 12-02 14:28:51.136 trainer.py:215] 1700 training steps
+I CMT_CPBP 12-02 14:28:51.136 utils.py:43] nll: 0.7912
+I CMT_CPBP 12-02 14:28:51.136 utils.py:43] nll_pitch: 0.6282
+I CMT_CPBP 12-02 14:28:51.136 utils.py:43] nll_rhythm: 0.1629
+I CMT_CPBP 12-02 14:28:51.136 utils.py:45] accuracy_rhythm/train: 0.9250
+I CMT_CPBP 12-02 14:28:51.137 utils.py:45] accuracy_pitch/train: 0.5875
+I CMT_CPBP 12-02 14:28:51.137 utils.py:43] nll/train: 0.8782
+I CMT_CPBP 12-02 14:28:51.137 utils.py:43] nll_pitch/train: 0.7072
+I CMT_CPBP 12-02 14:28:51.137 utils.py:43] nll_rhythm/train: 0.1710
+I CMT_CPBP 12-02 14:28:51.137 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:28:51.137 utils.py:45] accuracy_pitch/train: 0.5804
+I CMT_CPBP 12-02 14:28:51.138 trainer.py:129] ==========valid 68 epoch==========
+I CMT_CPBP 12-02 14:28:51.208 utils.py:43] nll/eval: 0.8549
+I CMT_CPBP 12-02 14:28:51.208 utils.py:43] nll_pitch/eval: 0.7002
+I CMT_CPBP 12-02 14:28:51.208 utils.py:43] nll_rhythm/eval: 0.1547
+I CMT_CPBP 12-02 14:28:51.208 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:28:51.208 utils.py:45] accuracy_pitch/eval: 0.5820
+I CMT_CPBP 12-02 14:28:51.209 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:51.209 trainer.py:121] 69 epoch
+I CMT_CPBP 12-02 14:28:51.210 trainer.py:124] ==========train 69 epoch==========
+I CMT_CPBP 12-02 14:28:54.038 utils.py:43] nll/train: 0.8782
+I CMT_CPBP 12-02 14:28:54.038 utils.py:43] nll_pitch/train: 0.7072
+I CMT_CPBP 12-02 14:28:54.038 utils.py:43] nll_rhythm/train: 0.1710
+I CMT_CPBP 12-02 14:28:54.038 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:28:54.038 utils.py:45] accuracy_pitch/train: 0.5789
+I CMT_CPBP 12-02 14:28:54.040 trainer.py:129] ==========valid 69 epoch==========
+I CMT_CPBP 12-02 14:28:54.108 utils.py:43] nll/eval: 0.8948
+I CMT_CPBP 12-02 14:28:54.108 utils.py:43] nll_pitch/eval: 0.7409
+I CMT_CPBP 12-02 14:28:54.108 utils.py:43] nll_rhythm/eval: 0.1539
+I CMT_CPBP 12-02 14:28:54.108 utils.py:45] accuracy_rhythm/eval: 0.9291
+I CMT_CPBP 12-02 14:28:54.108 utils.py:45] accuracy_pitch/eval: 0.5720
+I CMT_CPBP 12-02 14:28:54.109 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:54.109 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:28:54.110 trainer.py:120] 
+I CMT_CPBP 12-02 14:28:54.110 trainer.py:121] 70 epoch
+I CMT_CPBP 12-02 14:28:54.110 trainer.py:124] ==========train 70 epoch==========
+I CMT_CPBP 12-02 14:28:56.968 utils.py:43] nll/train: 0.8764
+I CMT_CPBP 12-02 14:28:56.968 utils.py:43] nll_pitch/train: 0.7066
+I CMT_CPBP 12-02 14:28:56.968 utils.py:43] nll_rhythm/train: 0.1698
+I CMT_CPBP 12-02 14:28:56.968 utils.py:45] accuracy_rhythm/train: 0.9254
+I CMT_CPBP 12-02 14:28:56.968 utils.py:45] accuracy_pitch/train: 0.5807
+I CMT_CPBP 12-02 14:28:56.970 trainer.py:129] ==========valid 70 epoch==========
+I CMT_CPBP 12-02 14:28:57.039 utils.py:43] nll/eval: 0.8609
+I CMT_CPBP 12-02 14:28:57.039 utils.py:43] nll_pitch/eval: 0.7064
+I CMT_CPBP 12-02 14:28:57.039 utils.py:43] nll_rhythm/eval: 0.1546
+I CMT_CPBP 12-02 14:28:57.039 utils.py:45] accuracy_rhythm/eval: 0.9277
+I CMT_CPBP 12-02 14:28:57.039 utils.py:45] accuracy_pitch/eval: 0.5882
+I CMT_CPBP 12-02 14:28:57.040 trainer.py:83] saving model, Epoch 70, step 1750
+I CMT_CPBP 12-02 14:28:57.248 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:28:57.248 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:28:58.788 trainer.py:259] ==========sampling result of epoch 070==========
+I CMT_CPBP 12-02 14:28:58.789 trainer.py:263] Sample 00 : [49 14 48 11 48 48  9  6 48  2  6 48  9 11 48  9  6 48  2  6]
+I CMT_CPBP 12-02 14:28:59.024 trainer.py:282] Groundtruth 00 : [49 49 49  9 48 14 48 48  9  9 48 11  9 48 14 48 48  9  9 48]
+I CMT_CPBP 12-02 14:28:59.197 trainer.py:263] Sample 01 : [ 7 48 48 48 48 12 48 48 48  9 48 48 48 48 11  9 48  7  9 48]
+I CMT_CPBP 12-02 14:28:59.389 trainer.py:282] Groundtruth 01 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:28:59.567 trainer.py:263] Sample 02 : [49 49 49 49  9 48 48 48 48  9 14 48 48  9 48 48 48 48 11 48]
+I CMT_CPBP 12-02 14:28:59.751 trainer.py:282] Groundtruth 02 : [49 49 49 18 48 14 48 48  9  9 48  6  9 48 11 48 48  9  9 48]
+I CMT_CPBP 12-02 14:28:59.976 trainer.py:263] Sample 03 : [18 48 14 48 48  9  4 48 48 13 48 11  9 48 11 13 48  9  9 48]
+I CMT_CPBP 12-02 14:29:00.167 trainer.py:282] Groundtruth 03 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:29:00.373 trainer.py:263] Sample 04 : [48 48 23 14 48 16 18 48 19 48 48 19 19 48 18 16 48 18 14 48]
+I CMT_CPBP 12-02 14:29:00.528 trainer.py:282] Groundtruth 04 : [48 48 16 18 48 48 14 48 16 48 48 14 11 48 13 14 48  9 11 48]
+I CMT_CPBP 12-02 14:29:00.842 trainer.py:263] Sample 05 : [49 49 49  9 11  9  7 48  9  6 48  7  6 48  9  7 48  6  4 48]
+I CMT_CPBP 12-02 14:29:01.036 trainer.py:282] Groundtruth 05 : [49 49 49 16 48 18 48 48 48 18 48 19 18 48 16 13 48  9 16 48]
+I CMT_CPBP 12-02 14:29:01.224 trainer.py:263] Sample 06 : [14 48 48  9 48 14 48 48  9 14 48 16 18 48 19 11 48 19 19 48]
+I CMT_CPBP 12-02 14:29:01.390 trainer.py:282] Groundtruth 06 : [14 48 48 18 19 21 18 48 14 14 48 18 21 48 19 16 48 13 13 48]
+I CMT_CPBP 12-02 14:29:01.579 trainer.py:263] Sample 07 : [ 7 48 48 48 48  4  9 48  9  9 48  9  9 48 12 16 48  9  4 48]
+I CMT_CPBP 12-02 14:29:01.734 trainer.py:282] Groundtruth 07 : [ 4 48 48  9 48  9 12 48 12 12 48 16 16 48 11 14 48 14 14 48]
+I CMT_CPBP 12-02 14:29:01.925 trainer.py:263] Sample 08 : [ 9 48  9 14 48 11  9 48  7  7 48 11 14 48 48 14 14  9 48 48]
+I CMT_CPBP 12-02 14:29:02.105 trainer.py:282] Groundtruth 08 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:29:02.279 trainer.py:263] Sample 09 : [18 48 16 48 48 48 19 48 48 19 48 18 19 48 14 13 48 11  9 48]
+I CMT_CPBP 12-02 14:29:02.447 trainer.py:282] Groundtruth 09 : [14 48 16 48 48 18 19 48 48 19 48 21 19 48 18 19 48 16 13 48]
+I CMT_CPBP 12-02 14:29:02.608 trainer.py:263] Sample 10 : [20 48 18 16 48 13  9 48 11 13 48 14 16 48 18 20 48 21 48 48]
+I CMT_CPBP 12-02 14:29:02.831 trainer.py:282] Groundtruth 10 : [20 48 18 16 48 14 13 48 11 13 48 14 13 48 11  9 48 21 48 48]
+I CMT_CPBP 12-02 14:29:02.994 trainer.py:263] Sample 11 : [11 48 12 14 48 16 19 48 21 19 48 16 14 48 13 14 48 16 18 48]
+I CMT_CPBP 12-02 14:29:03.165 trainer.py:282] Groundtruth 11 : [12 48 12 14 48 16 17 48 19 14 48 14 14 48 12 11 48  9 12 48]
+I CMT_CPBP 12-02 14:29:03.356 trainer.py:263] Sample 12 : [19 48 18 16 48 18 18 48 16 14 48 19 18 48 19 15 48 16 15 48]
+I CMT_CPBP 12-02 14:29:03.567 trainer.py:282] Groundtruth 12 : [19 48 21 14 48 14 24 48 22 21 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:29:03.751 trainer.py:263] Sample 13 : [12 48 11 48 48 11 14 48 48 48 48 12 14 48 12 11 48 48 14 48]
+I CMT_CPBP 12-02 14:29:03.923 trainer.py:282] Groundtruth 13 : [12 48 14 16 48 19 21 48 48 19 48 19 48 48 16 14 48 16 19 48]
+I CMT_CPBP 12-02 14:29:04.108 trainer.py:263] Sample 14 : [49  9 48 48 48 48  9 11 48 13 16 48 13  9 48 14 16 48 16 13]
+I CMT_CPBP 12-02 14:29:04.280 trainer.py:282] Groundtruth 14 : [49 49 49  6 48  4 48 48  4  4 48  9 11 48 13 48 48 48  9 48]
+I CMT_CPBP 12-02 14:29:04.468 trainer.py:263] Sample 15 : [21 48 48 23 48 26 28 48 26 28 48 48 23 48 19 23 48 21 23 48]
+I CMT_CPBP 12-02 14:29:04.639 trainer.py:282] Groundtruth 15 : [21 48 23 19 48 16 14 48 11 14 48 16 14 48 11  7 48 11 14 48]
+I CMT_CPBP 12-02 14:29:04.855 trainer.py:263] Sample 16 : [14 48 22 10 48 10 22 48 10 22 48 22 10 48 10 15 48 14 15 48]
+I CMT_CPBP 12-02 14:29:05.024 trainer.py:282] Groundtruth 16 : [14 48  7 10 48 14 13 48 48 14 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:29:05.190 trainer.py:263] Sample 17 : [49 49 49 49 49 14 11 12 11  9 48  6  7 48  9 11 48 14 11 48]
+I CMT_CPBP 12-02 14:29:05.352 trainer.py:282] Groundtruth 17 : [49 49 49 14 48 19 23 48 26 24 48 23 21 48 23 19 48 16 14 48]
+I CMT_CPBP 12-02 14:29:05.551 trainer.py:263] Sample 18 : [49 49 49 49  2 48 48  2 48  2 48 48  2  2 48 48  9 48  7 48]
+I CMT_CPBP 12-02 14:29:05.738 trainer.py:282] Groundtruth 18 : [49 49 11 12 48 14 48 16 14 14 48 16 18 48 19 48 48 48 19 48]
+I CMT_CPBP 12-02 14:29:05.906 trainer.py:263] Sample 19 : [ 9 48 11 48 48 11  9 48 48 48 48 14 13 48 11  9 48 11 13 48]
+I CMT_CPBP 12-02 14:29:06.058 trainer.py:282] Groundtruth 19 : [ 9 48 11 48 48  9  9 48 11 13 48 14 19 48 18 16 48 21 13 48]
+I CMT_CPBP 12-02 14:29:06.239 trainer.py:263] Sample 20 : [ 9 48  9  9 48 11 18 48 19 21 48 19 16 48 19 14 48 12  9 48]
+I CMT_CPBP 12-02 14:29:06.462 trainer.py:282] Groundtruth 20 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:29:06.632 trainer.py:263] Sample 21 : [11 48 14 48 48 14 14 48 11  7 48 12 11 48 11  2 48  6  9 48]
+I CMT_CPBP 12-02 14:29:06.841 trainer.py:282] Groundtruth 21 : [11 48  2  7 48 11 14 48 12 11 48 12 11 48 12  9 48 14 12 48]
+I CMT_CPBP 12-02 14:29:07.052 trainer.py:263] Sample 22 : [21 48 18 14 48 18 14 48 48  9 48 18 14 48 12 12 48 11  9 48]
+I CMT_CPBP 12-02 14:29:07.225 trainer.py:282] Groundtruth 22 : [19 48 18 48 48 48 18 48 48 16 48 14 48 16 14 14 48 13 12 48]
+I CMT_CPBP 12-02 14:29:07.398 trainer.py:263] Sample 23 : [16 48  7 11 48  9 11 48 14 16 48  9 11 48  9  7 48  9  7 48]
+I CMT_CPBP 12-02 14:29:07.551 trainer.py:282] Groundtruth 23 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:29:07.733 trainer.py:263] Sample 24 : [12 48 14 16 48 18 21 48 18 14 48 16 18 48 18  9 48 14  9 48]
+I CMT_CPBP 12-02 14:29:07.921 trainer.py:282] Groundtruth 24 : [ 9 48 14 11 48  9  9 48 11  9 48 14 48 48 18 21 48 48 19 48]
+I CMT_CPBP 12-02 14:29:08.118 trainer.py:263] Sample 25 : [14 48 14 48 48 48 19 48 48 16 13 14 13 48  9  9 48  9 14 48]
+I CMT_CPBP 12-02 14:29:08.315 trainer.py:282] Groundtruth 25 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:29:08.533 trainer.py:263] Sample 26 : [ 7 48 48  2 48  4  6 48  4  4 48  6  4 48  6  4 48  9 11 48]
+I CMT_CPBP 12-02 14:29:08.674 trainer.py:282] Groundtruth 26 : [ 7 48 48 11 48 16 11 48 16 19 48 23 19 48 16 11 48 16 19 48]
+I CMT_CPBP 12-02 14:29:08.924 trainer.py:263] Sample 27 : [48 48 14 19 48 48 14 48 11 48 48 11 11 48 13 14 48 16 48 48]
+I CMT_CPBP 12-02 14:29:09.068 trainer.py:282] Groundtruth 27 : [17 48 16 16 48 18 19 48 14 11 48  7  7 48  6  7 48  4  9 48]
+I CMT_CPBP 12-02 14:29:09.275 trainer.py:263] Sample 28 : [ 9 48 48 48 48 11 12 48 48 12 48 48 48 48  7 48 48 48  7 48]
+I CMT_CPBP 12-02 14:29:09.418 trainer.py:282] Groundtruth 28 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:29:09.575 trainer.py:263] Sample 29 : [ 7 48 11 16 48  7  7 48 48  7 48  9 11 48  7  9 48  9  7 48]
+I CMT_CPBP 12-02 14:29:09.726 trainer.py:282] Groundtruth 29 : [12 48 12 14 48 16 17 48 19 14 48 14 14 48 12 11 48  9 12 48]
+I CMT_CPBP 12-02 14:29:09.881 trainer.py:263] Sample 30 : [14 48 16 14 48 11  7 48 48 11 48  9 48 48  9 11 48 48 14 48]
+I CMT_CPBP 12-02 14:29:10.050 trainer.py:282] Groundtruth 30 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:29:10.281 trainer.py:263] Sample 31 : [14 48 48 16 18 20 18 48 16 13 48 14 16 48  9 13 48 16 21 48]
+I CMT_CPBP 12-02 14:29:10.462 trainer.py:282] Groundtruth 31 : [16 48 13 13 48 11 11 48  9  9 48  9 13 48 11 13 48  9 16 48]
+I CMT_CPBP 12-02 14:29:10.624 trainer.py:263] Sample 32 : [14 48 11  7 48  6  7 48  9 14 48 14 14 48 48  9 11 11 48 48]
+I CMT_CPBP 12-02 14:29:10.857 trainer.py:282] Groundtruth 32 : [48 48 11 11 48 13 14 48  9 48 48 48  6 48 48  9 48 11  9 48]
+I CMT_CPBP 12-02 14:29:11.019 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:11.019 trainer.py:121] 71 epoch
+I CMT_CPBP 12-02 14:29:11.019 trainer.py:124] ==========train 71 epoch==========
+I CMT_CPBP 12-02 14:29:13.886 utils.py:43] nll/train: 0.8804
+I CMT_CPBP 12-02 14:29:13.886 utils.py:43] nll_pitch/train: 0.7096
+I CMT_CPBP 12-02 14:29:13.886 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:29:13.886 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:29:13.886 utils.py:45] accuracy_pitch/train: 0.5781
+I CMT_CPBP 12-02 14:29:13.889 trainer.py:129] ==========valid 71 epoch==========
+I CMT_CPBP 12-02 14:29:13.959 utils.py:43] nll/eval: 0.8427
+I CMT_CPBP 12-02 14:29:13.959 utils.py:43] nll_pitch/eval: 0.6879
+I CMT_CPBP 12-02 14:29:13.959 utils.py:43] nll_rhythm/eval: 0.1548
+I CMT_CPBP 12-02 14:29:13.959 utils.py:45] accuracy_rhythm/eval: 0.9280
+I CMT_CPBP 12-02 14:29:13.959 utils.py:45] accuracy_pitch/eval: 0.5886
+I CMT_CPBP 12-02 14:29:13.959 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:13.960 trainer.py:121] 72 epoch
+I CMT_CPBP 12-02 14:29:13.960 trainer.py:124] ==========train 72 epoch==========
+I CMT_CPBP 12-02 14:29:16.835 trainer.py:215] 1800 training steps
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll: 0.8537
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll_pitch: 0.6851
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll_rhythm: 0.1686
+I CMT_CPBP 12-02 14:29:16.836 utils.py:45] accuracy_rhythm/train: 0.9258
+I CMT_CPBP 12-02 14:29:16.836 utils.py:45] accuracy_pitch/train: 0.5710
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll/train: 0.8770
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll_pitch/train: 0.7071
+I CMT_CPBP 12-02 14:29:16.836 utils.py:43] nll_rhythm/train: 0.1699
+I CMT_CPBP 12-02 14:29:16.836 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:29:16.836 utils.py:45] accuracy_pitch/train: 0.5793
+I CMT_CPBP 12-02 14:29:16.838 trainer.py:129] ==========valid 72 epoch==========
+I CMT_CPBP 12-02 14:29:16.906 utils.py:43] nll/eval: 0.8319
+I CMT_CPBP 12-02 14:29:16.906 utils.py:43] nll_pitch/eval: 0.6752
+I CMT_CPBP 12-02 14:29:16.906 utils.py:43] nll_rhythm/eval: 0.1567
+I CMT_CPBP 12-02 14:29:16.906 utils.py:45] accuracy_rhythm/eval: 0.9257
+I CMT_CPBP 12-02 14:29:16.906 utils.py:45] accuracy_pitch/eval: 0.5839
+I CMT_CPBP 12-02 14:29:16.907 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:16.907 trainer.py:121] 73 epoch
+I CMT_CPBP 12-02 14:29:16.907 trainer.py:124] ==========train 73 epoch==========
+I CMT_CPBP 12-02 14:29:19.754 utils.py:43] nll/train: 0.8724
+I CMT_CPBP 12-02 14:29:19.754 utils.py:43] nll_pitch/train: 0.7015
+I CMT_CPBP 12-02 14:29:19.754 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:29:19.754 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:29:19.754 utils.py:45] accuracy_pitch/train: 0.5800
+I CMT_CPBP 12-02 14:29:19.755 trainer.py:129] ==========valid 73 epoch==========
+I CMT_CPBP 12-02 14:29:19.826 utils.py:43] nll/eval: 0.8494
+I CMT_CPBP 12-02 14:29:19.826 utils.py:43] nll_pitch/eval: 0.6898
+I CMT_CPBP 12-02 14:29:19.826 utils.py:43] nll_rhythm/eval: 0.1596
+I CMT_CPBP 12-02 14:29:19.826 utils.py:45] accuracy_rhythm/eval: 0.9249
+I CMT_CPBP 12-02 14:29:19.826 utils.py:45] accuracy_pitch/eval: 0.5753
+I CMT_CPBP 12-02 14:29:19.827 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:19.828 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:19.828 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:19.829 trainer.py:121] 74 epoch
+I CMT_CPBP 12-02 14:29:19.829 trainer.py:124] ==========train 74 epoch==========
+I CMT_CPBP 12-02 14:29:22.660 utils.py:43] nll/train: 0.8788
+I CMT_CPBP 12-02 14:29:22.660 utils.py:43] nll_pitch/train: 0.7089
+I CMT_CPBP 12-02 14:29:22.660 utils.py:43] nll_rhythm/train: 0.1699
+I CMT_CPBP 12-02 14:29:22.660 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:29:22.660 utils.py:45] accuracy_pitch/train: 0.5801
+I CMT_CPBP 12-02 14:29:22.662 trainer.py:129] ==========valid 74 epoch==========
+I CMT_CPBP 12-02 14:29:22.731 utils.py:43] nll/eval: 0.8232
+I CMT_CPBP 12-02 14:29:22.731 utils.py:43] nll_pitch/eval: 0.6711
+I CMT_CPBP 12-02 14:29:22.731 utils.py:43] nll_rhythm/eval: 0.1521
+I CMT_CPBP 12-02 14:29:22.731 utils.py:45] accuracy_rhythm/eval: 0.9286
+I CMT_CPBP 12-02 14:29:22.731 utils.py:45] accuracy_pitch/eval: 0.5818
+I CMT_CPBP 12-02 14:29:22.731 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:22.732 trainer.py:121] 75 epoch
+I CMT_CPBP 12-02 14:29:22.732 trainer.py:124] ==========train 75 epoch==========
+I CMT_CPBP 12-02 14:29:25.581 utils.py:43] nll/train: 0.8793
+I CMT_CPBP 12-02 14:29:25.582 utils.py:43] nll_pitch/train: 0.7081
+I CMT_CPBP 12-02 14:29:25.582 utils.py:43] nll_rhythm/train: 0.1712
+I CMT_CPBP 12-02 14:29:25.582 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:29:25.582 utils.py:45] accuracy_pitch/train: 0.5791
+I CMT_CPBP 12-02 14:29:25.583 trainer.py:129] ==========valid 75 epoch==========
+I CMT_CPBP 12-02 14:29:25.651 utils.py:43] nll/eval: 0.9160
+I CMT_CPBP 12-02 14:29:25.651 utils.py:43] nll_pitch/eval: 0.7588
+I CMT_CPBP 12-02 14:29:25.652 utils.py:43] nll_rhythm/eval: 0.1572
+I CMT_CPBP 12-02 14:29:25.652 utils.py:45] accuracy_rhythm/eval: 0.9254
+I CMT_CPBP 12-02 14:29:25.652 utils.py:45] accuracy_pitch/eval: 0.5672
+I CMT_CPBP 12-02 14:29:25.652 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:25.652 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:25.653 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:25.653 trainer.py:121] 76 epoch
+I CMT_CPBP 12-02 14:29:25.653 trainer.py:124] ==========train 76 epoch==========
+I CMT_CPBP 12-02 14:29:28.519 trainer.py:215] 1900 training steps
+I CMT_CPBP 12-02 14:29:28.519 utils.py:43] nll: 0.7674
+I CMT_CPBP 12-02 14:29:28.519 utils.py:43] nll_pitch: 0.5968
+I CMT_CPBP 12-02 14:29:28.520 utils.py:43] nll_rhythm: 0.1705
+I CMT_CPBP 12-02 14:29:28.520 utils.py:45] accuracy_rhythm/train: 0.9243
+I CMT_CPBP 12-02 14:29:28.520 utils.py:45] accuracy_pitch/train: 0.5988
+I CMT_CPBP 12-02 14:29:28.520 utils.py:43] nll/train: 0.8769
+I CMT_CPBP 12-02 14:29:28.520 utils.py:43] nll_pitch/train: 0.7059
+I CMT_CPBP 12-02 14:29:28.520 utils.py:43] nll_rhythm/train: 0.1710
+I CMT_CPBP 12-02 14:29:28.520 utils.py:45] accuracy_rhythm/train: 0.9246
+I CMT_CPBP 12-02 14:29:28.520 utils.py:45] accuracy_pitch/train: 0.5787
+I CMT_CPBP 12-02 14:29:28.522 trainer.py:129] ==========valid 76 epoch==========
+I CMT_CPBP 12-02 14:29:28.590 utils.py:43] nll/eval: 0.8963
+I CMT_CPBP 12-02 14:29:28.590 utils.py:43] nll_pitch/eval: 0.7384
+I CMT_CPBP 12-02 14:29:28.590 utils.py:43] nll_rhythm/eval: 0.1580
+I CMT_CPBP 12-02 14:29:28.590 utils.py:45] accuracy_rhythm/eval: 0.9254
+I CMT_CPBP 12-02 14:29:28.590 utils.py:45] accuracy_pitch/eval: 0.5777
+I CMT_CPBP 12-02 14:29:28.591 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:28.591 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:28.592 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:28.592 trainer.py:121] 77 epoch
+I CMT_CPBP 12-02 14:29:28.592 trainer.py:124] ==========train 77 epoch==========
+I CMT_CPBP 12-02 14:29:31.434 utils.py:43] nll/train: 0.8761
+I CMT_CPBP 12-02 14:29:31.434 utils.py:43] nll_pitch/train: 0.7056
+I CMT_CPBP 12-02 14:29:31.434 utils.py:43] nll_rhythm/train: 0.1705
+I CMT_CPBP 12-02 14:29:31.434 utils.py:45] accuracy_rhythm/train: 0.9246
+I CMT_CPBP 12-02 14:29:31.434 utils.py:45] accuracy_pitch/train: 0.5795
+I CMT_CPBP 12-02 14:29:31.436 trainer.py:129] ==========valid 77 epoch==========
+I CMT_CPBP 12-02 14:29:31.504 utils.py:43] nll/eval: 0.8637
+I CMT_CPBP 12-02 14:29:31.504 utils.py:43] nll_pitch/eval: 0.7105
+I CMT_CPBP 12-02 14:29:31.504 utils.py:43] nll_rhythm/eval: 0.1532
+I CMT_CPBP 12-02 14:29:31.504 utils.py:45] accuracy_rhythm/eval: 0.9276
+I CMT_CPBP 12-02 14:29:31.504 utils.py:45] accuracy_pitch/eval: 0.5739
+I CMT_CPBP 12-02 14:29:31.505 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:31.505 trainer.py:121] 78 epoch
+I CMT_CPBP 12-02 14:29:31.505 trainer.py:124] ==========train 78 epoch==========
+I CMT_CPBP 12-02 14:29:34.351 utils.py:43] nll/train: 0.8744
+I CMT_CPBP 12-02 14:29:34.351 utils.py:43] nll_pitch/train: 0.7038
+I CMT_CPBP 12-02 14:29:34.351 utils.py:43] nll_rhythm/train: 0.1707
+I CMT_CPBP 12-02 14:29:34.351 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:29:34.351 utils.py:45] accuracy_pitch/train: 0.5811
+I CMT_CPBP 12-02 14:29:34.353 trainer.py:129] ==========valid 78 epoch==========
+I CMT_CPBP 12-02 14:29:34.423 utils.py:43] nll/eval: 0.8779
+I CMT_CPBP 12-02 14:29:34.423 utils.py:43] nll_pitch/eval: 0.7235
+I CMT_CPBP 12-02 14:29:34.423 utils.py:43] nll_rhythm/eval: 0.1544
+I CMT_CPBP 12-02 14:29:34.423 utils.py:45] accuracy_rhythm/eval: 0.9279
+I CMT_CPBP 12-02 14:29:34.423 utils.py:45] accuracy_pitch/eval: 0.5734
+I CMT_CPBP 12-02 14:29:34.424 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:34.424 trainer.py:121] 79 epoch
+I CMT_CPBP 12-02 14:29:34.425 trainer.py:124] ==========train 79 epoch==========
+I CMT_CPBP 12-02 14:29:37.259 utils.py:43] nll/train: 0.8690
+I CMT_CPBP 12-02 14:29:37.259 utils.py:43] nll_pitch/train: 0.6984
+I CMT_CPBP 12-02 14:29:37.259 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:29:37.259 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:29:37.259 utils.py:45] accuracy_pitch/train: 0.5796
+I CMT_CPBP 12-02 14:29:37.261 trainer.py:129] ==========valid 79 epoch==========
+I CMT_CPBP 12-02 14:29:37.330 utils.py:43] nll/eval: 0.8558
+I CMT_CPBP 12-02 14:29:37.330 utils.py:43] nll_pitch/eval: 0.7017
+I CMT_CPBP 12-02 14:29:37.330 utils.py:43] nll_rhythm/eval: 0.1541
+I CMT_CPBP 12-02 14:29:37.330 utils.py:45] accuracy_rhythm/eval: 0.9269
+I CMT_CPBP 12-02 14:29:37.330 utils.py:45] accuracy_pitch/eval: 0.5785
+I CMT_CPBP 12-02 14:29:37.331 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:37.331 trainer.py:121] 80 epoch
+I CMT_CPBP 12-02 14:29:37.331 trainer.py:124] ==========train 80 epoch==========
+I CMT_CPBP 12-02 14:29:40.163 trainer.py:215] 2000 training steps
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll: 0.8343
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll_pitch: 0.6643
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll_rhythm: 0.1700
+I CMT_CPBP 12-02 14:29:40.164 utils.py:45] accuracy_rhythm/train: 0.9237
+I CMT_CPBP 12-02 14:29:40.164 utils.py:45] accuracy_pitch/train: 0.6076
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll/train: 0.8765
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll_pitch/train: 0.7060
+I CMT_CPBP 12-02 14:29:40.164 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:29:40.164 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:29:40.164 utils.py:45] accuracy_pitch/train: 0.5803
+I CMT_CPBP 12-02 14:29:40.166 trainer.py:129] ==========valid 80 epoch==========
+I CMT_CPBP 12-02 14:29:40.234 utils.py:43] nll/eval: 0.8843
+I CMT_CPBP 12-02 14:29:40.234 utils.py:43] nll_pitch/eval: 0.7283
+I CMT_CPBP 12-02 14:29:40.234 utils.py:43] nll_rhythm/eval: 0.1559
+I CMT_CPBP 12-02 14:29:40.234 utils.py:45] accuracy_rhythm/eval: 0.9281
+I CMT_CPBP 12-02 14:29:40.234 utils.py:45] accuracy_pitch/eval: 0.5775
+I CMT_CPBP 12-02 14:29:40.235 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:40.235 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:29:40.235 trainer.py:83] saving model, Epoch 80, step 2000
+I CMT_CPBP 12-02 14:29:40.463 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:29:40.464 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:29:42.049 trainer.py:259] ==========sampling result of epoch 080==========
+I CMT_CPBP 12-02 14:29:42.050 trainer.py:263] Sample 00 : [ 9 48 48  4  9  9 16 48 14 12 48 48 14 48 16 14 48 12  9 48]
+I CMT_CPBP 12-02 14:29:42.205 trainer.py:282] Groundtruth 00 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:29:42.400 trainer.py:263] Sample 01 : [14 48 14 48 48 14 14 48 11  7 48  9 11 48  9  9 48 11  9 48]
+I CMT_CPBP 12-02 14:29:42.601 trainer.py:282] Groundtruth 01 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:29:42.801 trainer.py:263] Sample 02 : [14 48 48  6 48  2 48 48  6  9 48 48  6 48  7  6 48  7 11 48]
+I CMT_CPBP 12-02 14:29:43.020 trainer.py:282] Groundtruth 02 : [26 48 48 21 48 21 18 48 14 26 48 48 25 48 25 48 48 23 23 48]
+I CMT_CPBP 12-02 14:29:43.201 trainer.py:263] Sample 03 : [21 48 20 48 48 20 21 48 48 48 48 18 48 48 21 21 48 20 21 48]
+I CMT_CPBP 12-02 14:29:43.372 trainer.py:282] Groundtruth 03 : [21 48 16 19 48 19 19 48 18 19 48 16 17 48 16 14 48 12 11 48]
+I CMT_CPBP 12-02 14:29:43.651 trainer.py:263] Sample 04 : [48 48 11 12 48 14 16 48 48 11 48  9  7 48  6  4 48  6  9 48]
+I CMT_CPBP 12-02 14:29:43.864 trainer.py:282] Groundtruth 04 : [11 48 12 16 48 14 12 48 48 11 48  9  4 48  4  7 48  2  2 48]
+I CMT_CPBP 12-02 14:29:44.041 trainer.py:263] Sample 05 : [48 48  6  4 48  2  7 48  6 48 48  7  7 48 48  9 48  6 48 48]
+I CMT_CPBP 12-02 14:29:44.199 trainer.py:282] Groundtruth 05 : [48 48  4  4 48 13 11 48  9 48 48  6  6 48 48  9 48 18 48 48]
+I CMT_CPBP 12-02 14:29:44.373 trainer.py:263] Sample 06 : [14 48 13 11 48  9  9 48 11 13 48 14 13 48 14 13 48 48 48 48]
+I CMT_CPBP 12-02 14:29:44.531 trainer.py:282] Groundtruth 06 : [ 9 48  9 13 48 16 21 48 48 48 48 21 20 48 18 16 48 14 13 48]
+I CMT_CPBP 12-02 14:29:44.703 trainer.py:263] Sample 07 : [22 48  7 19 48  9 10 48 15 14 48 15 14 48 12 10 48  9 48 48]
+I CMT_CPBP 12-02 14:29:44.945 trainer.py:282] Groundtruth 07 : [14 48 14 19 48 14 14 48 14 12 48 10  9 48 48 10 48  7 10 48]
+I CMT_CPBP 12-02 14:29:45.111 trainer.py:263] Sample 08 : [ 9 48 48 11 13 13 48 48 16 16 48 13 14 48 16 48 48 16  9 48]
+I CMT_CPBP 12-02 14:29:45.265 trainer.py:282] Groundtruth 08 : [ 9 48 48 11 48 13 48 48 16 16 48 18 16 48 16 18 48 16 13 48]
+I CMT_CPBP 12-02 14:29:45.431 trainer.py:263] Sample 09 : [11 48  9 14 48 16  9 48 48 48 48  9 48 48 11 12 48 16 14 48]
+I CMT_CPBP 12-02 14:29:45.633 trainer.py:282] Groundtruth 09 : [11 48  9 12 48 11  9 48 48 11 48 12 12 48 12 14 48 11 11 48]
+I CMT_CPBP 12-02 14:29:45.845 trainer.py:263] Sample 10 : [48 48  7  4 48 48  6 48  7 48 48  7  7 48 48 14 48 14 48 48]
+I CMT_CPBP 12-02 14:29:46.001 trainer.py:282] Groundtruth 10 : [ 6 48  7  9 48 48  7 48 11 48 48 48 11 48 48 12 48 14 16 48]
+I CMT_CPBP 12-02 14:29:46.169 trainer.py:263] Sample 11 : [11 48  7  7 48 11 14 48 19 17 48 19 19 48 18 19 48 19 48 48]
+I CMT_CPBP 12-02 14:29:46.307 trainer.py:282] Groundtruth 11 : [48 48 48 13 48 14 16 48 14 48 48 48 48 48 48 48 48 14 48 48]
+I CMT_CPBP 12-02 14:29:46.484 trainer.py:263] Sample 12 : [13 48  9 13 48 16 18 48 11 13 48 11 11 48 13 11 48  9 48 48]
+I CMT_CPBP 12-02 14:29:46.672 trainer.py:282] Groundtruth 12 : [48 48 13 13 48 11  9 48 13 48 48 11 11 48  9 11 48 13 48 48]
+I CMT_CPBP 12-02 14:29:46.851 trainer.py:263] Sample 13 : [48 48 19 19 48 19 14 48 12 11 48 12 14 48 11  7 48 19 48 48]
+I CMT_CPBP 12-02 14:29:47.070 trainer.py:282] Groundtruth 13 : [48 48 12 16 48 14 12 48 11 14 48 19 14 48 11  7 48  9 11 48]
+I CMT_CPBP 12-02 14:29:47.260 trainer.py:263] Sample 14 : [13 48 48 11 48 14 48 48 11 14 48 48  9 48 14 13 48  9  9 48]
+I CMT_CPBP 12-02 14:29:47.425 trainer.py:282] Groundtruth 14 : [14 48 11 48 48 48 11 48  9  7 48  6  9 48  9  7 48  4  1 48]
+I CMT_CPBP 12-02 14:29:47.647 trainer.py:263] Sample 15 : [ 6 48 48  7 12  9 11 48 12 16 48 48 12 48 16 18 48 16 16 48]
+I CMT_CPBP 12-02 14:29:47.899 trainer.py:282] Groundtruth 15 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:29:48.067 trainer.py:263] Sample 16 : [ 9 48  9 12 48 14 12 48 11  7 48  7 11 48 48 48 48  9  9 48]
+I CMT_CPBP 12-02 14:29:48.270 trainer.py:282] Groundtruth 16 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:29:48.459 trainer.py:263] Sample 17 : [14 48 10 48 48 10 22 48 48 10 48 10 22 48 10 15 48 15 17 48]
+I CMT_CPBP 12-02 14:29:48.605 trainer.py:282] Groundtruth 17 : [14 48  7 10 48 14 13 48 48 14 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:29:48.776 trainer.py:263] Sample 18 : [16 48  9 16 48  9 13 48 16 13 48 11  9 48 14 13 48 14 13 48]
+I CMT_CPBP 12-02 14:29:48.936 trainer.py:282] Groundtruth 18 : [13 48 11 13 48  9 16 48  9 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:29:49.145 trainer.py:263] Sample 19 : [14 48 48 14 16 18 48 48 14  9 48 48  6 48 11 48 48  7  9 48]
+I CMT_CPBP 12-02 14:29:49.325 trainer.py:282] Groundtruth 19 : [14 48 48 18 19 21 18 48 14 14 48 18 21 48 19 16 48 13 13 48]
+I CMT_CPBP 12-02 14:29:49.492 trainer.py:263] Sample 20 : [48 48 14 13 48 14 16 48 48 14 48 14 48 48 14 16 48 13  9 48]
+I CMT_CPBP 12-02 14:29:49.681 trainer.py:282] Groundtruth 20 : [48 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:29:49.935 trainer.py:263] Sample 21 : [ 9 48 11 12 48 16 48 48 16 19 48 48 19 48 16 48 48 16 19 48]
+I CMT_CPBP 12-02 14:29:50.102 trainer.py:282] Groundtruth 21 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:29:50.297 trainer.py:263] Sample 22 : [19 48 18 16 48 18 16 48 48 48 48 18 19 48 21 19 48 14 15 48]
+I CMT_CPBP 12-02 14:29:50.470 trainer.py:282] Groundtruth 22 : [19 48 21 14 48 14 24 48 22 21 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:29:50.623 trainer.py:263] Sample 23 : [49 49 49  9 49  9 11 48  9  9 48 48 11 48 13 14 48 13 13 48]
+I CMT_CPBP 12-02 14:29:50.806 trainer.py:282] Groundtruth 23 : [49 49 49 16 48 21 48 48 16 13 48 48  9 48  9 13 48 16 21 48]
+I CMT_CPBP 12-02 14:29:50.985 trainer.py:263] Sample 24 : [12 48 16 48 48 16 18 48 21 18 48 18 48 48 18 16 48 14 11 48]
+I CMT_CPBP 12-02 14:29:51.180 trainer.py:282] Groundtruth 24 : [14 48 11 14 48 11  9 48  6  2 48  2  6 48  9 11 48 48  9 48]
+I CMT_CPBP 12-02 14:29:51.329 trainer.py:263] Sample 25 : [49 49 49 49 14 16 14 48 48 12 11 48 48 14 48 14 16 48 14 11]
+I CMT_CPBP 12-02 14:29:51.495 trainer.py:282] Groundtruth 25 : [49 49 49  2 48  7 48 48  7  7 48 11 14 48 19 48 48 14 14 48]
+I CMT_CPBP 12-02 14:29:51.672 trainer.py:263] Sample 26 : [ 9 48 48  7 12 12 12 48 16  9 48 12 12 48 11  9 48  9 16 48]
+I CMT_CPBP 12-02 14:29:51.933 trainer.py:282] Groundtruth 26 : [12 48 48  9 48 12 16 48 16 16 48 21 21 48 14 19 48 19 19 48]
+I CMT_CPBP 12-02 14:29:52.082 trainer.py:263] Sample 27 : [ 2 48  6  9 48 14 14 48 11  7 48  4  7 48 11  9 48  6  4 48]
+I CMT_CPBP 12-02 14:29:52.278 trainer.py:282] Groundtruth 27 : [ 7 48  9 48 48 14  9 48  7  6 48  4 48 48  6  7 48  6  4 48]
+I CMT_CPBP 12-02 14:29:52.491 trainer.py:263] Sample 28 : [14 48 16 14 48 14 19 48 48 11 48  9 11 48  9 11 48 48 14 48]
+I CMT_CPBP 12-02 14:29:52.700 trainer.py:282] Groundtruth 28 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:29:52.852 trainer.py:263] Sample 29 : [19 48 48 18 48 16 48 48 16 16 48 14 12 48 12 14 48 12 16 48]
+I CMT_CPBP 12-02 14:29:53.025 trainer.py:282] Groundtruth 29 : [48 48 48 48 48 12 48 48 12  7 48  9 10 48  9 48 48  5  2 48]
+I CMT_CPBP 12-02 14:29:53.278 trainer.py:263] Sample 30 : [49 49  9 11  9 11 48  9 14 48 13 18 48  9 11 48 13 14 48 13]
+I CMT_CPBP 12-02 14:29:53.416 trainer.py:282] Groundtruth 30 : [49 49 49 18 16 14  9 48  9  9 48 48 14 48 11 14 48 11  9 48]
+I CMT_CPBP 12-02 14:29:53.619 trainer.py:263] Sample 31 : [14 48 48 14 48 11  7 48  9  7 48 48  7 48  9 11 48 12 19 48]
+I CMT_CPBP 12-02 14:29:53.810 trainer.py:282] Groundtruth 31 : [19 48 18 17 48 16 48 48 48 11 48 48 48 48 12 48 48 48 16 48]
+I CMT_CPBP 12-02 14:29:54.068 trainer.py:263] Sample 32 : [14 48 13 48 48  9  9 48 13  9 48 14 13 48 14 16 48 13  9 48]
+I CMT_CPBP 12-02 14:29:54.272 trainer.py:282] Groundtruth 32 : [14 48 16 48 48 18 19 48 48 19 48 21 19 48 18 19 48 16 13 48]
+I CMT_CPBP 12-02 14:29:54.462 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:54.462 trainer.py:121] 81 epoch
+I CMT_CPBP 12-02 14:29:54.462 trainer.py:124] ==========train 81 epoch==========
+I CMT_CPBP 12-02 14:29:57.324 utils.py:43] nll/train: 0.8786
+I CMT_CPBP 12-02 14:29:57.325 utils.py:43] nll_pitch/train: 0.7077
+I CMT_CPBP 12-02 14:29:57.325 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:29:57.325 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:29:57.325 utils.py:45] accuracy_pitch/train: 0.5796
+I CMT_CPBP 12-02 14:29:57.326 trainer.py:129] ==========valid 81 epoch==========
+I CMT_CPBP 12-02 14:29:57.398 utils.py:43] nll/eval: 0.8463
+I CMT_CPBP 12-02 14:29:57.398 utils.py:43] nll_pitch/eval: 0.6920
+I CMT_CPBP 12-02 14:29:57.398 utils.py:43] nll_rhythm/eval: 0.1543
+I CMT_CPBP 12-02 14:29:57.399 utils.py:45] accuracy_rhythm/eval: 0.9289
+I CMT_CPBP 12-02 14:29:57.399 utils.py:45] accuracy_pitch/eval: 0.5752
+I CMT_CPBP 12-02 14:29:57.399 trainer.py:120] 
+I CMT_CPBP 12-02 14:29:57.400 trainer.py:121] 82 epoch
+I CMT_CPBP 12-02 14:29:57.400 trainer.py:124] ==========train 82 epoch==========
+I CMT_CPBP 12-02 14:30:00.269 utils.py:43] nll/train: 0.8677
+I CMT_CPBP 12-02 14:30:00.269 utils.py:43] nll_pitch/train: 0.6968
+I CMT_CPBP 12-02 14:30:00.269 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:30:00.269 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:30:00.269 utils.py:45] accuracy_pitch/train: 0.5786
+I CMT_CPBP 12-02 14:30:00.271 trainer.py:129] ==========valid 82 epoch==========
+I CMT_CPBP 12-02 14:30:00.340 utils.py:43] nll/eval: 0.8681
+I CMT_CPBP 12-02 14:30:00.340 utils.py:43] nll_pitch/eval: 0.7156
+I CMT_CPBP 12-02 14:30:00.340 utils.py:43] nll_rhythm/eval: 0.1526
+I CMT_CPBP 12-02 14:30:00.340 utils.py:45] accuracy_rhythm/eval: 0.9283
+I CMT_CPBP 12-02 14:30:00.340 utils.py:45] accuracy_pitch/eval: 0.5701
+I CMT_CPBP 12-02 14:30:00.340 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:00.341 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:00.341 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:00.342 trainer.py:121] 83 epoch
+I CMT_CPBP 12-02 14:30:00.342 trainer.py:124] ==========train 83 epoch==========
+I CMT_CPBP 12-02 14:30:03.181 utils.py:43] nll/train: 0.8711
+I CMT_CPBP 12-02 14:30:03.181 utils.py:43] nll_pitch/train: 0.7001
+I CMT_CPBP 12-02 14:30:03.181 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:30:03.181 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:30:03.182 utils.py:45] accuracy_pitch/train: 0.5815
+I CMT_CPBP 12-02 14:30:03.183 trainer.py:129] ==========valid 83 epoch==========
+I CMT_CPBP 12-02 14:30:03.254 utils.py:43] nll/eval: 0.8497
+I CMT_CPBP 12-02 14:30:03.254 utils.py:43] nll_pitch/eval: 0.6987
+I CMT_CPBP 12-02 14:30:03.254 utils.py:43] nll_rhythm/eval: 0.1510
+I CMT_CPBP 12-02 14:30:03.254 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:30:03.254 utils.py:45] accuracy_pitch/eval: 0.5828
+I CMT_CPBP 12-02 14:30:03.255 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:03.255 trainer.py:121] 84 epoch
+I CMT_CPBP 12-02 14:30:03.256 trainer.py:124] ==========train 84 epoch==========
+I CMT_CPBP 12-02 14:30:06.099 trainer.py:215] 2100 training steps
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll: 0.8583
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll_pitch: 0.6821
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll_rhythm: 0.1762
+I CMT_CPBP 12-02 14:30:06.099 utils.py:45] accuracy_rhythm/train: 0.9235
+I CMT_CPBP 12-02 14:30:06.099 utils.py:45] accuracy_pitch/train: 0.5746
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll/train: 0.8732
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll_pitch/train: 0.7023
+I CMT_CPBP 12-02 14:30:06.099 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:30:06.099 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:30:06.100 utils.py:45] accuracy_pitch/train: 0.5793
+I CMT_CPBP 12-02 14:30:06.102 trainer.py:129] ==========valid 84 epoch==========
+I CMT_CPBP 12-02 14:30:06.170 utils.py:43] nll/eval: 0.9145
+I CMT_CPBP 12-02 14:30:06.170 utils.py:43] nll_pitch/eval: 0.7572
+I CMT_CPBP 12-02 14:30:06.170 utils.py:43] nll_rhythm/eval: 0.1573
+I CMT_CPBP 12-02 14:30:06.170 utils.py:45] accuracy_rhythm/eval: 0.9266
+I CMT_CPBP 12-02 14:30:06.170 utils.py:45] accuracy_pitch/eval: 0.5675
+I CMT_CPBP 12-02 14:30:06.171 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:06.171 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:06.171 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:06.171 trainer.py:121] 85 epoch
+I CMT_CPBP 12-02 14:30:06.172 trainer.py:124] ==========train 85 epoch==========
+I CMT_CPBP 12-02 14:30:09.018 utils.py:43] nll/train: 0.8646
+I CMT_CPBP 12-02 14:30:09.018 utils.py:43] nll_pitch/train: 0.6941
+I CMT_CPBP 12-02 14:30:09.018 utils.py:43] nll_rhythm/train: 0.1705
+I CMT_CPBP 12-02 14:30:09.018 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:30:09.018 utils.py:45] accuracy_pitch/train: 0.5811
+I CMT_CPBP 12-02 14:30:09.020 trainer.py:129] ==========valid 85 epoch==========
+I CMT_CPBP 12-02 14:30:09.089 utils.py:43] nll/eval: 0.8936
+I CMT_CPBP 12-02 14:30:09.089 utils.py:43] nll_pitch/eval: 0.7377
+I CMT_CPBP 12-02 14:30:09.089 utils.py:43] nll_rhythm/eval: 0.1559
+I CMT_CPBP 12-02 14:30:09.089 utils.py:45] accuracy_rhythm/eval: 0.9268
+I CMT_CPBP 12-02 14:30:09.089 utils.py:45] accuracy_pitch/eval: 0.5732
+I CMT_CPBP 12-02 14:30:09.090 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:09.090 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:09.090 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:09.091 trainer.py:121] 86 epoch
+I CMT_CPBP 12-02 14:30:09.091 trainer.py:124] ==========train 86 epoch==========
+I CMT_CPBP 12-02 14:30:11.918 utils.py:43] nll/train: 0.8691
+I CMT_CPBP 12-02 14:30:11.918 utils.py:43] nll_pitch/train: 0.6977
+I CMT_CPBP 12-02 14:30:11.918 utils.py:43] nll_rhythm/train: 0.1713
+I CMT_CPBP 12-02 14:30:11.918 utils.py:45] accuracy_rhythm/train: 0.9239
+I CMT_CPBP 12-02 14:30:11.918 utils.py:45] accuracy_pitch/train: 0.5802
+I CMT_CPBP 12-02 14:30:11.920 trainer.py:129] ==========valid 86 epoch==========
+I CMT_CPBP 12-02 14:30:11.988 utils.py:43] nll/eval: 0.8143
+I CMT_CPBP 12-02 14:30:11.988 utils.py:43] nll_pitch/eval: 0.6596
+I CMT_CPBP 12-02 14:30:11.988 utils.py:43] nll_rhythm/eval: 0.1547
+I CMT_CPBP 12-02 14:30:11.988 utils.py:45] accuracy_rhythm/eval: 0.9261
+I CMT_CPBP 12-02 14:30:11.988 utils.py:45] accuracy_pitch/eval: 0.5806
+I CMT_CPBP 12-02 14:30:11.989 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:11.989 trainer.py:121] 87 epoch
+I CMT_CPBP 12-02 14:30:11.990 trainer.py:124] ==========train 87 epoch==========
+I CMT_CPBP 12-02 14:30:14.823 utils.py:43] nll/train: 0.8681
+I CMT_CPBP 12-02 14:30:14.823 utils.py:43] nll_pitch/train: 0.6972
+I CMT_CPBP 12-02 14:30:14.823 utils.py:43] nll_rhythm/train: 0.1709
+I CMT_CPBP 12-02 14:30:14.823 utils.py:45] accuracy_rhythm/train: 0.9242
+I CMT_CPBP 12-02 14:30:14.823 utils.py:45] accuracy_pitch/train: 0.5782
+I CMT_CPBP 12-02 14:30:14.825 trainer.py:129] ==========valid 87 epoch==========
+I CMT_CPBP 12-02 14:30:14.893 utils.py:43] nll/eval: 0.8893
+I CMT_CPBP 12-02 14:30:14.893 utils.py:43] nll_pitch/eval: 0.7322
+I CMT_CPBP 12-02 14:30:14.893 utils.py:43] nll_rhythm/eval: 0.1571
+I CMT_CPBP 12-02 14:30:14.893 utils.py:45] accuracy_rhythm/eval: 0.9258
+I CMT_CPBP 12-02 14:30:14.893 utils.py:45] accuracy_pitch/eval: 0.5757
+I CMT_CPBP 12-02 14:30:14.894 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:14.894 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:14.894 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:14.895 trainer.py:121] 88 epoch
+I CMT_CPBP 12-02 14:30:14.895 trainer.py:124] ==========train 88 epoch==========
+I CMT_CPBP 12-02 14:30:17.724 trainer.py:215] 2200 training steps
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll: 0.9360
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll_pitch: 0.7683
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll_rhythm: 0.1676
+I CMT_CPBP 12-02 14:30:17.724 utils.py:45] accuracy_rhythm/train: 0.9255
+I CMT_CPBP 12-02 14:30:17.724 utils.py:45] accuracy_pitch/train: 0.5632
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll/train: 0.8673
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll_pitch/train: 0.6976
+I CMT_CPBP 12-02 14:30:17.724 utils.py:43] nll_rhythm/train: 0.1698
+I CMT_CPBP 12-02 14:30:17.724 utils.py:45] accuracy_rhythm/train: 0.9253
+I CMT_CPBP 12-02 14:30:17.725 utils.py:45] accuracy_pitch/train: 0.5793
+I CMT_CPBP 12-02 14:30:17.726 trainer.py:129] ==========valid 88 epoch==========
+I CMT_CPBP 12-02 14:30:17.794 utils.py:43] nll/eval: 0.8098
+I CMT_CPBP 12-02 14:30:17.794 utils.py:43] nll_pitch/eval: 0.6541
+I CMT_CPBP 12-02 14:30:17.794 utils.py:43] nll_rhythm/eval: 0.1557
+I CMT_CPBP 12-02 14:30:17.794 utils.py:45] accuracy_rhythm/eval: 0.9267
+I CMT_CPBP 12-02 14:30:17.794 utils.py:45] accuracy_pitch/eval: 0.5825
+I CMT_CPBP 12-02 14:30:17.795 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:17.795 trainer.py:121] 89 epoch
+I CMT_CPBP 12-02 14:30:17.795 trainer.py:124] ==========train 89 epoch==========
+I CMT_CPBP 12-02 14:30:20.633 utils.py:43] nll/train: 0.8669
+I CMT_CPBP 12-02 14:30:20.633 utils.py:43] nll_pitch/train: 0.6963
+I CMT_CPBP 12-02 14:30:20.633 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:30:20.633 utils.py:45] accuracy_rhythm/train: 0.9245
+I CMT_CPBP 12-02 14:30:20.634 utils.py:45] accuracy_pitch/train: 0.5809
+I CMT_CPBP 12-02 14:30:20.636 trainer.py:129] ==========valid 89 epoch==========
+I CMT_CPBP 12-02 14:30:20.704 utils.py:43] nll/eval: 0.9066
+I CMT_CPBP 12-02 14:30:20.704 utils.py:43] nll_pitch/eval: 0.7527
+I CMT_CPBP 12-02 14:30:20.704 utils.py:43] nll_rhythm/eval: 0.1539
+I CMT_CPBP 12-02 14:30:20.704 utils.py:45] accuracy_rhythm/eval: 0.9287
+I CMT_CPBP 12-02 14:30:20.704 utils.py:45] accuracy_pitch/eval: 0.5642
+I CMT_CPBP 12-02 14:30:20.704 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:20.705 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:20.706 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:20.706 trainer.py:121] 90 epoch
+I CMT_CPBP 12-02 14:30:20.706 trainer.py:124] ==========train 90 epoch==========
+I CMT_CPBP 12-02 14:30:23.577 utils.py:43] nll/train: 0.8635
+I CMT_CPBP 12-02 14:30:23.577 utils.py:43] nll_pitch/train: 0.6935
+I CMT_CPBP 12-02 14:30:23.577 utils.py:43] nll_rhythm/train: 0.1700
+I CMT_CPBP 12-02 14:30:23.577 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:30:23.577 utils.py:45] accuracy_pitch/train: 0.5786
+I CMT_CPBP 12-02 14:30:23.579 trainer.py:129] ==========valid 90 epoch==========
+I CMT_CPBP 12-02 14:30:23.650 utils.py:43] nll/eval: 0.8653
+I CMT_CPBP 12-02 14:30:23.650 utils.py:43] nll_pitch/eval: 0.7143
+I CMT_CPBP 12-02 14:30:23.650 utils.py:43] nll_rhythm/eval: 0.1510
+I CMT_CPBP 12-02 14:30:23.650 utils.py:45] accuracy_rhythm/eval: 0.9278
+I CMT_CPBP 12-02 14:30:23.650 utils.py:45] accuracy_pitch/eval: 0.5790
+I CMT_CPBP 12-02 14:30:23.651 trainer.py:83] saving model, Epoch 90, step 2250
+I CMT_CPBP 12-02 14:30:23.862 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:30:23.862 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:30:25.477 trainer.py:259] ==========sampling result of epoch 090==========
+I CMT_CPBP 12-02 14:30:25.478 trainer.py:263] Sample 00 : [14 48 18  9 48  9  9 48 48 11 48 13 14 48  9  9 48  9 13 48]
+I CMT_CPBP 12-02 14:30:25.639 trainer.py:282] Groundtruth 00 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:30:25.859 trainer.py:263] Sample 01 : [21 48 48 23 48 23 48 48 23 21 48 23 19 48 19 16 48 18 19 48]
+I CMT_CPBP 12-02 14:30:26.052 trainer.py:282] Groundtruth 01 : [25 48 26 48 48 21 21 48 19 18 48 16 48 48 18 19 48 18 16 48]
+I CMT_CPBP 12-02 14:30:26.267 trainer.py:263] Sample 02 : [11 48 14 19 48 16 19 48 16 12 48  9 11 48 12  9 48  9  7 48]
+I CMT_CPBP 12-02 14:30:26.467 trainer.py:282] Groundtruth 02 : [12 48 12 14 48 16 17 48 19 14 48 14 14 48 12 11 48  9 12 48]
+I CMT_CPBP 12-02 14:30:26.656 trainer.py:263] Sample 03 : [14 48 16 19 48 18 16 48 19 14 48 16 12 48  9 11 48 14 14 48]
+I CMT_CPBP 12-02 14:30:26.889 trainer.py:282] Groundtruth 03 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:30:27.223 trainer.py:263] Sample 04 : [ 4 48 48  6 48  4  9 48  9  9 48  7 12 48  7  4 48  4  4 48]
+I CMT_CPBP 12-02 14:30:27.459 trainer.py:282] Groundtruth 04 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:30:27.662 trainer.py:263] Sample 05 : [ 9 48  9  9 48  7  9 48 11 12 48 48 48 48 16  9 48  9 14 48]
+I CMT_CPBP 12-02 14:30:27.887 trainer.py:282] Groundtruth 05 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:30:28.071 trainer.py:263] Sample 06 : [ 6 48 48 14 48 16 18 48 16 16 48 48 12 48 16 48 48 16 16 48]
+I CMT_CPBP 12-02 14:30:28.274 trainer.py:282] Groundtruth 06 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:30:28.531 trainer.py:263] Sample 07 : [49 49 49 14 12 11 48 14 14 48 11 14 48 19 16 48 16 12 48 11]
+I CMT_CPBP 12-02 14:30:28.720 trainer.py:282] Groundtruth 07 : [49 49 49  2 48  7 48 48 11 11 48  7 11 48 12 14 48 12 11 48]
+I CMT_CPBP 12-02 14:30:28.918 trainer.py:263] Sample 08 : [14 48 48  6  7  9 48 48  9  9 48 48 14 48 18 48 48 18  9 48]
+I CMT_CPBP 12-02 14:30:29.118 trainer.py:282] Groundtruth 08 : [14 48 48 14 16 18 48 48 48 19 48 18 19 48 21 48 48 48 18 48]
+I CMT_CPBP 12-02 14:30:29.297 trainer.py:263] Sample 09 : [ 7 48  6  9 48 48  6 48  7  9 48  7  7 48 48  6 48  9 48 48]
+I CMT_CPBP 12-02 14:30:29.576 trainer.py:282] Groundtruth 09 : [48 48  6  9 48 48  6 48  9 48 48  7  4 48 48  9 48  9 18 48]
+I CMT_CPBP 12-02 14:30:29.786 trainer.py:263] Sample 10 : [14 48 16 14 48 11 11 48 48  9 48 14 12 48 11  9 48 11 16 48]
+I CMT_CPBP 12-02 14:30:30.011 trainer.py:282] Groundtruth 10 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:30:30.191 trainer.py:263] Sample 11 : [19 48 16 48 48 48 19 48 48 48 48 19 21 48 16 16 48 48 21 48]
+I CMT_CPBP 12-02 14:30:30.360 trainer.py:282] Groundtruth 11 : [21 48 21 48 48 19 19 48 48 18 48 16 28 48 26 25 48 23 25 48]
+I CMT_CPBP 12-02 14:30:30.544 trainer.py:263] Sample 12 : [ 7 48  6  9 48  9  4 48  2  7 48  6  4 48 48  2 48  4 48 48]
+I CMT_CPBP 12-02 14:30:30.748 trainer.py:282] Groundtruth 12 : [ 4 48  4  9 48 48 11 48 14 11 48 11 14 48 12 11 48  9  4 48]
+I CMT_CPBP 12-02 14:30:30.948 trainer.py:263] Sample 13 : [21 48 21 48 48 18 18 48 16 14 48 12 16 48 12 12 48  9  6 48]
+I CMT_CPBP 12-02 14:30:31.169 trainer.py:282] Groundtruth 13 : [19 48 18 48 48 48 18 48 48 16 48 14 48 16 14 14 48 13 12 48]
+I CMT_CPBP 12-02 14:30:31.368 trainer.py:263] Sample 14 : [ 9 48 48  4  9  9 11 48  7  7 48  9 11 48 14 11 48 12  9 48]
+I CMT_CPBP 12-02 14:30:31.551 trainer.py:282] Groundtruth 14 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:30:31.771 trainer.py:263] Sample 15 : [ 7 48  9  9 48  6  9 48 11 14 48 14 13 48  9  9 48 11  7 48]
+I CMT_CPBP 12-02 14:30:31.944 trainer.py:282] Groundtruth 15 : [ 4 48  6  7 48  6 48 48  2  2 48  6  7 48  9  6 48  9 11 48]
+I CMT_CPBP 12-02 14:30:32.162 trainer.py:263] Sample 16 : [49 49 49 49  9 48 14 48 48  9 14 48 48 48 48 14 48 48 48 14]
+I CMT_CPBP 12-02 14:30:32.326 trainer.py:282] Groundtruth 16 : [49 49 49  9 48  9 11 48  9  9 48  6  9 48 14 48 48 16 18 48]
+I CMT_CPBP 12-02 14:30:32.515 trainer.py:263] Sample 17 : [ 9 48  9 12 48 11 14 48 19 11 48  7  7 48  7 11 48  4 48 48]
+I CMT_CPBP 12-02 14:30:32.728 trainer.py:282] Groundtruth 17 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:30:32.966 trainer.py:263] Sample 18 : [16 48 13 13 48 48  9  7 14 16 48 14  9 48  7  6 48  7 48 48]
+I CMT_CPBP 12-02 14:30:33.230 trainer.py:282] Groundtruth 18 : [48 48 16 16 48 25 23 48 21 48 48 18 18 48 48 21 48 30 48 48]
+I CMT_CPBP 12-02 14:30:33.421 trainer.py:263] Sample 19 : [ 2 48  4  9 48  9  9 48  7  6 48 16 14 48  4  4 48  6  9 48]
+I CMT_CPBP 12-02 14:30:33.681 trainer.py:282] Groundtruth 19 : [11 48 12 16 48 14 12 48 48 11 48  9  4 48  4  7 48  2  2 48]
+I CMT_CPBP 12-02 14:30:33.887 trainer.py:263] Sample 20 : [12 48 48 11 48  9 48 48  9  9 48  7 12 48 14 48 48  9  9 48]
+I CMT_CPBP 12-02 14:30:34.101 trainer.py:282] Groundtruth 20 : [12 48 11 10 48  9 48 48 12  5 48  9 12 48 17 48 48 48 17 48]
+I CMT_CPBP 12-02 14:30:34.254 trainer.py:263] Sample 21 : [ 7 48 48 14 48 14 16 48 14 19 48 48 48 48 14 48 48 11 12 48]
+I CMT_CPBP 12-02 14:30:34.442 trainer.py:282] Groundtruth 21 : [ 7 48 48 14 18 19 21 48 19 19 48 14 11 48  9 11 48  9  9 48]
+I CMT_CPBP 12-02 14:30:34.620 trainer.py:263] Sample 22 : [21 48 48 19 21 20 21 48 20 18 48 48 16 48 20 21 48 20 21 48]
+I CMT_CPBP 12-02 14:30:34.816 trainer.py:282] Groundtruth 22 : [ 9 48  9  9 48 13 16 48 21 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:30:35.022 trainer.py:263] Sample 23 : [16 48 19 48 48 16 16 48 48 16 48 21 21 48 18 19 48 14 11 48]
+I CMT_CPBP 12-02 14:30:35.224 trainer.py:282] Groundtruth 23 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:30:35.449 trainer.py:263] Sample 24 : [ 9 48 48 11 48 12 48 48 19  7 48 12 14 48 19 16 48 19 14 48]
+I CMT_CPBP 12-02 14:30:35.636 trainer.py:282] Groundtruth 24 : [ 9 48 48 11 48 12 48 48 12 12 48 14 16 48 14 48 48 14 14 48]
+I CMT_CPBP 12-02 14:30:35.835 trainer.py:263] Sample 25 : [13 48 14 16 48 18 19 48 18 19 48 48 16 48 13  9 48 14 14 48]
+I CMT_CPBP 12-02 14:30:36.012 trainer.py:282] Groundtruth 25 : [13 48 14 16 48 13  9 48 11 13 48 14 16 48 18 19 48 18 48 48]
+I CMT_CPBP 12-02 14:30:36.237 trainer.py:263] Sample 26 : [ 9 48 11 12 48 16 48 48 16 12 48 14 16 48 12  9 48  7  9 48]
+I CMT_CPBP 12-02 14:30:36.456 trainer.py:282] Groundtruth 26 : [ 9 48 48  4  7  9  4 48  4  9 48 48 11 48 12 16 48 14 12 48]
+I CMT_CPBP 12-02 14:30:36.680 trainer.py:263] Sample 27 : [48 48 48  9 48 48  6 48  7 14 48 13 18 48 48 16 48 18 48 48]
+I CMT_CPBP 12-02 14:30:36.882 trainer.py:282] Groundtruth 27 : [11 48  9  6 48 48  2 48 11 14 48 14 14 48 12 11 48 12 12 48]
+I CMT_CPBP 12-02 14:30:37.066 trainer.py:263] Sample 28 : [49 49 49 49  9  6  6  2 48  9 14 48 18  9 48 11 48 48  9 14]
+I CMT_CPBP 12-02 14:30:37.245 trainer.py:282] Groundtruth 28 : [49 49 49 18 16 14  9 48  9  9 48 48 14 48 11 14 48 11  9 48]
+I CMT_CPBP 12-02 14:30:37.417 trainer.py:263] Sample 29 : [49 49 49 49 49 14 48 48 11 14 48 48 16 48 16 48 48 14 14 48]
+I CMT_CPBP 12-02 14:30:37.574 trainer.py:282] Groundtruth 29 : [49 49 49 14 12 11  9 48 11  2 48  7 11 48  2  7 48 11 14 48]
+I CMT_CPBP 12-02 14:30:37.745 trainer.py:263] Sample 30 : [ 9 48 48 11 48  9  9 48  7 12 48  9 16 48 14 11 48  7 11 48]
+I CMT_CPBP 12-02 14:30:37.913 trainer.py:282] Groundtruth 30 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:30:38.054 trainer.py:263] Sample 31 : [19 48 18 16 48 14 14 48 48 14 48 19 18 48 19 15 48 12 15 48]
+I CMT_CPBP 12-02 14:30:38.261 trainer.py:282] Groundtruth 31 : [19 48 21 14 48 14 24 48 22 21 48 19 14 48 14 15 48 14 12 48]
+I CMT_CPBP 12-02 14:30:38.422 trainer.py:263] Sample 32 : [ 9 48  9  4 48  6  4 48  2  7 48 11 14 48  7 14 48  4 48 48]
+I CMT_CPBP 12-02 14:30:38.575 trainer.py:282] Groundtruth 32 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:30:38.737 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:38.737 trainer.py:121] 91 epoch
+I CMT_CPBP 12-02 14:30:38.737 trainer.py:124] ==========train 91 epoch==========
+I CMT_CPBP 12-02 14:30:41.642 utils.py:43] nll/train: 0.8692
+I CMT_CPBP 12-02 14:30:41.642 utils.py:43] nll_pitch/train: 0.6990
+I CMT_CPBP 12-02 14:30:41.642 utils.py:43] nll_rhythm/train: 0.1702
+I CMT_CPBP 12-02 14:30:41.642 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:30:41.642 utils.py:45] accuracy_pitch/train: 0.5780
+I CMT_CPBP 12-02 14:30:41.644 trainer.py:129] ==========valid 91 epoch==========
+I CMT_CPBP 12-02 14:30:41.716 utils.py:43] nll/eval: 0.7767
+I CMT_CPBP 12-02 14:30:41.716 utils.py:43] nll_pitch/eval: 0.6232
+I CMT_CPBP 12-02 14:30:41.716 utils.py:43] nll_rhythm/eval: 0.1535
+I CMT_CPBP 12-02 14:30:41.717 utils.py:45] accuracy_rhythm/eval: 0.9273
+I CMT_CPBP 12-02 14:30:41.717 utils.py:45] accuracy_pitch/eval: 0.5936
+I CMT_CPBP 12-02 14:30:41.717 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:41.718 trainer.py:121] 92 epoch
+I CMT_CPBP 12-02 14:30:41.718 trainer.py:124] ==========train 92 epoch==========
+I CMT_CPBP 12-02 14:30:44.600 trainer.py:215] 2300 training steps
+I CMT_CPBP 12-02 14:30:44.600 utils.py:43] nll: 0.8774
+I CMT_CPBP 12-02 14:30:44.600 utils.py:43] nll_pitch: 0.6974
+I CMT_CPBP 12-02 14:30:44.600 utils.py:43] nll_rhythm: 0.1800
+I CMT_CPBP 12-02 14:30:44.600 utils.py:45] accuracy_rhythm/train: 0.9193
+I CMT_CPBP 12-02 14:30:44.600 utils.py:45] accuracy_pitch/train: 0.5545
+I CMT_CPBP 12-02 14:30:44.601 utils.py:43] nll/train: 0.8618
+I CMT_CPBP 12-02 14:30:44.601 utils.py:43] nll_pitch/train: 0.6914
+I CMT_CPBP 12-02 14:30:44.601 utils.py:43] nll_rhythm/train: 0.1704
+I CMT_CPBP 12-02 14:30:44.601 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:30:44.601 utils.py:45] accuracy_pitch/train: 0.5789
+I CMT_CPBP 12-02 14:30:44.603 trainer.py:129] ==========valid 92 epoch==========
+I CMT_CPBP 12-02 14:30:44.672 utils.py:43] nll/eval: 0.8373
+I CMT_CPBP 12-02 14:30:44.672 utils.py:43] nll_pitch/eval: 0.6854
+I CMT_CPBP 12-02 14:30:44.672 utils.py:43] nll_rhythm/eval: 0.1519
+I CMT_CPBP 12-02 14:30:44.672 utils.py:45] accuracy_rhythm/eval: 0.9272
+I CMT_CPBP 12-02 14:30:44.672 utils.py:45] accuracy_pitch/eval: 0.5800
+I CMT_CPBP 12-02 14:30:44.672 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:44.673 trainer.py:121] 93 epoch
+I CMT_CPBP 12-02 14:30:44.674 trainer.py:124] ==========train 93 epoch==========
+I CMT_CPBP 12-02 14:30:47.523 utils.py:43] nll/train: 0.8661
+I CMT_CPBP 12-02 14:30:47.524 utils.py:43] nll_pitch/train: 0.6953
+I CMT_CPBP 12-02 14:30:47.524 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:30:47.524 utils.py:45] accuracy_rhythm/train: 0.9247
+I CMT_CPBP 12-02 14:30:47.524 utils.py:45] accuracy_pitch/train: 0.5810
+I CMT_CPBP 12-02 14:30:47.526 trainer.py:129] ==========valid 93 epoch==========
+I CMT_CPBP 12-02 14:30:47.594 utils.py:43] nll/eval: 0.8375
+I CMT_CPBP 12-02 14:30:47.594 utils.py:43] nll_pitch/eval: 0.6828
+I CMT_CPBP 12-02 14:30:47.594 utils.py:43] nll_rhythm/eval: 0.1548
+I CMT_CPBP 12-02 14:30:47.594 utils.py:45] accuracy_rhythm/eval: 0.9273
+I CMT_CPBP 12-02 14:30:47.594 utils.py:45] accuracy_pitch/eval: 0.5839
+I CMT_CPBP 12-02 14:30:47.594 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:47.595 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:47.595 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:47.596 trainer.py:121] 94 epoch
+I CMT_CPBP 12-02 14:30:47.596 trainer.py:124] ==========train 94 epoch==========
+I CMT_CPBP 12-02 14:30:50.470 utils.py:43] nll/train: 0.8700
+I CMT_CPBP 12-02 14:30:50.470 utils.py:43] nll_pitch/train: 0.6995
+I CMT_CPBP 12-02 14:30:50.470 utils.py:43] nll_rhythm/train: 0.1704
+I CMT_CPBP 12-02 14:30:50.470 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:30:50.470 utils.py:45] accuracy_pitch/train: 0.5816
+I CMT_CPBP 12-02 14:30:50.472 trainer.py:129] ==========valid 94 epoch==========
+I CMT_CPBP 12-02 14:30:50.545 utils.py:43] nll/eval: 0.8549
+I CMT_CPBP 12-02 14:30:50.545 utils.py:43] nll_pitch/eval: 0.6990
+I CMT_CPBP 12-02 14:30:50.545 utils.py:43] nll_rhythm/eval: 0.1560
+I CMT_CPBP 12-02 14:30:50.545 utils.py:45] accuracy_rhythm/eval: 0.9269
+I CMT_CPBP 12-02 14:30:50.545 utils.py:45] accuracy_pitch/eval: 0.5826
+I CMT_CPBP 12-02 14:30:50.546 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:50.546 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:50.546 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:50.547 trainer.py:121] 95 epoch
+I CMT_CPBP 12-02 14:30:50.547 trainer.py:124] ==========train 95 epoch==========
+I CMT_CPBP 12-02 14:30:53.382 utils.py:43] nll/train: 0.8633
+I CMT_CPBP 12-02 14:30:53.382 utils.py:43] nll_pitch/train: 0.6931
+I CMT_CPBP 12-02 14:30:53.382 utils.py:43] nll_rhythm/train: 0.1703
+I CMT_CPBP 12-02 14:30:53.382 utils.py:45] accuracy_rhythm/train: 0.9244
+I CMT_CPBP 12-02 14:30:53.383 utils.py:45] accuracy_pitch/train: 0.5811
+I CMT_CPBP 12-02 14:30:53.385 trainer.py:129] ==========valid 95 epoch==========
+I CMT_CPBP 12-02 14:30:53.456 utils.py:43] nll/eval: 0.8840
+I CMT_CPBP 12-02 14:30:53.456 utils.py:43] nll_pitch/eval: 0.7317
+I CMT_CPBP 12-02 14:30:53.456 utils.py:43] nll_rhythm/eval: 0.1523
+I CMT_CPBP 12-02 14:30:53.456 utils.py:45] accuracy_rhythm/eval: 0.9291
+I CMT_CPBP 12-02 14:30:53.456 utils.py:45] accuracy_pitch/eval: 0.5786
+I CMT_CPBP 12-02 14:30:53.457 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:53.457 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:53.458 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:53.458 trainer.py:121] 96 epoch
+I CMT_CPBP 12-02 14:30:53.459 trainer.py:124] ==========train 96 epoch==========
+I CMT_CPBP 12-02 14:30:56.293 trainer.py:215] 2400 training steps
+I CMT_CPBP 12-02 14:30:56.293 utils.py:43] nll: 0.8268
+I CMT_CPBP 12-02 14:30:56.293 utils.py:43] nll_pitch: 0.6731
+I CMT_CPBP 12-02 14:30:56.294 utils.py:43] nll_rhythm: 0.1537
+I CMT_CPBP 12-02 14:30:56.294 utils.py:45] accuracy_rhythm/train: 0.9342
+I CMT_CPBP 12-02 14:30:56.294 utils.py:45] accuracy_pitch/train: 0.5996
+I CMT_CPBP 12-02 14:30:56.294 utils.py:43] nll/train: 0.8667
+I CMT_CPBP 12-02 14:30:56.294 utils.py:43] nll_pitch/train: 0.6964
+I CMT_CPBP 12-02 14:30:56.294 utils.py:43] nll_rhythm/train: 0.1703
+I CMT_CPBP 12-02 14:30:56.294 utils.py:45] accuracy_rhythm/train: 0.9250
+I CMT_CPBP 12-02 14:30:56.294 utils.py:45] accuracy_pitch/train: 0.5795
+I CMT_CPBP 12-02 14:30:56.297 trainer.py:129] ==========valid 96 epoch==========
+I CMT_CPBP 12-02 14:30:56.366 utils.py:43] nll/eval: 0.8830
+I CMT_CPBP 12-02 14:30:56.366 utils.py:43] nll_pitch/eval: 0.7297
+I CMT_CPBP 12-02 14:30:56.366 utils.py:43] nll_rhythm/eval: 0.1533
+I CMT_CPBP 12-02 14:30:56.366 utils.py:45] accuracy_rhythm/eval: 0.9270
+I CMT_CPBP 12-02 14:30:56.366 utils.py:45] accuracy_pitch/eval: 0.5731
+I CMT_CPBP 12-02 14:30:56.367 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:56.367 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:30:56.367 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:56.367 trainer.py:121] 97 epoch
+I CMT_CPBP 12-02 14:30:56.368 trainer.py:124] ==========train 97 epoch==========
+I CMT_CPBP 12-02 14:30:59.192 utils.py:43] nll/train: 0.8682
+I CMT_CPBP 12-02 14:30:59.192 utils.py:43] nll_pitch/train: 0.6974
+I CMT_CPBP 12-02 14:30:59.192 utils.py:43] nll_rhythm/train: 0.1708
+I CMT_CPBP 12-02 14:30:59.193 utils.py:45] accuracy_rhythm/train: 0.9241
+I CMT_CPBP 12-02 14:30:59.193 utils.py:45] accuracy_pitch/train: 0.5799
+I CMT_CPBP 12-02 14:30:59.194 trainer.py:129] ==========valid 97 epoch==========
+I CMT_CPBP 12-02 14:30:59.263 utils.py:43] nll/eval: 0.8682
+I CMT_CPBP 12-02 14:30:59.263 utils.py:43] nll_pitch/eval: 0.7141
+I CMT_CPBP 12-02 14:30:59.263 utils.py:43] nll_rhythm/eval: 0.1541
+I CMT_CPBP 12-02 14:30:59.263 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 14:30:59.263 utils.py:45] accuracy_pitch/eval: 0.5817
+I CMT_CPBP 12-02 14:30:59.263 trainer.py:120] 
+I CMT_CPBP 12-02 14:30:59.264 trainer.py:121] 98 epoch
+I CMT_CPBP 12-02 14:30:59.265 trainer.py:124] ==========train 98 epoch==========
+I CMT_CPBP 12-02 14:31:02.114 utils.py:43] nll/train: 0.8607
+I CMT_CPBP 12-02 14:31:02.114 utils.py:43] nll_pitch/train: 0.6901
+I CMT_CPBP 12-02 14:31:02.114 utils.py:43] nll_rhythm/train: 0.1706
+I CMT_CPBP 12-02 14:31:02.114 utils.py:45] accuracy_rhythm/train: 0.9249
+I CMT_CPBP 12-02 14:31:02.114 utils.py:45] accuracy_pitch/train: 0.5822
+I CMT_CPBP 12-02 14:31:02.116 trainer.py:129] ==========valid 98 epoch==========
+I CMT_CPBP 12-02 14:31:02.187 utils.py:43] nll/eval: 0.8979
+I CMT_CPBP 12-02 14:31:02.187 utils.py:43] nll_pitch/eval: 0.7440
+I CMT_CPBP 12-02 14:31:02.187 utils.py:43] nll_rhythm/eval: 0.1539
+I CMT_CPBP 12-02 14:31:02.187 utils.py:45] accuracy_rhythm/eval: 0.9290
+I CMT_CPBP 12-02 14:31:02.188 utils.py:45] accuracy_pitch/eval: 0.5755
+I CMT_CPBP 12-02 14:31:02.188 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:31:02.189 trainer.py:98] adjusting learning rate from 0.000001 to 0.000001
+I CMT_CPBP 12-02 14:31:02.189 trainer.py:120] 
+I CMT_CPBP 12-02 14:31:02.189 trainer.py:121] 99 epoch
+I CMT_CPBP 12-02 14:31:02.189 trainer.py:124] ==========train 99 epoch==========
+I CMT_CPBP 12-02 14:31:05.013 utils.py:43] nll/train: 0.8679
+I CMT_CPBP 12-02 14:31:05.013 utils.py:43] nll_pitch/train: 0.6980
+I CMT_CPBP 12-02 14:31:05.013 utils.py:43] nll_rhythm/train: 0.1699
+I CMT_CPBP 12-02 14:31:05.014 utils.py:45] accuracy_rhythm/train: 0.9248
+I CMT_CPBP 12-02 14:31:05.014 utils.py:45] accuracy_pitch/train: 0.5791
+I CMT_CPBP 12-02 14:31:05.015 trainer.py:129] ==========valid 99 epoch==========
+I CMT_CPBP 12-02 14:31:05.087 utils.py:43] nll/eval: 0.8381
+I CMT_CPBP 12-02 14:31:05.087 utils.py:43] nll_pitch/eval: 0.6847
+I CMT_CPBP 12-02 14:31:05.087 utils.py:43] nll_rhythm/eval: 0.1534
+I CMT_CPBP 12-02 14:31:05.087 utils.py:45] accuracy_rhythm/eval: 0.9283
+I CMT_CPBP 12-02 14:31:05.087 utils.py:45] accuracy_pitch/eval: 0.5797
+I CMT_CPBP 12-02 14:31:05.088 trainer.py:120] 
+I CMT_CPBP 12-02 14:31:05.089 trainer.py:121] 100 epoch
+I CMT_CPBP 12-02 14:31:05.089 trainer.py:124] ==========train 100 epoch==========
+I CMT_CPBP 12-02 14:31:07.929 trainer.py:215] 2500 training steps
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll: 0.8156
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll_pitch: 0.6500
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll_rhythm: 0.1655
+I CMT_CPBP 12-02 14:31:07.930 utils.py:45] accuracy_rhythm/train: 0.9246
+I CMT_CPBP 12-02 14:31:07.930 utils.py:45] accuracy_pitch/train: 0.6008
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll/train: 0.8580
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll_pitch/train: 0.6884
+I CMT_CPBP 12-02 14:31:07.930 utils.py:43] nll_rhythm/train: 0.1695
+I CMT_CPBP 12-02 14:31:07.930 utils.py:45] accuracy_rhythm/train: 0.9254
+I CMT_CPBP 12-02 14:31:07.930 utils.py:45] accuracy_pitch/train: 0.5839
+I CMT_CPBP 12-02 14:31:07.932 trainer.py:129] ==========valid 100 epoch==========
+I CMT_CPBP 12-02 14:31:08.001 utils.py:43] nll/eval: 0.8571
+I CMT_CPBP 12-02 14:31:08.001 utils.py:43] nll_pitch/eval: 0.7048
+I CMT_CPBP 12-02 14:31:08.001 utils.py:43] nll_rhythm/eval: 0.1523
+I CMT_CPBP 12-02 14:31:08.001 utils.py:45] accuracy_rhythm/eval: 0.9295
+I CMT_CPBP 12-02 14:31:08.001 utils.py:45] accuracy_pitch/eval: 0.5790
+I CMT_CPBP 12-02 14:31:08.002 trainer.py:83] saving model, Epoch 100, step 2500
+I CMT_CPBP 12-02 14:31:08.190 trainer.py:240] range len of loader dataset
+I CMT_CPBP 12-02 14:31:08.190 trainer.py:242] num sample config
+I CMT_CPBP 12-02 14:31:09.775 trainer.py:259] ==========sampling result of epoch 100==========
+I CMT_CPBP 12-02 14:31:09.777 trainer.py:263] Sample 00 : [48 48 12 12 48 14 16 48 14 11 48  7 14 48 48 11 48 16 48 48]
+I CMT_CPBP 12-02 14:31:09.964 trainer.py:282] Groundtruth 00 : [48 48 12 16 48 14 12 48 11 14 48 19 14 48 11  7 48  9 11 48]
+I CMT_CPBP 12-02 14:31:10.159 trainer.py:263] Sample 01 : [49 49 49 11 48 14 16 48 14 11 48 12 16 48 14 19 48 14 11 48]
+I CMT_CPBP 12-02 14:31:10.371 trainer.py:282] Groundtruth 01 : [49 49 49 14 12 11  9 48 11  2 48  7 11 48  2  7 48 11 14 48]
+I CMT_CPBP 12-02 14:31:10.567 trainer.py:263] Sample 02 : [14 48 18 48 48 16 18 48 48 48 48 19 48 48 19 14 48 11 14 48]
+I CMT_CPBP 12-02 14:31:10.750 trainer.py:282] Groundtruth 02 : [14 48  9 48 48 14 14 48 13 14 48  7  6 48  7 10 48 11 14 48]
+I CMT_CPBP 12-02 14:31:10.956 trainer.py:263] Sample 03 : [48 48 48 12 48 11  9 48  7 48 48  7  7 48 11 14 48 12 48 48]
+I CMT_CPBP 12-02 14:31:11.196 trainer.py:282] Groundtruth 03 : [17 48 16 16 48 18 19 48 14 11 48  7  7 48  6  7 48  4  9 48]
+I CMT_CPBP 12-02 14:31:11.477 trainer.py:263] Sample 04 : [49 49 49  9 14 18 19 48 18 18 48 19 11 48 14 19 48 18 19 48]
+I CMT_CPBP 12-02 14:31:11.684 trainer.py:282] Groundtruth 04 : [49 49 49  6  7  9 48 48  9  9 48 48 18 48 16 14 48 16 18 48]
+I CMT_CPBP 12-02 14:31:11.863 trainer.py:263] Sample 05 : [ 9 48 48 11 48 12 14 48 12 16 48 48 11 48 12 11 48  9  7 48]
+I CMT_CPBP 12-02 14:31:12.086 trainer.py:282] Groundtruth 05 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:31:12.245 trainer.py:263] Sample 06 : [ 9 48 48  7 48  4  9 48  9 16 48  9 12 48 11  4 48  6  4 48]
+I CMT_CPBP 12-02 14:31:12.448 trainer.py:282] Groundtruth 06 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:31:12.658 trainer.py:263] Sample 07 : [14 48 48 14 14 18 19 48 21 23 48 19 19 48 16 18 48 19 18 48]
+I CMT_CPBP 12-02 14:31:12.817 trainer.py:282] Groundtruth 07 : [14 48 48  9 48 18 48 48 16 14 48 13 11 48  9 48 48  6  6 48]
+I CMT_CPBP 12-02 14:31:13.009 trainer.py:263] Sample 08 : [48 48 11 14 48 48 19 48 19 21 48 19 19 48 21 19 48 18 48 48]
+I CMT_CPBP 12-02 14:31:13.228 trainer.py:282] Groundtruth 08 : [48 48 48 13 48 14 16 48 14 48 48 48 48 48 48 48 48 14 48 48]
+I CMT_CPBP 12-02 14:31:13.439 trainer.py:263] Sample 09 : [48 48 14 13 48 11 11 48 13 14 48 11  7 48  7  4 48  7  9 48]
+I CMT_CPBP 12-02 14:31:13.678 trainer.py:282] Groundtruth 09 : [ 9 48 11 48 48 12 14 48 48 16 48 11 48 48  9  7 48 48  6 48]
+I CMT_CPBP 12-02 14:31:13.865 trainer.py:263] Sample 10 : [48 48 48 48 48  4 48 48 48  4 48 48  4 48  4 48 48  9  9 48]
+I CMT_CPBP 12-02 14:31:14.104 trainer.py:282] Groundtruth 10 : [ 4 48 48  9 11 12 12 48 12 12 48 48 11 48  9 12 48 11  9 48]
+I CMT_CPBP 12-02 14:31:14.279 trainer.py:263] Sample 11 : [48 48 14 48 48 48 19 48 48 48 48  9 48 48  7  7 48 48 11 48]
+I CMT_CPBP 12-02 14:31:14.444 trainer.py:282] Groundtruth 11 : [48 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:31:14.627 trainer.py:263] Sample 12 : [11 48 11  9 48  7  4 48 48  7 48  6  2 48  6  9 48 11 13 48]
+I CMT_CPBP 12-02 14:31:14.797 trainer.py:282] Groundtruth 12 : [18 48 16 14 48 16 18 48 14 11 48  9 48 48  9 21 48 48 19 48]
+I CMT_CPBP 12-02 14:31:14.983 trainer.py:263] Sample 13 : [49 49 49 18 48 16 48 48 13  9 48 48  9 48 18 48 48 18 18 48]
+I CMT_CPBP 12-02 14:31:15.186 trainer.py:282] Groundtruth 13 : [49 49 49  9 11 13 48 48  4  4 48  6  4 48  6 48 48  9  9 48]
+I CMT_CPBP 12-02 14:31:15.370 trainer.py:263] Sample 14 : [14 48 14 48 48 14 14 48 48 13 48 11 48 48 13 18 48 16  9 48]
+I CMT_CPBP 12-02 14:31:15.618 trainer.py:282] Groundtruth 14 : [16 48 16 18 48 18 18 48 16 13 48 11  9 48  9  9 48 48 48 48]
+I CMT_CPBP 12-02 14:31:15.777 trainer.py:263] Sample 15 : [13 48 11 48 48  9  9 48 48  6 48  9 48 48  9 11 48 48 13 48]
+I CMT_CPBP 12-02 14:31:15.970 trainer.py:282] Groundtruth 15 : [14 48 11 14 48 11  9 48  6  2 48  2  6 48  9 11 48 48  9 48]
+I CMT_CPBP 12-02 14:31:16.137 trainer.py:263] Sample 16 : [ 9 48 48 11 48  9 48 48 11 12 48 11 12 48 14 16 48  7 19 48]
+I CMT_CPBP 12-02 14:31:16.355 trainer.py:282] Groundtruth 16 : [ 9 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:31:16.519 trainer.py:263] Sample 17 : [11 48 14 48 48 48 14 48 48 48 48  2 48 48 48  9 48 48 11 48]
+I CMT_CPBP 12-02 14:31:16.692 trainer.py:282] Groundtruth 17 : [14 48 11 14 48 11  9 48 48 19 48 18 16 48 14  9 48 14 13 48]
+I CMT_CPBP 12-02 14:31:16.884 trainer.py:263] Sample 18 : [12 48 14 48 48 12 11 48 48 12 48 14 48 48 14 11 48 12 14 48]
+I CMT_CPBP 12-02 14:31:17.101 trainer.py:282] Groundtruth 18 : [48 48 12 48 48 16 21 48 48 19 48 19 48 48 48 48 48 48 48 48]
+I CMT_CPBP 12-02 14:31:17.294 trainer.py:263] Sample 19 : [ 9 48 14 48 48 48 14 48 48 48 48 11 48 48  9  9 48 48  9 48]
+I CMT_CPBP 12-02 14:31:17.517 trainer.py:282] Groundtruth 19 : [ 9 48 14 48 48 16 18 48 48 19 48 21 18 48 14 16 48 18 16 48]
+I CMT_CPBP 12-02 14:31:17.741 trainer.py:263] Sample 20 : [16 48 19 48 48 16 19 48 16 11 48 12 11 48  9 11 48 12 14 48]
+I CMT_CPBP 12-02 14:31:17.913 trainer.py:282] Groundtruth 20 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:31:18.092 trainer.py:263] Sample 21 : [ 9 48  9 14 48 11  9 48 11  7 48 11 14 48 19 16 48 18  9 48]
+I CMT_CPBP 12-02 14:31:18.269 trainer.py:282] Groundtruth 21 : [ 9 48  9  9 48 11 12 48 11  7 48  7  7 48 48 48 48  4  9 48]
+I CMT_CPBP 12-02 14:31:18.417 trainer.py:263] Sample 22 : [16 48 17 16 48 17  9 48  7  9 48 10 14 48 10 12 48 14 16 48]
+I CMT_CPBP 12-02 14:31:18.618 trainer.py:282] Groundtruth 22 : [16 48 17 48 48 12  9 48 48  5 48  7  9 48 10 12 48 14 16 48]
+I CMT_CPBP 12-02 14:31:18.790 trainer.py:263] Sample 23 : [48 48 48  7 48  9 11 48  7 48 48  7  7 48  9 11 48 14 48 48]
+I CMT_CPBP 12-02 14:31:18.959 trainer.py:282] Groundtruth 23 : [ 6 48  7  9 48 48  7 48 11 48 48 48 11 48 48 12 48 14 16 48]
+I CMT_CPBP 12-02 14:31:19.128 trainer.py:263] Sample 24 : [ 9 48 48 14 48 16 48 48  9  9 48 11 12 48 16 14 48 16 19 48]
+I CMT_CPBP 12-02 14:31:19.281 trainer.py:282] Groundtruth 24 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:31:19.459 trainer.py:263] Sample 25 : [49 14 48 48  9  9 48 48 11 48 12 48 48  9  4 48 48  9 48 12]
+I CMT_CPBP 12-02 14:31:19.665 trainer.py:282] Groundtruth 25 : [49 49 49  4 48  4  9 48  9  9 48  8  9 48 12 11 48  9 12 48]
+I CMT_CPBP 12-02 14:31:19.805 trainer.py:263] Sample 26 : [21 48 48 19 21 23 21 48 20 18 48 20 21 48 20 21 48 20 21 48]
+I CMT_CPBP 12-02 14:31:19.949 trainer.py:282] Groundtruth 26 : [ 9 48  9  9 48 13 16 48 21 18 48 16 16 48 18 21 48 21  9 48]
+I CMT_CPBP 12-02 14:31:20.094 trainer.py:263] Sample 27 : [ 4 48 48  9 11 12 48 48  9 16 48 48 12 48 11  9 48  7  4 48]
+I CMT_CPBP 12-02 14:31:20.256 trainer.py:282] Groundtruth 27 : [ 4 48 48  4 48  4  9 48  9  9 48 12 12 48  7 11 48 11 11 48]
+I CMT_CPBP 12-02 14:31:20.425 trainer.py:263] Sample 28 : [14 48 16 14 48 16 19 48 18 16 48 14 11 48 12 11 48  7 11 48]
+I CMT_CPBP 12-02 14:31:20.595 trainer.py:282] Groundtruth 28 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:31:20.771 trainer.py:263] Sample 29 : [14 48 16 48 48 16 19 48 18 16 48 14 12 48  9 11 48 14 19 48]
+I CMT_CPBP 12-02 14:31:20.926 trainer.py:282] Groundtruth 29 : [12 48  7 11 48 11 11 48 16 16 48 12  9 48  9 11 48  7  7 48]
+I CMT_CPBP 12-02 14:31:21.133 trainer.py:263] Sample 30 : [26 48 23 21 48 20 18 48 20 21 48 23 19 48 18 16 48 14 11 48]
+I CMT_CPBP 12-02 14:31:21.321 trainer.py:282] Groundtruth 30 : [23 48 21 48 48 18 18 48 48 21 48 19 28 48 26 25 48 23 25 48]
+I CMT_CPBP 12-02 14:31:21.540 trainer.py:263] Sample 31 : [10 48 48 10 48 10 48 48 10 14 48 48 10 48  9 10 48  9  2 48]
+I CMT_CPBP 12-02 14:31:21.696 trainer.py:282] Groundtruth 31 : [ 7 48 48 48 48 19 14 48 14 22 48 21 19 48 21 14 48 14 24 48]
+I CMT_CPBP 12-02 14:31:21.837 trainer.py:263] Sample 32 : [49 49 14 48 48 16 48 19 18 48 19 19 48 48 16 48 16 19 48 16]
+I CMT_CPBP 12-02 14:31:21.971 trainer.py:282] Groundtruth 32 : [ 7 48 48 48 48 12 11 48 12  7 48  6  7 48  4  3 48  4  0 48]
+ARGS
+Namespace(gpu_index=0, idx=1, load_rhythm=True, ngpu=1, optim_name='adam', restore_epoch=-1, sample=False, seed=42)
+CONFIG
+{'path': './pkl_files/instance_pkl_8bars_fpb12_48p_ckey', 'loader': {'num_workers': 8, 'batch_size': 64, 'shuffle': True, 'drop_last': True, 'pin_memory': True}, 'dataset': {'data_ratio': [0.8, 0.1, 0.1], 'num_worker': 4}}

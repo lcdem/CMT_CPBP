@@ -1,0 +1,15 @@
+I CMT_CPBP 12-04 15:03:03.322 run.py:58] get loaders
+ARGS
+Namespace(gpu_index=0, idx=1, load_rhythm=True, ngpu=1, optim_name='adam', restore_epoch=-1, sample=False, seed=42)
+CONFIG
+{'path': './pkl_files/instance_pkl_15bars_fpb12_48p', 'loader': {'num_workers': 8, 'batch_size': 64, 'shuffle': 'Tru', 'drop_last': True, 'pin_memory': True}, 'dataset': {'data_ratio': [0.8, 0.1, 0.1], 'num_worker': 4}}
+Traceback (most recent call last):
+  File "/home/lidem/projects/def-pesantg/lidem/CMT_CPBP/run.py", line 59, in <module>
+    train_loader = get_loader(data_config, mode='train')
+  File "/lustre06/project/6032307/lidem/CMT_CPBP/dataset.py", line 47, in get_loader
+    shuffle=True, drop_last=True)
+  File "/home/lidem/.local/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 268, in __init__
+    sampler = RandomSampler(dataset, generator=generator)
+  File "/home/lidem/.local/lib/python3.7/site-packages/torch/utils/data/sampler.py", line 103, in __init__
+    "value, but got num_samples={}".format(self.num_samples))
+ValueError: num_samples should be a positive integer value, but got num_samples=0

@@ -1,1 +1,5 @@
+*.pth.tar
 results/idx001/model/*.pth.tar
+results/idx002/model/*.pth.tar
+results/idx003/model/*.pth.tar
+slurm-25550530.out

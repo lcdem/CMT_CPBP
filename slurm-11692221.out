@@ -1,0 +1,174 @@
+I CMT_CPBP 12-02 04:09:20.298 run.py:58] get loaders
+I CMT_CPBP 12-02 04:09:20.562 run.py:64] build graph, criterion, optimizer and trainer
+I CMT_CPBP 12-02 04:09:22.676 run.py:103] start training
+I CMT_CPBP 12-02 04:09:22.677 trainer.py:114] -1
+I CMT_CPBP 12-02 04:09:22.677 trainer.py:115] True
+I CMT_CPBP 12-02 04:09:22.677 trainer.py:55] loading model
+I CMT_CPBP 12-02 04:09:23.444 trainer.py:79] restore rhythm model
+I CMT_CPBP 12-02 04:09:23.445 trainer.py:120] 
+I CMT_CPBP 12-02 04:09:23.446 trainer.py:121] 1 epoch
+I CMT_CPBP 12-02 04:09:23.446 trainer.py:124] ==========train 1 epoch==========
+I CMT_CPBP 12-02 04:10:28.313 utils.py:43] nll/train: 24.0446
+I CMT_CPBP 12-02 04:10:28.315 utils.py:43] nll_pitch/train: 23.7821
+I CMT_CPBP 12-02 04:10:28.316 utils.py:43] nll_rhythm/train: 0.2624
+I CMT_CPBP 12-02 04:10:28.316 utils.py:45] accuracy_rhythm/train: 0.8906
+I CMT_CPBP 12-02 04:10:28.316 utils.py:45] accuracy_pitch/train: 0.0786
+I CMT_CPBP 12-02 04:10:28.318 trainer.py:129] ==========valid 1 epoch==========
+I CMT_CPBP 12-02 04:10:32.750 utils.py:43] nll/eval: 8.7548
+I CMT_CPBP 12-02 04:10:32.751 utils.py:43] nll_pitch/eval: 8.5573
+I CMT_CPBP 12-02 04:10:32.752 utils.py:43] nll_rhythm/eval: 0.1975
+I CMT_CPBP 12-02 04:10:32.753 utils.py:45] accuracy_rhythm/eval: 0.9148
+I CMT_CPBP 12-02 04:10:32.753 utils.py:45] accuracy_pitch/eval: 0.1850
+I CMT_CPBP 12-02 04:10:32.753 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:32.755 trainer.py:121] 2 epoch
+I CMT_CPBP 12-02 04:10:32.755 trainer.py:124] ==========train 2 epoch==========
+I CMT_CPBP 12-02 04:10:36.012 utils.py:43] nll/train: 14.3272
+I CMT_CPBP 12-02 04:10:36.012 utils.py:43] nll_pitch/train: 14.0932
+I CMT_CPBP 12-02 04:10:36.012 utils.py:43] nll_rhythm/train: 0.2340
+I CMT_CPBP 12-02 04:10:36.012 utils.py:45] accuracy_rhythm/train: 0.9027
+I CMT_CPBP 12-02 04:10:36.012 utils.py:45] accuracy_pitch/train: 0.1372
+I CMT_CPBP 12-02 04:10:36.013 trainer.py:129] ==========valid 2 epoch==========
+I CMT_CPBP 12-02 04:10:37.076 utils.py:43] nll/eval: 5.8276
+I CMT_CPBP 12-02 04:10:37.077 utils.py:43] nll_pitch/eval: 5.6450
+I CMT_CPBP 12-02 04:10:37.077 utils.py:43] nll_rhythm/eval: 0.1826
+I CMT_CPBP 12-02 04:10:37.077 utils.py:45] accuracy_rhythm/eval: 0.9178
+I CMT_CPBP 12-02 04:10:37.077 utils.py:45] accuracy_pitch/eval: 0.2302
+I CMT_CPBP 12-02 04:10:37.078 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:37.079 trainer.py:121] 3 epoch
+I CMT_CPBP 12-02 04:10:37.080 trainer.py:124] ==========train 3 epoch==========
+I CMT_CPBP 12-02 04:10:40.203 utils.py:43] nll/train: 10.7909
+I CMT_CPBP 12-02 04:10:40.203 utils.py:43] nll_pitch/train: 10.5797
+I CMT_CPBP 12-02 04:10:40.204 utils.py:43] nll_rhythm/train: 0.2112
+I CMT_CPBP 12-02 04:10:40.205 utils.py:45] accuracy_rhythm/train: 0.9108
+I CMT_CPBP 12-02 04:10:40.205 utils.py:45] accuracy_pitch/train: 0.1611
+I CMT_CPBP 12-02 04:10:40.206 trainer.py:129] ==========valid 3 epoch==========
+I CMT_CPBP 12-02 04:10:40.729 utils.py:43] nll/eval: 4.7299
+I CMT_CPBP 12-02 04:10:40.730 utils.py:43] nll_pitch/eval: 4.5669
+I CMT_CPBP 12-02 04:10:40.730 utils.py:43] nll_rhythm/eval: 0.1630
+I CMT_CPBP 12-02 04:10:40.730 utils.py:45] accuracy_rhythm/eval: 0.9273
+I CMT_CPBP 12-02 04:10:40.731 utils.py:45] accuracy_pitch/eval: 0.2522
+I CMT_CPBP 12-02 04:10:40.732 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:40.733 trainer.py:121] 4 epoch
+I CMT_CPBP 12-02 04:10:40.733 trainer.py:124] ==========train 4 epoch==========
+I CMT_CPBP 12-02 04:10:43.857 trainer.py:215] 100 training steps
+I CMT_CPBP 12-02 04:10:43.858 utils.py:43] nll: 7.4811
+I CMT_CPBP 12-02 04:10:43.859 utils.py:43] nll_pitch: 7.2826
+I CMT_CPBP 12-02 04:10:43.859 utils.py:43] nll_rhythm: 0.1985
+I CMT_CPBP 12-02 04:10:43.860 utils.py:45] accuracy_rhythm/train: 0.9124
+I CMT_CPBP 12-02 04:10:43.861 utils.py:45] accuracy_pitch/train: 0.1983
+I CMT_CPBP 12-02 04:10:43.861 utils.py:43] nll/train: 8.5801
+I CMT_CPBP 12-02 04:10:43.862 utils.py:43] nll_pitch/train: 8.3838
+I CMT_CPBP 12-02 04:10:43.863 utils.py:43] nll_rhythm/train: 0.1963
+I CMT_CPBP 12-02 04:10:43.863 utils.py:45] accuracy_rhythm/train: 0.9158
+I CMT_CPBP 12-02 04:10:43.864 utils.py:45] accuracy_pitch/train: 0.1831
+I CMT_CPBP 12-02 04:10:43.866 trainer.py:129] ==========valid 4 epoch==========
+I CMT_CPBP 12-02 04:10:44.129 utils.py:43] nll/eval: 3.7173
+I CMT_CPBP 12-02 04:10:44.129 utils.py:43] nll_pitch/eval: 3.5515
+I CMT_CPBP 12-02 04:10:44.129 utils.py:43] nll_rhythm/eval: 0.1658
+I CMT_CPBP 12-02 04:10:44.129 utils.py:45] accuracy_rhythm/eval: 0.9257
+I CMT_CPBP 12-02 04:10:44.129 utils.py:45] accuracy_pitch/eval: 0.3047
+I CMT_CPBP 12-02 04:10:44.129 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:44.131 trainer.py:121] 5 epoch
+I CMT_CPBP 12-02 04:10:44.131 trainer.py:124] ==========train 5 epoch==========
+I CMT_CPBP 12-02 04:10:47.141 utils.py:43] nll/train: 6.8250
+I CMT_CPBP 12-02 04:10:47.142 utils.py:43] nll_pitch/train: 6.6366
+I CMT_CPBP 12-02 04:10:47.142 utils.py:43] nll_rhythm/train: 0.1885
+I CMT_CPBP 12-02 04:10:47.143 utils.py:45] accuracy_rhythm/train: 0.9178
+I CMT_CPBP 12-02 04:10:47.143 utils.py:45] accuracy_pitch/train: 0.2172
+I CMT_CPBP 12-02 04:10:47.145 trainer.py:129] ==========valid 5 epoch==========
+I CMT_CPBP 12-02 04:10:47.282 utils.py:43] nll/eval: 3.1976
+I CMT_CPBP 12-02 04:10:47.283 utils.py:43] nll_pitch/eval: 3.0404
+I CMT_CPBP 12-02 04:10:47.283 utils.py:43] nll_rhythm/eval: 0.1572
+I CMT_CPBP 12-02 04:10:47.284 utils.py:45] accuracy_rhythm/eval: 0.9269
+I CMT_CPBP 12-02 04:10:47.284 utils.py:45] accuracy_pitch/eval: 0.3471
+I CMT_CPBP 12-02 04:10:47.286 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:47.286 trainer.py:121] 6 epoch
+I CMT_CPBP 12-02 04:10:47.287 trainer.py:124] ==========train 6 epoch==========
+I CMT_CPBP 12-02 04:10:50.108 utils.py:43] nll/train: 5.4830
+I CMT_CPBP 12-02 04:10:50.108 utils.py:43] nll_pitch/train: 5.2989
+I CMT_CPBP 12-02 04:10:50.108 utils.py:43] nll_rhythm/train: 0.1840
+I CMT_CPBP 12-02 04:10:50.109 utils.py:45] accuracy_rhythm/train: 0.9199
+I CMT_CPBP 12-02 04:10:50.109 utils.py:45] accuracy_pitch/train: 0.2589
+I CMT_CPBP 12-02 04:10:50.110 trainer.py:129] ==========valid 6 epoch==========
+I CMT_CPBP 12-02 04:10:50.199 utils.py:43] nll/eval: 2.7937
+I CMT_CPBP 12-02 04:10:50.200 utils.py:43] nll_pitch/eval: 2.6315
+I CMT_CPBP 12-02 04:10:50.200 utils.py:43] nll_rhythm/eval: 0.1622
+I CMT_CPBP 12-02 04:10:50.200 utils.py:45] accuracy_rhythm/eval: 0.9262
+I CMT_CPBP 12-02 04:10:50.200 utils.py:45] accuracy_pitch/eval: 0.3923
+I CMT_CPBP 12-02 04:10:50.200 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:50.200 trainer.py:121] 7 epoch
+I CMT_CPBP 12-02 04:10:50.201 trainer.py:124] ==========train 7 epoch==========
+I CMT_CPBP 12-02 04:10:52.973 utils.py:43] nll/train: 4.3422
+I CMT_CPBP 12-02 04:10:52.975 utils.py:43] nll_pitch/train: 4.1605
+I CMT_CPBP 12-02 04:10:52.975 utils.py:43] nll_rhythm/train: 0.1818
+I CMT_CPBP 12-02 04:10:52.975 utils.py:45] accuracy_rhythm/train: 0.9209
+I CMT_CPBP 12-02 04:10:52.975 utils.py:45] accuracy_pitch/train: 0.3053
+I CMT_CPBP 12-02 04:10:52.977 trainer.py:129] ==========valid 7 epoch==========
+I CMT_CPBP 12-02 04:10:53.061 utils.py:43] nll/eval: 2.2853
+I CMT_CPBP 12-02 04:10:53.061 utils.py:43] nll_pitch/eval: 2.1260
+I CMT_CPBP 12-02 04:10:53.061 utils.py:43] nll_rhythm/eval: 0.1593
+I CMT_CPBP 12-02 04:10:53.061 utils.py:45] accuracy_rhythm/eval: 0.9266
+I CMT_CPBP 12-02 04:10:53.061 utils.py:45] accuracy_pitch/eval: 0.4606
+I CMT_CPBP 12-02 04:10:53.061 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:53.062 trainer.py:121] 8 epoch
+I CMT_CPBP 12-02 04:10:53.063 trainer.py:124] ==========train 8 epoch==========
+I CMT_CPBP 12-02 04:10:55.845 trainer.py:215] 200 training steps
+I CMT_CPBP 12-02 04:10:55.846 utils.py:43] nll: 3.1605
+I CMT_CPBP 12-02 04:10:55.846 utils.py:43] nll_pitch: 2.9843
+I CMT_CPBP 12-02 04:10:55.846 utils.py:43] nll_rhythm: 0.1762
+I CMT_CPBP 12-02 04:10:55.846 utils.py:45] accuracy_rhythm/train: 0.9253
+I CMT_CPBP 12-02 04:10:55.846 utils.py:45] accuracy_pitch/train: 0.3766
+I CMT_CPBP 12-02 04:10:55.847 utils.py:43] nll/train: 3.4823
+I CMT_CPBP 12-02 04:10:55.847 utils.py:43] nll_pitch/train: 3.3034
+I CMT_CPBP 12-02 04:10:55.847 utils.py:43] nll_rhythm/train: 0.1789
+I CMT_CPBP 12-02 04:10:55.847 utils.py:45] accuracy_rhythm/train: 0.9220
+I CMT_CPBP 12-02 04:10:55.847 utils.py:45] accuracy_pitch/train: 0.3528
+I CMT_CPBP 12-02 04:10:55.848 trainer.py:129] ==========valid 8 epoch==========
+I CMT_CPBP 12-02 04:10:55.924 utils.py:43] nll/eval: 1.9869
+I CMT_CPBP 12-02 04:10:55.925 utils.py:43] nll_pitch/eval: 1.8270
+I CMT_CPBP 12-02 04:10:55.925 utils.py:43] nll_rhythm/eval: 0.1599
+I CMT_CPBP 12-02 04:10:55.925 utils.py:45] accuracy_rhythm/eval: 0.9266
+I CMT_CPBP 12-02 04:10:55.925 utils.py:45] accuracy_pitch/eval: 0.4823
+I CMT_CPBP 12-02 04:10:55.925 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:55.925 trainer.py:121] 9 epoch
+I CMT_CPBP 12-02 04:10:55.926 trainer.py:124] ==========train 9 epoch==========
+I CMT_CPBP 12-02 04:10:58.708 utils.py:43] nll/train: 2.8832
+I CMT_CPBP 12-02 04:10:58.710 utils.py:43] nll_pitch/train: 2.7055
+I CMT_CPBP 12-02 04:10:58.710 utils.py:43] nll_rhythm/train: 0.1776
+I CMT_CPBP 12-02 04:10:58.710 utils.py:45] accuracy_rhythm/train: 0.9226
+I CMT_CPBP 12-02 04:10:58.710 utils.py:45] accuracy_pitch/train: 0.3906
+I CMT_CPBP 12-02 04:10:58.712 trainer.py:129] ==========valid 9 epoch==========
+I CMT_CPBP 12-02 04:10:58.783 utils.py:43] nll/eval: 1.8705
+I CMT_CPBP 12-02 04:10:58.783 utils.py:43] nll_pitch/eval: 1.7075
+I CMT_CPBP 12-02 04:10:58.783 utils.py:43] nll_rhythm/eval: 0.1631
+I CMT_CPBP 12-02 04:10:58.783 utils.py:45] accuracy_rhythm/eval: 0.9249
+I CMT_CPBP 12-02 04:10:58.784 utils.py:45] accuracy_pitch/eval: 0.5107
+I CMT_CPBP 12-02 04:10:58.784 trainer.py:120] 
+I CMT_CPBP 12-02 04:10:58.784 trainer.py:121] 10 epoch
+I CMT_CPBP 12-02 04:10:58.785 trainer.py:124] ==========train 10 epoch==========
+I CMT_CPBP 12-02 04:11:01.551 utils.py:43] nll/train: 2.4704
+I CMT_CPBP 12-02 04:11:01.552 utils.py:43] nll_pitch/train: 2.2935
+I CMT_CPBP 12-02 04:11:01.552 utils.py:43] nll_rhythm/train: 0.1768
+I CMT_CPBP 12-02 04:11:01.552 utils.py:45] accuracy_rhythm/train: 0.9223
+I CMT_CPBP 12-02 04:11:01.552 utils.py:45] accuracy_pitch/train: 0.4185
+I CMT_CPBP 12-02 04:11:01.553 trainer.py:129] ==========valid 10 epoch==========
+I CMT_CPBP 12-02 04:11:01.622 utils.py:43] nll/eval: 1.6516
+I CMT_CPBP 12-02 04:11:01.622 utils.py:43] nll_pitch/eval: 1.4980
+I CMT_CPBP 12-02 04:11:01.622 utils.py:43] nll_rhythm/eval: 0.1536
+I CMT_CPBP 12-02 04:11:01.622 utils.py:45] accuracy_rhythm/eval: 0.9274
+I CMT_CPBP 12-02 04:11:01.622 utils.py:45] accuracy_pitch/eval: 0.5236
+I CMT_CPBP 12-02 04:11:01.623 trainer.py:83] saving model, Epoch 10, step 250
+ARGS
+Namespace(gpu_index=0, idx=1, load_rhythm=True, ngpu=1, optim_name='adam', restore_epoch=-1, sample=False, seed=42)
+CONFIG
+{'path': './pkl_files/instance_pkl_8bars_fpb12_48p_ckey', 'loader': {'num_workers': 8, 'batch_size': 64, 'shuffle': True, 'drop_last': True, 'pin_memory': True}, 'dataset': {'data_ratio': [0.8, 0.1, 0.1], 'num_worker': 4}}
+Traceback (most recent call last):
+  File "/home/lidem/projects/def-pesantg/lidem/CMT_CPBP/run.py", line 104, in <module>
+    trainer.train(restore_epoch=args.restore_epoch, load_rhythm=args.load_rhythm)
+  File "/lustre06/project/6032307/lidem/CMT_CPBP/trainer.py", line 134, in train
+    self._sampling(epoch)
+  File "/lustre06/project/6032307/lidem/CMT_CPBP/trainer.py", line 241, in _sampling
+    indices = random.sample(range(len(loader.dataset)), self.config["num_sample"])
+  File "/cvmfs/soft.computecanada.ca/gentoo/2020/usr/lib/python3.7/random.py", line 321, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative

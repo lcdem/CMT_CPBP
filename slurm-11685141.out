@@ -1,0 +1,15 @@
+I CMT_CPBP 12-01 21:24:15.575 run.py:58] get loaders
+I CMT_CPBP 12-01 21:24:15.823 run.py:64] build graph, criterion, optimizer and trainer
+I CMT_CPBP 12-01 21:24:18.206 run.py:103] start training
+ARGS
+Namespace(gpu_index=0, idx=2, load_rhythm=True, ngpu=1, optim_name='adam', restore_epoch=-1, sample=False, seed=42)
+CONFIG
+{'path': './pkl_files/instance_pkl_8bars_fpb12_48p_ckey', 'loader': {'num_workers': 8, 'batch_size': 64, 'shuffle': True, 'drop_last': True, 'pin_memory': True}, 'dataset': {'data_ratio': [0.8, 0.1, 0.1], 'num_worker': 4}}
+Traceback (most recent call last):
+  File "/home/lidem/projects/def-pesantg/lidem/CMT_CPBP/run.py", line 104, in <module>
+    trainer.train(restore_epoch=args.restore_epoch, load_rhythm=args.load_rhythm)
+  File "/lustre06/project/6032307/lidem/CMT_CPBP/trainer.py", line 114, in train
+    logger.info(kwargs["restore_epoch"])
+  File "/lustre06/project/6032307/lidem/CMT_CPBP/utils/logger.py", line 66, in info
+    _logger.info('I ' + project_name + ' ' + _log_prefix() + msg, *args, **kwargs)
+TypeError: can only concatenate str (not "int") to str

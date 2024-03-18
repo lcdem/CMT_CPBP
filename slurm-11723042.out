@@ -1,0 +1,23 @@
+I CMT_CPBP 12-03 21:10:57.791 run.py:58] get loaders
+I CMT_CPBP 12-03 21:10:57.880 run.py:64] build graph, criterion, optimizer and trainer
+I CMT_CPBP 12-03 21:10:59.624 run.py:103] start training
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:114] -1
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:115] False
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:55] loading model
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:60] no checkpoint with -1 epoch
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:120] 
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:121] 1 epoch
+I CMT_CPBP 12-03 21:10:59.624 trainer.py:124] ==========train 1 epoch==========
+terminate called after throwing an instance of 'c10::CUDAOutOfMemoryError'
+  what():  CUDA out of memory. Tried to allocate 508.00 MiB (GPU 0; 39.45 GiB total capacity; 37.40 GiB already allocated; 185.75 MiB free; 37.65 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+Exception raised from malloc at /tmp/coulombc/pytorch_build_2021-11-09_14-57-01/avx2/python3.7/pytorch/c10/cuda/CUDACachingAllocator.cpp:513 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x55 (0x14b3d5e08905 in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x295bf (0x14b3d5e675bf in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libc10_cuda.so)
+frame #2: <unknown function> + 0x2a2c5 (0x14b3d5e682c5 in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libc10_cuda.so)
+frame #3: <unknown function> + 0x2a7d2 (0x14b3d5e687d2 in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libc10_cuda.so)
+frame #4: at::native::empty_cuda(c10::ArrayRef<long>, c10::optional<c10::ScalarType>, c10::optional<c10::Layout>, c10::optional<c10::Device>, c10::optional<bool>, c10::optional<c10::MemoryFormat>) + 0xef (0x14b3d8eba52f in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #5: <unknown function> + 0x317750c (0x14b3d900950c in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #6: <unknown function> + 0x317757b (0x14b3d900957b in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libtorch_cuda.so)
+frame #7: <unknown function> + 0x1e54ca5 (0x14b3f3fa4ca5 in /home/lidem/.local/lib/python3.7/site-packages/torch/lib/libtorch_cpu.so)
+
+/var/spool/slurmd/job11723042/slurm_script: line 11: 2693065 Aborted                 (core dumped) python /home/lidem/projects/def-pesantg/lidem/CMT_CPBP/run.py --idx 1 --gpu_index 0 --ngpu 1 --optim_name adam --restore_epoch -1 --seed 42
