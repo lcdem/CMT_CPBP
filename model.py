@@ -8,6 +8,9 @@ from cp import ConstraintProgramming as CP
 from layers import DynamicPositionEmbedding, SelfAttentionBlock
 from torch.autograd import Variable
 from utils import logger
+import os
+import dill
+import subprocess
 
 class ChordConditionedMelodyTransformer(nn.Module):
     def __init__(self, num_pitch=89, frame_per_bar=16, num_bars=8,
@@ -116,14 +119,43 @@ class ChordConditionedMelodyTransformer(nn.Module):
         return result
 
     def chord_forward(self, chord):
+        torch.set_printoptions(threshold=10_000)
+        with open('debug_idx.txt', 'a') as file:
+            file.write("chord: ")
+            file.write(str(chord)+"\n")
         size = chord.size()
+        with open('debug_idx.txt', 'a') as file:
+            file.write("size: ")
+            file.write(str(size)+"\n")
         chord_emb = torch.matmul(chord.float(), self.chord_emb)
+        with open('debug_idx.txt', 'a') as file:
+            file.write("self.chord_emb: ")
+            file.write(str(self.chord_emb)+"\n")
+            file.write("chord.float(): ")
+            file.write(str(chord.float())+"\n")
+            file.write("chord_emb: ")
+            file.write(str(chord_emb)+"\n")
 
         h0, c0 = self.init_lstm_hidden(size[0])
+        with open('debug_idx.txt', 'a') as file:
+            file.write("h0: ")
+            file.write(str(h0)+"\n")
+            file.write("c0: ")
+            file.write(str(c0)+"\n")
         self.chord_lstm.flatten_parameters()
         chord_out, _ = self.chord_lstm(chord_emb, (h0.to(chord.device), c0.to(chord.device)))
+        with open('debug_idx.txt', 'a') as file:
+            file.write("chord.out: ")
+            file.write(str(chord_out)+"\n")
+            file.write("chord.device: ")
+            file.write(str(chord.device)+"\n")
         chord_for = chord_out[:, 1:, :self.chord_hidden]
         chord_back = chord_out[:, 1:, self.chord_hidden:]
+        with open('debug_idx.txt', 'a') as file:
+            file.write("chord_for: ")
+            file.write(str(chord_for)+"\n")
+            file.write("chord_back: ")
+            file.write(str(chord_back)+"\n")
         return chord_for, chord_back
     
     def rhythm_forward(self, rhythm, chord_hidden, attention_map=False, masking=True):
@@ -168,9 +200,10 @@ class ChordConditionedMelodyTransformer(nn.Module):
         
         return result
 
-    def sampling(self, prime_rhythm, prime_pitch, chord, epoch, sample_key, topk=None, attention_map=False):
+    def sampling(self, prime_rhythm, prime_pitch, chord, epoch, sample_key, seed, song_name, topk=None, attention_map=False):
         chord_hidden = self.chord_forward(chord)
-
+        self.cp.config['rhythm']['activate'] = False
+        self.cp.config['pitch']['activate'] = False
         # batch_size * prime_len * num_outputs
         batch_size = prime_pitch.size(0)
         pad_length = self.max_len - prime_rhythm.size(1)
@@ -178,9 +211,9 @@ class ChordConditionedMelodyTransformer(nn.Module):
         rhythm_result = torch.cat([prime_rhythm, rhythm_pad], dim=1)
 
         # sampling phase
-        # calculer les accords ICI
-        converted_chords = chords_operations.chords_conversion(chord, sample_key)
-        preparing_constraints.get_constraints_info()
+        # # calculer les accords ICI
+        # chords_operations.chords_conversion(chord, sample_key)
+        # preparing_constraints.get_constraints_info(song_name)
 
         for i in range(prime_rhythm.size(1), self.max_len):
             rhythm_dec_result = self.rhythm_forward(rhythm_result, chord_hidden, attention_map, masking=True)
@@ -189,14 +222,16 @@ class ChordConditionedMelodyTransformer(nn.Module):
             if topk is None:
                 idx = torch.argmax(rhythm_out[:, i - 1, :], dim=1)
             else:
-                if self.cp.config['rhythm']['activate']:
-                    # print(rhythm_out[:, i - 1, :])
-                    idx = self.cp.get_cp_rhythm_idx(rhythm_result, rhythm_out[:, i - 1, :], epoch, i, prime_pitch.device, sample_key)
-                else:
-                    top3_probs, top3_idxs = torch.topk(rhythm_out[:, i - 1, :], 3, dim=-1)
-                    idx = torch.gather(top3_idxs, 1, torch.multinomial(F.softmax(top3_probs, dim=-1), 1)).squeeze()
+                
+                # if self.cp.config['rhythm']['activate']:
+                #     # print(rhythm_out[:, i - 1, :])
+                #     idx = self.cp.get_cp_rhythm_idx(rhythm_result, rhythm_out[:, i - 1, :], epoch, i, prime_pitch.device, sample_key)
+                # else:
+                top3_probs, top3_idxs = torch.topk(rhythm_out[:, i - 1, :], 3, dim=-1)
+                idx = torch.gather(top3_idxs, 1, torch.multinomial(F.softmax(top3_probs, dim=-1), 1)).squeeze()
             rhythm_result[:, i] = idx
 
+        #### Rhythm encoding
         rhythm_dict = self.rhythm_forward(rhythm_result, chord_hidden, attention_map, masking=True)
         rhythm_out = self.rhythm_outlayer(rhythm_dict['output'])
         rhythm_out = self.log_softmax(rhythm_out)
@@ -204,6 +239,8 @@ class ChordConditionedMelodyTransformer(nn.Module):
         rhythm_temp = torch.cat([rhythm_result[:, 1:], idx.unsqueeze(-1)], dim=1)
         rhythm_enc_dict = self.rhythm_forward(rhythm_temp, chord_hidden, attention_map, masking=False)
         rhythm_emb = rhythm_enc_dict['output']
+        
+        ### Pitch
         if self.cp.config['pitch']['activate']:
             self.cp.save_rhythm_token(rhythm_result)
 
@@ -219,13 +256,13 @@ class ChordConditionedMelodyTransformer(nn.Module):
             if topk is None:
                 idx = torch.argmax(pitch_dict['output'][:, i - 1, :], dim=1)
             else:
-                if self.cp.config['pitch']['activate']:
-                    probs_cp = self.cp.get_cp_pitch_probs(pitch_result, pitch_dict['output'][:, i - 1, :], epoch, i, prime_pitch.device, sample_key)
-                    topk_probs, topk_idxs = torch.topk(probs_cp, topk, dim=-1)
-                    idx = torch.gather(topk_idxs, 1, torch.multinomial(topk_probs, 1)).squeeze()
-                else:
-                    topk_probs, topk_idxs = torch.topk(pitch_dict['output'][:, i - 1, :], topk, dim=-1)
-                    idx = torch.gather(topk_idxs, 1, torch.multinomial(F.softmax(topk_probs, dim=-1), 1)).squeeze()
+                # if self.cp.config['pitch']['activate']:
+                #     probs_cp = self.cp.get_cp_pitch_probs(pitch_result, pitch_dict['output'][:, i - 1, :], epoch, i, prime_pitch.device, sample_key)
+                #     topk_probs, topk_idxs = torch.topk(probs_cp, topk, dim=-1)
+                #     idx = torch.gather(topk_idxs, 1, torch.multinomial(topk_probs, 1)).squeeze()
+                # else:
+                topk_probs, topk_idxs = torch.topk(pitch_dict['output'][:, i - 1, :], topk, dim=-1)
+                idx = torch.gather(topk_idxs, 1, torch.multinomial(F.softmax(topk_probs, dim=-1), 1)).squeeze()
             pitch_result[:, i] = idx
 
         result = {'rhythm': rhythm_result,
@@ -237,3 +274,185 @@ class ChordConditionedMelodyTransformer(nn.Module):
         return result
 
 
+    def sampling_with_cp(self, prime_rhythm, prime_pitch, chord, epoch, sample_key, seed, song_name, topk=None, attention_map=False):
+        if os.path.exists("debug_idx.txt"):
+            os.remove("debug_idx.txt")
+        
+        # Rhythm
+        # Save info for jep to access
+        with open('model.pkl', 'w+b') as f:
+            dill.dump(self, f)
+        with open('chord.pkl', 'w+b') as f:
+            dill.dump(chord, f)
+        with open('prime_rhythm.pkl', 'w+b') as f:
+            dill.dump(prime_rhythm, f)
+        
+        chords_operations.chords_conversion(chord, sample_key)
+        preparing_constraints.get_constraints_info(song_name)
+
+        # Execute java code
+        current_dir_backup = os.getcwd()
+        os.chdir(self.cp.minicpbp_working_dir)
+        cp_model_name = 'rhythmPatternCorrelation'
+
+        cmd = f'{self.cp.BASIC_JAVA_CMD}{cp_model_name} {seed}'.split()
+        print(cmd)
+        process = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+        batch_size = prime_pitch.size(0)
+        pad_length = self.max_len - prime_rhythm.size(1)
+
+        os.chdir(current_dir_backup)
+
+        rhythm_pad = torch.zeros([batch_size, pad_length], dtype=torch.long).to(prime_rhythm.device)
+        rhythm_result = torch.cat([prime_rhythm, rhythm_pad], dim=1)
+
+        if process.returncode != 0:
+            print(f'Java MiniCPBP rhythm failed: {process.stderr}')
+        else :
+            print(f'java miniCPBP rhythm succeed, process returncode :{process.returncode} - {process.stdout} - {process.stderr}')
+            with open(os.path.join(self.cp.minicpbp_music_path, 'results_rhythm.txt'), 'r') as f:
+                line = f.readline()
+                tokens = line.split()
+                print('\n Read file : ')
+                print(tokens)
+                for j in range(128):
+                    rhythm_result[:,j] = float(tokens[j])
+
+        ####### Pitch generration
+        # Save info for jep to access
+        with open('prime_pitch.pkl', 'w+b') as f:
+            dill.dump(prime_pitch, f)
+        with open('rhythm_result.pkl', 'w+b') as f:
+            dill.dump(rhythm_result, f)
+        #### Rhythm encoding
+        os.chdir(self.cp.minicpbp_working_dir)
+        cp_model_name = 'pitchPatternCorrelation'
+        k = self.cp.config[self.cp.PITCH]['model']['k']
+        
+        cmd = f'{self.cp.BASIC_JAVA_CMD}{cp_model_name} {seed} {sample_key}'.split()
+        process = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+        batch_size = prime_pitch.size(0)
+        pad_length = self.max_len - prime_pitch.size(1)
+
+        os.chdir(current_dir_backup)
+
+        pitch_pad = torch.zeros([batch_size, pad_length], dtype=torch.long).to(prime_pitch.device)
+        pitch_result = torch.cat([prime_pitch, pitch_pad], dim=1)
+
+        if process.returncode != 0:
+            print(f'\nJava MiniCPBP pitch failed: {process.stderr}')
+        else:
+            print(
+                f'\njava miniCPBP pitch succeed, process returncode :{process.returncode} - {process.stdout} - {process.stderr}')
+            with open(os.path.join(self.cp.minicpbp_music_path, 'results_pitch.txt'), 'r') as f:
+                line = f.readline()
+                tokens = line.split()
+                print('\n Read file : ')
+                print(tokens)
+                for j in range(128):
+                    pitch_result[:, j] = float(tokens[j])
+
+        result = {'rhythm': rhythm_result,
+                  'pitch': pitch_result}
+        if attention_map:
+            result['weights_rdec'] = rhythm_dict['weights']
+            result['weights_renc'] = rhythm_enc_dict['weights']
+            result['weights_pitch'] = pitch_dict['weights']
+        return result
+
+
+
+    def sampling_with_java(self, prime_rhythm, prime_pitch, chord, epoch, seed, topk=None, attention_map=False):
+        if os.path.exists("debug_idx.txt"):
+            os.remove("debug_idx.txt")
+        
+        #============================================== RHYTHM ==============================================
+        # Save python variables into pkl files to access them inside JEP
+        with open('model.pkl', 'w+b') as f:
+            dill.dump(self, f)
+        with open('chord.pkl', 'w+b') as f:
+            dill.dump(chord, f)
+        with open('prime_rhythm.pkl', 'w+b') as f:
+            dill.dump(prime_rhythm, f)
+
+        # Execute java code
+        current_dir_backup = os.getcwd()
+        os.chdir(self.cp.minicpbp_working_dir)
+        cp_model_name = 'samplingRhythm'
+        userConstraints = self.cp.config[self.cp.RHYTHM]['model']['userconstraints']
+        print("")
+        print(userConstraints)
+        print("")
+        cmd = f'{self.cp.BASIC_JAVA_CMD}{cp_model_name} {userConstraints} {seed}'.split()
+        process = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+        batch_size = prime_pitch.size(0)
+        pad_length = self.max_len - prime_rhythm.size(1)
+
+        os.chdir(current_dir_backup)
+
+        rhythm_pad = torch.zeros([batch_size, pad_length], dtype=torch.long).to(prime_rhythm.device)
+        rhythm_result = torch.cat([prime_rhythm, rhythm_pad], dim=1)
+
+        if process.returncode != 0:
+            print(f'Java MiniCPBP rhythm failed: {process.stderr}')
+        else :
+            print(f'java miniCPBP rhythm succeed, process returncode :{process.returncode} - {process.stdout} - {process.stderr}')
+            with open(os.path.join(self.cp.minicpbp_music_path, 'results_rhythm.txt'), 'r') as f:
+                line = f.readline()
+                tokens = line.split()
+                print('\n Read file : ')
+                print(tokens)
+                for j in range(128):
+                    rhythm_result[:,j] = float(tokens[j])
+
+        #============================================== PITCH ==============================================
+        # Save python variables into pkl files to access them inside JEP
+        with open('prime_pitch.pkl', 'w+b') as f:
+            dill.dump(prime_pitch, f)
+        with open('rhythm_result.pkl', 'w+b') as f:
+            dill.dump(rhythm_result, f)
+
+        # Execute java code
+        os.chdir(self.cp.minicpbp_working_dir)
+        cp_model_name = 'samplingPitch'
+        userConstraints = self.cp.config[self.cp.PITCH]['model']['userconstraints']
+        k = self.cp.config[self.cp.PITCH]['model']['k']
+        java_debug = "jdb"
+        JAVA_CMD = f'jdb -cp ../../../target/minicpbp-1.0.jar minicpbp.examples.'
+        cmd = f'{self.cp.BASIC_JAVA_CMD}{cp_model_name} {userConstraints} {seed} {k}'.split()
+        process = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+
+        batch_size = prime_pitch.size(0)
+        pad_length = self.max_len - prime_pitch.size(1)
+
+        os.chdir(current_dir_backup)
+
+        pitch_pad = torch.zeros([batch_size, pad_length], dtype=torch.long).to(prime_pitch.device)
+        pitch_result = torch.cat([prime_pitch, pitch_pad], dim=1)
+
+        if process.returncode != 0:
+            print(f'\nJava MiniCPBP pitch failed: {process.stderr}')
+        else:
+            print(
+                f'\njava miniCPBP pitch succeed, process returncode :{process.returncode} - {process.stdout} - {process.stderr}')
+            with open(os.path.join(self.cp.minicpbp_music_path, 'results_pitch.txt'), 'r') as f:
+                line = f.readline()
+                tokens = line.split()
+                print('\n Read file : ')
+                print(tokens)
+                for j in range(128):
+                    pitch_result[:, j] = float(tokens[j])
+
+        result = {'rhythm': rhythm_result,
+                  'pitch': pitch_result}
+        if attention_map:
+            result['weights_rdec'] = rhythm_dict['weights']
+            result['weights_renc'] = rhythm_enc_dict['weights']
+            result['weights_pitch'] = pitch_dict['weights']
+        return result
+    
+    def scare_lockwood(self):
+        return "Where is Lucy? Where did she go?"

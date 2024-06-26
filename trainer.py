@@ -132,10 +132,10 @@ class CMTtrainer(BaseTrainer):
                 if epoch > self.loading_epoch and ((epoch < 100 and epoch % 10 == 0) or epoch % 100 == 0):
                     self.save_model(epoch, self.current_step)
                     if not self.config['rhythm_only']:
-                        self._sampling(epoch)
+                        self._sampling(epoch, seed=42)
     
     # new method added to directly sample melodies from a checkpoint
-    def sampling(self, **kwargs):
+    def sampling(self, seed, **kwargs):
         # load model if exists
         self.load_model(kwargs["restore_epoch"], kwargs["load_rhythm"])
 
@@ -146,7 +146,7 @@ class CMTtrainer(BaseTrainer):
             # logger.info("========== test ==========")
             # self._epoch(kwargs["restore_epoch"], 'test', self.config['rhythm_only'])
             if not self.config['rhythm_only']:
-                self._sampling(kwargs["restore_epoch"])
+                self._sampling(kwargs["restore_epoch"], seed)
 
     def _step(self, loss, **kwargs):
         # back-propagation
@@ -235,17 +235,11 @@ class CMTtrainer(BaseTrainer):
         if mode == 'eval':
             self.adjust_learning_rate()
 
-    def _sampling(self, epoch):
+    def _sampling(self, epoch, seed):
         self.model.eval()
         loader = self.test_loader
         asset_path = os.path.join(self.asset_path)
-        logger.info("range len of loader dataset")
-        logger.info(str(range(len(loader.dataset))))
-        logger.info("num sample config")
-        logger.info(str(self.config["num_sample"]))
         indices = random.sample(range(len(loader.dataset)), self.config["num_sample"])
-        logger.info(str(loader.dataset[0]))
-        logger.info(str(loader.dataset[1]))
         batch = collate_fn([loader.dataset[i] for i in indices])
         for key in batch.keys():
             if key != 'name':
@@ -263,87 +257,157 @@ class CMTtrainer(BaseTrainer):
         np.set_printoptions(threshold=sys.maxsize)
         sample_key = int(batch['key'].numpy()[0])
         print("KEY : ", sample_key)
-        print("NAME : ", batch['name'])
+        song_name = batch['name'][0]
+        print("NAME : ", song_name)
+
+        cp_sample_path = 'MAI_samples_cpbp/MAI_sample_95_couverture_100'
+        cmt_sample_path = 'samples_cpbp/cmt_results/MAI'
+        is_cp = True
+        if is_cp:
+            result_dict = model.sampling_with_cp(prime_rhythm, prime, batch['chord'], epoch, sample_key, seed, str(song_name),
+                                        self.config["topk"], self.config['attention_map'])
+            result_key = 'pitch'
+            pitch_idx = result_dict[result_key].cpu().numpy()
+
+            logger.info("==========sampling result of epoch %03d==========" % epoch)
+            os.makedirs(os.path.join(asset_path, cp_sample_path, 'epoch_%03d' % epoch), exist_ok=True)
+
+            for sample_id in range(pitch_idx.shape[0]):
+                logger.info(("Sample %02d : " % sample_id) + str(pitch_idx[sample_id][self.config["num_prime"]:self.config["num_prime"]+20]))
+                save_path = os.path.join(asset_path, cp_sample_path, 'epoch_%03d' % epoch,
+                                        '{seed}_cp_sample{sample_id}_{song_name}.mid'.format(seed=seed, sample_id=sample_id, song_name=song_name))
+                gt_pitch = batch['pitch'].cpu().numpy()
+                gt_chord = batch['chord'][:, :-1].cpu().numpy() 
+
+                sample_dict = {'pitch': pitch_idx[sample_id],
+                            'rhythm': result_dict['rhythm'][sample_id].cpu().numpy(),
+                            'chord': csc_matrix(gt_chord[sample_id])}
+
+                with open(save_path.replace('.mid', '.pkl'), 'wb') as f_samp:
+                    pickle.dump(sample_dict, f_samp)
+                instruments = pitch_to_midi(pitch_idx[sample_id], gt_chord[sample_id], model.frame_per_bar, save_path)
+                save_instruments_as_image(save_path.replace('.mid', '.jpg'), instruments,
+                                        frame_per_bar=model.frame_per_bar,
+                                        num_bars=(model.max_len // model.frame_per_bar))
+
+                # save groundtruth
+                logger.info(("Groundtruth %02d : " % sample_id) +
+                            str(gt_pitch[sample_id, self.config["num_prime"]:self.config["num_prime"] + 20]))
+                gt_path = os.path.join(asset_path, cp_sample_path, 'epoch_%03d' % epoch,
+                                        'epoch{epoch}_groundtruth{sample_id}_{song_name}_{seed}.mid'.format(epoch=epoch, sample_id=sample_id, song_name=song_name, seed=seed))
+                gt_dict = {'pitch': gt_pitch[sample_id, :-1],
+                        'rhythm': batch['rhythm'][sample_id, :-1].cpu().numpy(),
+                        'chord': csc_matrix(gt_chord[sample_id])}
+                with open(gt_path.replace('.mid', '.pkl'), 'wb') as f_gt:
+                    pickle.dump(gt_dict, f_gt)
+                gt_instruments = pitch_to_midi(gt_pitch[sample_id, :-1], gt_chord[sample_id], model.frame_per_bar, gt_path)
+                save_instruments_as_image(gt_path.replace('.mid', '.jpg'), gt_instruments,
+                                        frame_per_bar=model.frame_per_bar,
+                                        num_bars=(model.max_len // model.frame_per_bar))
+
+                if self.config['attention_map']:
+                    os.makedirs(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch,
+                                            'RDec-Chord', 'sample_%02d' % sample_id), exist_ok=True)
+
+                    for head_num in range(8):
+                        for l, w in enumerate(result_dict['weights_bdec']):
+                            fig_w = plt.figure(figsize=(8, 8))
+                            ax_w = fig_w.add_subplot(1, 1, 1)
+                            heatmap_w = ax_w.pcolor(w[sample_id, head_num].cpu().numpy(), cmap='Reds')
+                            ax_w.set_xticks(np.arange(0, self.model.module.max_len))
+                            ax_w.xaxis.tick_top()
+                            ax_w.set_yticks(np.arange(0, self.model.module.max_len))
+                            ax_w.set_xticklabels(rhythm_to_symbol_list(result_dict['rhythm'][sample_id].cpu().numpy()),
+                                                fontdict=x_fontdict)
+                            chord_symbol_list = [''] * pitch_idx.shape[1]
+                            for t in sorted(chord_array_to_dict(gt_chord[sample_id]).keys()):
+                                chord_symbol_list[t] = chord_array_to_dict(gt_chord[sample_id])[t].tolist()
+                            ax_w.set_yticklabels(chord_to_symbol_list(gt_chord[sample_id]), fontdict=y_fontdict)
+                            ax_w.invert_yaxis()
+                            plt.savefig(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch, 'RDec-Chord',
+                                                    'sample_%02d' % sample_id,
+                                                    'epoch%03d_RDec-Chord_sample%02d_head%02d_layer%02d.jpg' % (
+                                                    epoch, sample_id, head_num, l)))
+                            plt.close()
+        else:
+            result_dict = model.sampling(prime_rhythm, prime, batch['chord'], epoch, sample_key, seed, str(song_name),
+                                        self.config["topk"], self.config['attention_map'])
+            result_key = 'pitch'
+            pitch_idx = result_dict[result_key].cpu().numpy()
+
+            logger.info("==========sampling result of epoch %03d==========" % epoch)
+            os.makedirs(os.path.join(asset_path, cmt_sample_path, 'epoch_%03d' % epoch), exist_ok=True)
+
+            for sample_id in range(pitch_idx.shape[0]):
+                logger.info(("Sample %02d : " % sample_id) + str(pitch_idx[sample_id][self.config["num_prime"]:self.config["num_prime"]+20]))
+                save_path = os.path.join(asset_path, cmt_sample_path, 'epoch_%03d' % epoch,
+                                        '{seed}_cmt_sample{sample_id}_{song_name}.mid'.format(seed=seed, sample_id=sample_id, song_name=song_name))
+                gt_pitch = batch['pitch'].cpu().numpy()
+                gt_chord = batch['chord'][:, :-1].cpu().numpy()
+                # print(gt_chord[sample_id])
+                # differing_locations(batch['chord'], gt_chord[sample_id])
+                # differing_locations(batch['chord'], batch['chord'][:, :-1].cpu().numpy())
+                # differing_locations(batch['chord'], batch['chord'][sample_id])
+
+                # differing_locations(batch['chord'][sample_id], gt_chord[sample_id])
+                
+
+                sample_dict = {'pitch': pitch_idx[sample_id],
+                            'rhythm': result_dict['rhythm'][sample_id].cpu().numpy(),
+                            'chord': csc_matrix(gt_chord[sample_id])}
+                # print("GROUNDTRUTH INFO")
+                # print(sample_dict)
+                # print(sample_dict['chord'])
+                # print("CHORD INFO")
+                # print(gt_chord)
 
 
-        result_dict = model.sampling(prime_rhythm, prime, batch['chord'], epoch, sample_key,
-                                     self.config["topk"], self.config['attention_map'])
-        result_key = 'pitch'
-        pitch_idx = result_dict[result_key].cpu().numpy()
+                with open(save_path.replace('.mid', '.pkl'), 'wb') as f_samp:
+                    pickle.dump(sample_dict, f_samp)
+                instruments = pitch_to_midi(pitch_idx[sample_id], gt_chord[sample_id], model.frame_per_bar, save_path)
+                save_instruments_as_image(save_path.replace('.mid', '.jpg'), instruments,
+                                        frame_per_bar=model.frame_per_bar,
+                                        num_bars=(model.max_len // model.frame_per_bar))
 
-        logger.info("==========sampling result of epoch %03d==========" % epoch)
-        os.makedirs(os.path.join(asset_path, 'sampling_results', 'epoch_%03d' % epoch), exist_ok=True)
+                # save groundtruth
+                logger.info(("Groundtruth %02d : " % sample_id) +
+                            str(gt_pitch[sample_id, self.config["num_prime"]:self.config["num_prime"] + 20]))
+                gt_path = os.path.join(asset_path, cmt_sample_path, 'epoch_%03d' % epoch,
+                                        'epoch{epoch}_groundtruth{sample_id}_{song_name}_{seed}.mid'.format(epoch=epoch, sample_id=sample_id, song_name=song_name, seed=seed))
+                gt_dict = {'pitch': gt_pitch[sample_id, :-1],
+                        'rhythm': batch['rhythm'][sample_id, :-1].cpu().numpy(),
+                        'chord': csc_matrix(gt_chord[sample_id])}
+                with open(gt_path.replace('.mid', '.pkl'), 'wb') as f_gt:
+                    pickle.dump(gt_dict, f_gt)
+                gt_instruments = pitch_to_midi(gt_pitch[sample_id, :-1], gt_chord[sample_id], model.frame_per_bar, gt_path)
+                save_instruments_as_image(gt_path.replace('.mid', '.jpg'), gt_instruments,
+                                        frame_per_bar=model.frame_per_bar,
+                                        num_bars=(model.max_len // model.frame_per_bar))
 
-        for sample_id in range(pitch_idx.shape[0]):
-            logger.info(("Sample %02d : " % sample_id) + str(pitch_idx[sample_id][self.config["num_prime"]:self.config["num_prime"]+20]))
-            save_path = os.path.join(asset_path, 'sampling_results', 'epoch_%03d' % epoch,
-                                     'epoch%03d_sample%02d.mid' % (epoch, sample_id))
-            gt_pitch = batch['pitch'].cpu().numpy()
-            gt_chord = batch['chord'][:, :-1].cpu().numpy()
-            # print(gt_chord[sample_id])
-            # differing_locations(batch['chord'], gt_chord[sample_id])
-            # differing_locations(batch['chord'], batch['chord'][:, :-1].cpu().numpy())
-            # differing_locations(batch['chord'], batch['chord'][sample_id])
+                if self.config['attention_map']:
+                    os.makedirs(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch,
+                                            'RDec-Chord', 'sample_%02d' % sample_id), exist_ok=True)
 
-            # differing_locations(batch['chord'][sample_id], gt_chord[sample_id])
-            
-
-            sample_dict = {'pitch': pitch_idx[sample_id],
-                           'rhythm': result_dict['rhythm'][sample_id].cpu().numpy(),
-                           'chord': csc_matrix(gt_chord[sample_id])}
-            # print("GROUNDTRUTH INFO")
-            # print(sample_dict)
-            # print(sample_dict['chord'])
-            # print("CHORD INFO")
-            # print(gt_chord)
-
-
-            with open(save_path.replace('.mid', '.pkl'), 'wb') as f_samp:
-                pickle.dump(sample_dict, f_samp)
-            instruments = pitch_to_midi(pitch_idx[sample_id], gt_chord[sample_id], model.frame_per_bar, save_path)
-            save_instruments_as_image(save_path.replace('.mid', '.jpg'), instruments,
-                                      frame_per_bar=model.frame_per_bar,
-                                      num_bars=(model.max_len // model.frame_per_bar))
-
-            # save groundtruth
-            logger.info(("Groundtruth %02d : " % sample_id) +
-                        str(gt_pitch[sample_id, self.config["num_prime"]:self.config["num_prime"] + 20]))
-            gt_path = os.path.join(asset_path, 'sampling_results', 'epoch_%03d' % epoch,
-                                     'epoch%03d_groundtruth%02d.mid' % (epoch, sample_id))
-            gt_dict = {'pitch': gt_pitch[sample_id, :-1],
-                       'rhythm': batch['rhythm'][sample_id, :-1].cpu().numpy(),
-                       'chord': csc_matrix(gt_chord[sample_id])}
-            with open(gt_path.replace('.mid', '.pkl'), 'wb') as f_gt:
-                pickle.dump(gt_dict, f_gt)
-            gt_instruments = pitch_to_midi(gt_pitch[sample_id, :-1], gt_chord[sample_id], model.frame_per_bar, gt_path)
-            save_instruments_as_image(gt_path.replace('.mid', '.jpg'), gt_instruments,
-                                      frame_per_bar=model.frame_per_bar,
-                                      num_bars=(model.max_len // model.frame_per_bar))
-
-            if self.config['attention_map']:
-                os.makedirs(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch,
-                                         'RDec-Chord', 'sample_%02d' % sample_id), exist_ok=True)
-
-                for head_num in range(8):
-                    for l, w in enumerate(result_dict['weights_bdec']):
-                        fig_w = plt.figure(figsize=(8, 8))
-                        ax_w = fig_w.add_subplot(1, 1, 1)
-                        heatmap_w = ax_w.pcolor(w[sample_id, head_num].cpu().numpy(), cmap='Reds')
-                        ax_w.set_xticks(np.arange(0, self.model.module.max_len))
-                        ax_w.xaxis.tick_top()
-                        ax_w.set_yticks(np.arange(0, self.model.module.max_len))
-                        ax_w.set_xticklabels(rhythm_to_symbol_list(result_dict['rhythm'][sample_id].cpu().numpy()),
-                                             fontdict=x_fontdict)
-                        chord_symbol_list = [''] * pitch_idx.shape[1]
-                        for t in sorted(chord_array_to_dict(gt_chord[sample_id]).keys()):
-                            chord_symbol_list[t] = chord_array_to_dict(gt_chord[sample_id])[t].tolist()
-                        ax_w.set_yticklabels(chord_to_symbol_list(gt_chord[sample_id]), fontdict=y_fontdict)
-                        ax_w.invert_yaxis()
-                        plt.savefig(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch, 'RDec-Chord',
-                                                 'sample_%02d' % sample_id,
-                                                 'epoch%03d_RDec-Chord_sample%02d_head%02d_layer%02d.jpg' % (
-                                                 epoch, sample_id, head_num, l)))
-                        plt.close()
+                    for head_num in range(8):
+                        for l, w in enumerate(result_dict['weights_bdec']):
+                            fig_w = plt.figure(figsize=(8, 8))
+                            ax_w = fig_w.add_subplot(1, 1, 1)
+                            heatmap_w = ax_w.pcolor(w[sample_id, head_num].cpu().numpy(), cmap='Reds')
+                            ax_w.set_xticks(np.arange(0, self.model.module.max_len))
+                            ax_w.xaxis.tick_top()
+                            ax_w.set_yticks(np.arange(0, self.model.module.max_len))
+                            ax_w.set_xticklabels(rhythm_to_symbol_list(result_dict['rhythm'][sample_id].cpu().numpy()),
+                                                fontdict=x_fontdict)
+                            chord_symbol_list = [''] * pitch_idx.shape[1]
+                            for t in sorted(chord_array_to_dict(gt_chord[sample_id]).keys()):
+                                chord_symbol_list[t] = chord_array_to_dict(gt_chord[sample_id])[t].tolist()
+                            ax_w.set_yticklabels(chord_to_symbol_list(gt_chord[sample_id]), fontdict=y_fontdict)
+                            ax_w.invert_yaxis()
+                            plt.savefig(os.path.join(asset_path, 'attention_map', 'epoch_%03d' % epoch, 'RDec-Chord',
+                                                    'sample_%02d' % sample_id,
+                                                    'epoch%03d_RDec-Chord_sample%02d_head%02d_layer%02d.jpg' % (
+                                                    epoch, sample_id, head_num, l)))
+                            plt.close()
 
 
 def differing_locations(array1, array2):

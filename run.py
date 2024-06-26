@@ -15,12 +15,12 @@ from trainer import CMTtrainer
 # hyperparameter - using argparse and parameter module
 parser = argparse.ArgumentParser()
 parser.add_argument('--idx', type=int, help='experiment number',  default=0)
-parser.add_argument('--gpu_index', '-g', type=int, default="0", help='GPU index')
+parser.add_argument('--gpu_index', '-g', type=int, default="1", help='GPU index')
 parser.add_argument('--ngpu', type=int, default=1, help='0 = CPU.')
 parser.add_argument('--optim_name', type=str, default='adam')
 parser.add_argument('--restore_epoch', type=int, default=-1)
 parser.add_argument('--load_rhythm', dest='load_rhythm', action='store_true', default=True)
-parser.add_argument('--seed', type=int, default=1)
+parser.add_argument('--seed', type=str, default=1)
 parser.add_argument('--sample', dest='sample', action='store_true')
 args = parser.parse_args()
 
@@ -29,6 +29,7 @@ print("ARGS")
 print(args)
 use_cuda = torch.cuda.is_available()
 device = torch.device("cuda:%d" % args.gpu_index if use_cuda else "cpu")
+# device = torch.device("cpu")
 print(device)
 
 hparam_file = os.path.join(os.getcwd(), "hparams_gen.yaml")
@@ -49,11 +50,12 @@ logger.logging_verbosity(1)
 logger.add_filehandler(os.path.join(asset_path, "log.txt"))
 
 # seed
-if args.seed > 0:
-    torch.manual_seed(args.seed)
-    torch.cuda.manual_seed_all(args.seed)
-    # np.random.seed(args.seed)
-    random.seed(args.seed)
+seed = int(args.seed)
+if seed > 0:
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    # np.random.seed(seed)
+    random.seed(seed)
 
 # get dataloader for training
 logger.info("get loaders")
@@ -98,7 +100,7 @@ trainer = CMTtrainer(asset_path, model, criterion, optimizer,
 
 if args.sample:
     logger.info("start sampling")
-    trainer.sampling(restore_epoch=args.restore_epoch, load_rhythm=args.load_rhythm)
+    trainer.sampling(seed, restore_epoch=args.restore_epoch, load_rhythm=args.load_rhythm)
 else:
     # start training - add additional train configuration
     logger.info("start training")

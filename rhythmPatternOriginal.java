@@ -163,10 +163,8 @@ public class rhythmPatternCorrelation {
 
         // set  marginals for following variables
         for (int i = idx + 1; i < nbVar; i++) {
-            double score = s.nextDouble();
-            if (x[idx].contains(i)) {
-                x[idx].setMarginal(i, score);
-            }
+            x[i].resetMarginals();
+            x[i].normalizeMarginals();
         }
     }
 
